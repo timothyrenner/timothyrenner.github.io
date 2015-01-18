@@ -1,0 +1,27 @@
+---
+layout: default
+title: timothyrenner.github.io
+---
+
+<div class="container">
+    {% for post in site.posts %}
+    <div class="row">
+        <div class="col-md-4">
+                <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p class="bottom-pad-small">
+                <strong>{{ post.date | date: "%B %d %Y" }}</strong>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            {{ post.excerpt }}
+        <hr>
+        </div>
+    </div>
+    {% endfor %}
+</div>

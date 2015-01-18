@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ page.title }}</title>
+    <!-- Syntax highlighting CSS -->
+    <link href="{{ site.url }}/css/syntax.css" rel="stylesheet"/>
+    <!-- Bootstrap CSS -->
+    <link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="{{ site.url }}/css/style.css" rel="stylesheet"/>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% include navbar.html %}
+    <div id="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-4">
+                    <div class="container" id="frontmatter">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h1>{{ page.title }}</h1>
+                            </div> <!-- title col -->
+                        </div> <!-- title row -->
+                        <div class="row">
+                            <div class="col-md-2">
+                                <strong>{{ page.date | date: "%B %d %Y" }}</strong>
+                            </div> <!-- date col -->
+                            <!-- Twitter button -->
+                            <div class="col-md-1">
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="timothyrenner">Tweet</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            </div> <!-- Tweet button col -->
+                        </div> <!-- frontmatter row -->
+                        <div class="row">
+                            <div class="col-md-8">
+                                <hr>
+                            </div>
+                        </div>
+                    </div><!-- frontmatter container -->
+                    <div class="container" id="content">
+                        <div class="row">
+                            <div class="col-md-8">
+                                {{ content }}
+                            </div> <!-- content col -->
+                        </div> <!-- content row -->
+                    </div> <!-- content container -->
+                </div> <!-- Page col -->
+            </div> <!-- Page row -->
+            <div class="row">
+                <div class="col-md-8">
+                    <hr>
+                </div>
+            </div>
+        </div> <!-- Page container -->
+        <!-- Disqus Comments -->
+        <div class="container bottom-pad">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'timothyrennergithubio'; // required: replace example with your forum shortname
+                    
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div> <!-- col -->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div> <!-- wrap -->
+    {% include footer.html %}    
+    <!-- JQuery -->
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap Javascript -->
+    <script type="text/javascript"
+        src="{{ site.url }}/js/bootstrap.min.js"></script>
+    <!-- Mathjax Javascript -->
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <!-- Twitter Widgets -->
+    <script>window.twttr = (function (d, s, id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src= "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));</script>
+</body>
