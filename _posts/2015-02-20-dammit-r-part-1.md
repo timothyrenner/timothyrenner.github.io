@@ -169,7 +169,10 @@ cat(sprintf("Theoretical variance: %f", 1.0),
     Difference: 0.500000
 {% endhighlight %}
 
-Take careful note that I just had to present a _solution_ to _printing three things onto the screen_.
+Take careful note that I just had to present a _solution_ to _printing three things onto the screen_ (with a single print statement).
 
 
-And that's how you format print onto the screen in R.
+<s>And that's how you format print onto the screen in R.</s>
+And that's how you format print multiple lines onto the screen in R with a single print statement.
+
+[EDITED for clarity and fairness to R].
