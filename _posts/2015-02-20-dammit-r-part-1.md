@@ -3,6 +3,7 @@ title: Dammit, R
 categories: rant
 tags: rant,rstats
 layout: post
+tweet_text: "Dammit, #rstats."
 ---
 
 A week or so ago, I was working on the class project for an online course, Statistical Inference, taught by Brian Caffo at Johns Hopkins.

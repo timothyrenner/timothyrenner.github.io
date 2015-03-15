@@ -3,6 +3,7 @@ title: "Gadfly, Splats, and Layers"
 tags: notebook julia
 categories: programming
 layout: post
+tweet_text: "Gadfly, splats, and layers: fun plots with #julialang."
 ---
 
 The [Gadfly](http://gadflyjl.org/) package is pretty much the coolest thing
@@ -100,13 +101,13 @@ x = zeros(11, n+1); # Each column is a different x0.
 t = zeros(n+1); # The times will be the same for all x0s.
 
 for ii=1:11
-    
+
     # Solve the ODE with an order 4 RK (from the RungeKutta package).
     tnew, xnew = rk4f(f, x0s[:,ii], 0.0, h, n);
-    
+
     # Save the x solution.
     x[ii,:] = xnew[1,:];
-    
+
     # Save the time only once.
     if ii==1
         t = tnew;
@@ -151,9 +152,9 @@ colors = palette("PRGn", 11);
 
 # Make the layers with a comprehension!
 layers = [layer(
-    x=t, y=x[ii,:], 
-    Geom.path, 
-    Theme(default_color=colors[ii])) 
+    x=t, y=x[ii,:],
+    Geom.path,
+    Theme(default_color=colors[ii]))
     for ii in 1:11];
 
 {% endhighlight %}
@@ -175,12 +176,12 @@ arguments, which the plot function _will_ take.
 
 # Create a blank theme for white backgrounds. Because ... art.
 blankTheme = Theme(
-    grid_color=color("white"), 
+    grid_color=color("white"),
     panel_fill=color("white"),
-    major_label_color=color("white"), 
+    major_label_color=color("white"),
     minor_label_color=color("white"));
 
-# Now draw the plot (it takes a bit). 
+# Now draw the plot (it takes a bit).
 # Note how easy it is with the splat.
 draw(PNG(24cm, 18cm), plot(layers..., blankTheme))
 
