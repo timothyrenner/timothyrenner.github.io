@@ -9,6 +9,7 @@
     <link href="{{ site.url }}/css/style.css" rel="stylesheet"/>
     <meta charset="utf-8">
 </head>
+{% include analytics.html %}
 <body>
     {% include navbar.html %}
     <div id="wrap">
@@ -27,7 +28,6 @@
                             </div> <!-- date col -->
                             <!-- Twitter button -->
                             <div class="col-md-1">
-                                <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="timothyrenner">Tweet</a> -->
                                 <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.tweet_text }}" data-via="timothyrenner">Tweet</a>
                                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                             </div> <!-- Tweet button col -->
