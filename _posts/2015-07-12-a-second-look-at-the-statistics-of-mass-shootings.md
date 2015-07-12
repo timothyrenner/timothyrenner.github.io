@@ -3,7 +3,7 @@ title: "A Second Look at the Statistics of Mass Shootings"
 tags: notebook python
 categories: datascience
 layout: post
-tweet_text: "A Second Look at the Statistics of Mass Shootings"
+tweet_text: "A Second Look at the Statistics of Mass Shootings #python #datascience"
 ---
 
 This is a follow-up to an incredibly insightful [post](http://www.charlespetzold.com/blog/2015/07/De-Obfuscating-the-Statistics-of-Mass-Shootings.html) by Charles Petzold.
