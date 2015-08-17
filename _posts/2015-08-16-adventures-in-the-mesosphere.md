@@ -58,7 +58,7 @@ This is more like the _opposite_ of a tutorial, from someone who waited until th
 
 **The following takes place between Tuesday, August 4th and Thursday, August 6th, 2015.**
 
-###Tuesday, August 4th
+### Tuesday, August 4th
 
 **8:15 PM** After reading up online, I decided to use Mesosphere to launch and manage the cluster.
 It seemed like a really quick and dirty way to get what I needed.
@@ -78,7 +78,7 @@ Two instances.
 Now I don't know what really caused this because I have no idea what I'm doing, but after 20-25 minutes I still don't have a completed stack up and running.
 At this point it's about 9:30 and - for reasons you're about to discover - I head to bed.
 
-###Wednesday, August 5th
+### Wednesday, August 5th
 
 **4:58 AM** You read that correctly.
 It's a 4.
@@ -248,7 +248,7 @@ It works.
 
 I throw in the towel and go to bed.
 
-###Thursday, August 6th
+### Thursday, August 6th
 
 **4:45 AM**
 
