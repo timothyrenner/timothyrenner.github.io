@@ -4,7 +4,6 @@ tags: spark d3
 categories: projects
 layout: post
 tweet_text: "Introducing the Profanity Power Index, built with #d3js and #spark. #GOPDebate"
-tweet_text: "Introducing the Profanity Power Index, built with #d3js and #spark. #GOPDebate"
 ---
 
 Last night was the first Republican presidential debate of the 2016 race, and while many were thoroughly enjoying what I'm sure was a spectacular shitshow, I was hard at work monitoring the Twittersphere to collect the data everyone _really_ wants to know about the candidates: who's getting cussed at the most (**spoiler** it's Trump).
