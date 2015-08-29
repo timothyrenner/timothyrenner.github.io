@@ -3,7 +3,7 @@ html, body, .container {
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 120px;
     padding-bottom: 110px;
 }
 
@@ -15,7 +15,7 @@ footer {
     padding-bottom:5px;
     text-align: center;
     color:Gray;
-    background-color: #F8F8F8
+    background-color: white
 }
 
 #wrap {
@@ -34,6 +34,12 @@ footer {
   display: inline-block;
   float: none;
   vertical-align: top;
+}
+
+/* Style the navbar to invisible-ish. */
+.navbar-default {
+  background-color: white;
+  border-color: transparent;
 }
 
 .navbar .navbar-collapse {
