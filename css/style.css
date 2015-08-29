@@ -1,10 +1,10 @@
-html, body {
+html, body, .container {
     height: 100%
 }
 
 body {
     padding-top: 60px;
-    padding-bottom: 110px
+    padding-bottom: 110px;
 }
 
 footer {
@@ -24,6 +24,20 @@ footer {
   height: 100%;
   margin: 0 auto -90px;
   padding: 0 0 60px;
+}
+
+/* Centers the navbar.
+    See http://stackoverflow.com/questions/18777235/
+      center-content-in-responsive-bootstrap-navbar
+*/
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 .bottom-pad {
