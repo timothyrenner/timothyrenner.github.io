@@ -25,7 +25,12 @@ footer {
   margin: 0 auto -90px;
   padding: 0 0 60px;
 }
-
+.caret {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000000;
+    padding-bottom: 3px;
+}
 /* Centers the navbar.
     See http://stackoverflow.com/questions/18777235/
       center-content-in-responsive-bootstrap-navbar
@@ -44,6 +49,57 @@ footer {
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+/* Black nav links */
+a.nav-link:link
+{
+   color: black;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: black;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: black;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: black;
+   text-decoration: none;
+}
+
+/* Gray nav links */
+a.nav-link-gray:link
+{
+   color: Gray;
+   text-decoration: none;
+}
+a.nav-link-gray:visited
+{
+   color: Gray;
+   text-decoration: none;
+}
+a.nav-link-gray:hover
+{
+   color: Gray;
+   text-decoration: none;
+}
+a.nav-link-gray:active
+{
+   color: Gray;
+   text-decoration: none;
+}
+
+/* Remove dropdown styling. */
+.dropdown-menu {
+    width: 250px !important;
+    border-color: transparent;
+    box-shadow: none;
 }
 
 .bottom-pad {
