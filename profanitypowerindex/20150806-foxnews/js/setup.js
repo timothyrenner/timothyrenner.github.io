@@ -290,7 +290,7 @@ function hbar(d3, id, data, start, stop, width, height, maxVal, color) {
     var lowerWidthThreshold = 0.25;
     bars.append("rect")
        .attr("class","bar")
-       .attr("x", function(d) { return xScale(d.count); })
+       .attr("x", function(d) { return xScale(d.count) - 5; }) // -5 for douche.
        .attr("width", function(d) { return width - xScale(d.count); })
        .attr("y", function(d) { return yScale(d.word); })
        .attr("height", function(d) { return yScale.rangeBand(); })
@@ -322,7 +322,7 @@ function hbar(d3, id, data, start, stop, width, height, maxVal, color) {
         .attr("class",id + "-svg-text noselect")
         .attr("x", 
             function(d) { return ((d.count/maxVal) >= lowerWidthThreshold) ? 
-                                 xScale(d.count) + 5 : xScale(d.count) - 5; })
+                                 xScale(d.count) + 5 : xScale(d.count) - 10; })
         .attr("y", 
             function(d) { return yScale(d.word) + yScale.rangeBand()/1.35; })
         .text(function(d) { return d.count.toLocaleString(); })
@@ -343,7 +343,7 @@ function hbar(d3, id, data, start, stop, width, height, maxVal, color) {
     // Draw the axis.       
     svg.append("g")
        .attr("class", "y-axis")
-       .attr("transform","translate(" + (width-5) + ",0)")
+       .attr("transform","translate(" + (width-10) + ",0)") // -10 for douche
        .call(yAxis)
        .select("path")
        .attr('fill','none')

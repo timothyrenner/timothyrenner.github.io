@@ -25,12 +25,7 @@ footer {
   margin: 0 auto -90px;
   padding: 0 0 60px;
 }
-.caret {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #000000;
-    padding-bottom: 3px;
-}
+
 /* Centers the navbar.
     See http://stackoverflow.com/questions/18777235/
       center-content-in-responsive-bootstrap-navbar
@@ -102,6 +97,19 @@ a.nav-link-gray:active
     box-shadow: none;
 }
 
+.caret {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000000;
+    padding-bottom: 3px;
+}
+
+/* misc */
+.notebook-title {
+    font-weight: bold;
+    font-size: 165%;
+}
+
 .bottom-pad {
     margin-bottom: 0.75cm
 }
@@ -126,6 +134,8 @@ a.nav-link-gray:active
 .pointer-only {
     cursor:pointer
 }
+
+/* code panels */
 .panel-heading div:after {
     font-family:'Glyphicons Halflings';
     content:"\e114";
