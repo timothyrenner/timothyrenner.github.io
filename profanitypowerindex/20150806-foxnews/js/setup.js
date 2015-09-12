@@ -71,7 +71,6 @@ function elementWidth(divId) {
 //         'time'      : time,
 //         'count'     : count }]
 
-// TODO: Fill the actual debate times on the sparklines?
 function sparkline(d3, id, data, start, stop, width, height, gradient) {
 
     var dataByTime = data.slice(1).reduce(countByTime,
