@@ -1,0 +1,223 @@
+---
+layout: null
+title: "Profanity Power Index"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Profanity Power Index</title>
+        <!-- Syntax highlighting CSS -->
+        <link href="{{ site.url }}/css/syntax.css" rel="stylesheet"/>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!-- Site-wide styling -->
+        <link rel="stylesheet" href="{{ site.url }}/css/style.css"/>
+        <!-- Profanity-power-index specific styling -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    {% include analytics.html %}
+    <body class="fill">
+        {% include navbar.html %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+        <script src="js/profanitypowerindex.js" type="text/javascript"></script>
+        <div id="wrap">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Profanity Power Index</h1>
+                <h3 class="text-center">2016 Republican Primary Edition</h3>
+            </div>
+            <hr>
+            <div class="row">
+                <h2 class="text-center">CNN Debate, 9/16/2015, 8-11 ET</h2>
+            </div>
+            <div class="row">
+                <h5 class="text-center">Collected from 560,000 tweets on the Twitter public timeline.</h5></div><hr><div class="row"><div class="col-md-5" id="donald-trump-barchart"></div><div class="col-md-2"><div class="row" id="donald-trump-image"><img src="https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Donald Trump</h5></div></div><div class="col-md-5" id="donald-trump-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="carly-fiorina-barchart"></div><div class="col-md-2"><div class="row" id="carly-fiorina-image"><img src="https://pbs.twimg.com/profile_images/595179129013538816/weoj-HQY_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Carly Fiorina</h5></div></div><div class="col-md-5" id="carly-fiorina-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="rand-paul-barchart"></div><div class="col-md-2"><div class="row" id="rand-paul-image"><img src="https://pbs.twimg.com/profile_images/378800000172093378/1fdc56b3070dfe288553f20ebb49e92a_400x400.jpeg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Rand Paul</h5></div></div><div class="col-md-5" id="rand-paul-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="jeb-bush-barchart"></div><div class="col-md-2"><div class="row" id="jeb-bush-image"><img src="https://pbs.twimg.com/profile_images/591000793303547905/eu1KYXqx_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Jeb Bush</h5></div></div><div class="col-md-5" id="jeb-bush-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="ted-cruz-barchart"></div><div class="col-md-2"><div class="row" id="ted-cruz-image"><img src="https://pbs.twimg.com/profile_images/478888071518093312/Rdiy3UhY_400x400.jpeg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Ted Cruz</h5></div></div><div class="col-md-5" id="ted-cruz-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="ben-carson-barchart"></div><div class="col-md-2"><div class="row" id="ben-carson-image"><img src="https://pbs.twimg.com/profile_images/639107224216993792/kJU5VKFt.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Ben Carson</h5></div></div><div class="col-md-5" id="ben-carson-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="chris-christie-barchart"></div><div class="col-md-2"><div class="row" id="chris-christie-image"><img src="https://pbs.twimg.com/profile_images/614760759965265920/8ahsjx48_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Chris Christie</h5></div></div><div class="col-md-5" id="chris-christie-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="mike-huckabee-barchart"></div><div class="col-md-2"><div class="row" id="mike-huckabee-image"><img src="https://pbs.twimg.com/profile_images/595604836667691008/34kTwIqb_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Mike Huckabee</h5></div></div><div class="col-md-5" id="mike-huckabee-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="marco-rubio-barchart"></div><div class="col-md-2"><div class="row" id="marco-rubio-image"><img src="https://pbs.twimg.com/profile_images/588332605969342464/l3r5Akro_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Marco Rubio</h5></div></div><div class="col-md-5" id="marco-rubio-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="scott-walker-barchart"></div><div class="col-md-2"><div class="row" id="scott-walker-image"><img src="https://pbs.twimg.com/profile_images/611918888872226817/AQ401NFI_400x400.png" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>Scott Walker</h5></div></div><div class="col-md-5" id="scott-walker-sparkline"></div></div><hr><div class="row"><div class="col-md-5" id="john-kasich-barchart"></div><div class="col-md-2"><div class="row" id="john-kasich-image"><img src="https://pbs.twimg.com/profile_images/623191528626716672/i7M8s0FC_400x400.png" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0"></div><div class="row text-center"><h5>John Kasich</h5></div></div><div class="col-md-5" id="john-kasich-sparkline"></div></div></div><script>d3.tsv("data/20150916_cnn_debate_counts.csv",tsvCallback([
+    {
+        "name": "Donald Trump",
+        "display_name": "Donald Trump",
+        "picture": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg",
+        "id": "donald-trump",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Carly Fiorina",
+        "display_name": "Carly Fiorina",
+        "picture": "https://pbs.twimg.com/profile_images/595179129013538816/weoj-HQY_400x400.jpg",
+        "id": "carly-fiorina",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Rand Paul",
+        "display_name": "Rand Paul",
+        "picture": "https://pbs.twimg.com/profile_images/378800000172093378/1fdc56b3070dfe288553f20ebb49e92a_400x400.jpeg",
+        "id": "rand-paul",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Jeb Bush",
+        "display_name": "Jeb Bush",
+        "picture": "https://pbs.twimg.com/profile_images/591000793303547905/eu1KYXqx_400x400.jpg",
+        "id": "jeb-bush",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Ted Cruz",
+        "display_name": "Ted Cruz",
+        "picture": "https://pbs.twimg.com/profile_images/478888071518093312/Rdiy3UhY_400x400.jpeg",
+        "id": "ted-cruz",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Ben Carson",
+        "display_name": "Ben Carson",
+        "picture":"https://pbs.twimg.com/profile_images/639107224216993792/kJU5VKFt.jpg",
+        "id": "ben-carson",        
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Chris Christie",
+        "display_name": "Chris Christie",
+        "picture": "https://pbs.twimg.com/profile_images/614760759965265920/8ahsjx48_400x400.jpg",
+        "id": "chris-christie",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }  
+    },
+    {
+        "name": "Mike Huckabee",
+        "display_name": "Mike Huckabee",
+        "picture": "https://pbs.twimg.com/profile_images/595604836667691008/34kTwIqb_400x400.jpg",
+        "id": "mike-huckabee",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Marco Rubio",
+        "display_name": "Marco Rubio",
+        "picture": "https://pbs.twimg.com/profile_images/588332605969342464/l3r5Akro_400x400.jpg",
+        "id": "marco-rubio",        
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "Scott Walker",
+        "display_name": "Scott Walker",
+        "picture": "https://pbs.twimg.com/profile_images/611918888872226817/AQ401NFI_400x400.png",
+        "id": "scott-walker",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    },
+    {
+        "name": "John Kasich",
+        "display_name": "John Kasich",
+        "picture": "https://pbs.twimg.com/profile_images/623191528626716672/i7M8s0FC_400x400.png",
+        "id": "john-kasich",
+        "colors": {
+            "sparkline": [ { "offset": "0%",    "color": "#fcbba1" },
+                           {  "offset": "25%",  "color": "#fcae91" },
+                           {  "offset": "50%",  "color": "#fb6a4a" },
+                           {  "offset": "75%",  "color": "#de2d26" },
+                           {  "offset": "100%", "color": "#a50f15" } ],
+            "barchart": { "base" : "#bd0026",
+                          "hover": "#800026" }
+        }
+    }
+],"2015-09-16T20:00-0400","2015-09-16T23:00-0400"))</script>
+<hr>
+<div class="row">
+    <p class="text-center">Read more:</p>
+    <p class="text-center"><a href="{{ site.url }}/data/2015/08/15/profanity-power-index-to-polls.html">Comparing the Profanity Power Index to the Polls</a></p>
+    <p class="text-center"><a href="{{ site.url }}/streaming/2015/08/16/adventures-in-the-mesosphere.html">Adventures in the Mesosphere: How the DCOS Turned me into a Cluster Computing MacGyver</a></p>
+</div>
+<hr>
+<div class="row">
+<p class="text-center">Technical shit:</p>
+<p class="text-center">Collected with a laptop using <a href="http://twitter4j.org">Twitter4j</a>.</p> 
+<p class="text-center">Visualization built with <a href="http://d3js.org">d3.js</a>.</p>
+<p class="text-center">Check out the code on <a href="https://www.github.com/timothyrenner/ProfanityPowerIndex">Github</a>.</p>
+<hr>
+</div>
+</div>
+{% include footer.html %}
+</body></html>
