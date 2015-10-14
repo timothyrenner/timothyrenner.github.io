@@ -1,0 +1,137 @@
+---
+layout: null
+title: "Profanity Power Index"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Profanity Power Index</title>
+        <!-- Syntax highlighting CSS -->
+        <link href="{{ site.url }}/css/syntax.css" rel="stylesheet"/>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!-- Site-wide styling -->
+        <link rel="stylesheet" href="{{ site.url }}/css/style.css"/>
+        <!-- Profanity Power Index specific styling -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    {% include analytics.html %}
+    <body class="fill">
+        {% include navbar.html %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+        <script src="js/profanitypowerindex.js" type="text/javascript"></script>
+        <div id="wrap">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Profanity Power Index</h1>
+                <h3 class="text-center">2016 Democrat Primary Edition</h3>
+            </div>
+            <hr>
+            <div class="row">
+                <h2 class="text-center">CNN Debate, 10/13/2015, 8-10 CT</h2>
+            </div>
+            <div class="row">
+                <h5 class="text-center">Collected from 461,000 tweets on the Twitter public timeline.</h5>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5" id="hillary-clinton-barchart"></div>
+                <div class="col-md-2">
+                    <div class="row" id="hillary-clinton-image">
+                        <img src="https://pbs.twimg.com/profile_images/651541754680770560/yC5Emg11.png" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0">
+                    </div>
+                    <div class="row text-center">
+                        <h5>Hillary Clinton</h5>
+                    </div>
+                </div>
+                <div class="col-md-5" id="hillary-clinton-sparkline"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5" id="bernie-sanders-barchart"></div>
+                <div class="col-md-2">
+                    <div class="row" id="bernie-sanders-image">
+                        <img src="https://pbs.twimg.com/profile_images/649063561273040896/oCnTcltj.png" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0">
+                    </div>
+                    <div class="row text-center">
+                        <h5>Bernie Sanders</h5>
+                    </div>
+                </div>
+            <div class="col-md-5" id="bernie-sanders-sparkline"></div>
+        </div>
+        <hr>
+            <div class="row">
+                <div class="col-md-5" id="martin-omalley-barchart"></div>
+                <div class="col-md-2">
+                    <div class="row" id="martin-omalley-image">
+                        <img src="https://pbs.twimg.com/profile_images/649203805716803584/otyJOChG.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0">
+                    </div>
+                    <div class="row text-center">
+                        <h5>Martin O&apos;Malley</h5>
+                    </div>
+                </div>
+                <div class="col-md-5" id="martin-omalley-sparkline"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-5" id="lincoln-chafee-barchart"></div>
+                <div class="col-md-2">
+                    <div class="row" id="lincoln-chafee-image">
+                        <img src="https://pbs.twimg.com/profile_images/648953935248662533/QQV-JIul.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0">
+                    </div>
+                    <div class="row text-center">
+                        <h5>Lincoln Chafee</h5>
+                    </div>
+                </div>
+                <div class="col-md-5" id="lincoln-chafee-sparkline"></div>
+            </div>
+            <hr>
+        <div class="row">
+            <div class="col-md-5" id="jim-webb-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="jim-webb-image">
+                    <img src="https://pbs.twimg.com/profile_images/603792003298656258/uAchir_7_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Jim Webb</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="jim-webb-sparkline"></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-5" id="donald-trump-barchart"></div>
+                <div class="col-md-2"><div class="row" id="donald-trump-image">
+                    <img src="https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg" style="width: 180px;height: 180px;border:2px solid black;margin: 1em auto 0">
+                </div>
+            <div class="row text-center">
+                <h5>Donald Trump</h5>
+            </div>
+        </div>
+        <div class="col-md-5" id="donald-trump-sparkline"></div>
+    </div>
+</div>
+<script>d3.tsv("data/20151013_cnn_debate_counts.csv",tsvCallback([{"name":"Lincoln Chafee","display_name":"Lincoln Chafee","picture":"https://pbs.twimg.com/profile_images/378800000433899667/8238019d8e6e4b2117a79850576e5069_400x400.jpeg","id":"lincoln-chafee","colors":{"sparkline":[{"offset":"0%","color":"#c6dbef"},{"offset":"25%","color":"#9ecae1"},{"offset":"50%","color":"#6baed6"},{"offset":"75%","color":"#3182bd"},{"offset":"100%","color":"#08519c"}],"barchart":{"base":"#08519c","hover":"#08306b"}}},{"name":"Hillary Clinton","display_name":"Hillary Clinton","picture":"https://pbs.twimg.com/profile_images/625852134907469824/waxtV3lF_400x400.png","id":"hillary-clinton","colors":{"sparkline":[{"offset":"0%","color":"#c6dbef"},{"offset":"25%","color":"#9ecae1"},{"offset":"50%","color":"#6baed6"},{"offset":"75%","color":"#3182bd"},{"offset":"100%","color":"#08519c"}],"barchart":{"base":"#08519c","hover":"#08306b"}}},{"name":"Martin O'Malley","display_name":"Martin O'Malley","picture":"https://pbs.twimg.com/profile_images/623344834401685504/PrYH3-HB_400x400.jpg","id":"martin-omalley","colors":{"sparkline":[{"offset":"0%","color":"#c6dbef"},{"offset":"25%","color":"#9ecae1"},{"offset":"50%","color":"#6baed6"},{"offset":"75%","color":"#3182bd"},{"offset":"100%","color":"#08519c"}],"barchart":{"base":"#08519c","hover":"#08306b"}}},{"name":"Bernie Sanders","display_name":"Bernie Sanders","picture":"https://pbs.twimg.com/profile_images/593768630619414528/NtUnu7BX_400x400.png","id":"bernie-sanders","colors":{"sparkline":[{"offset":"0%","color":"#c6dbef"},{"offset":"25%","color":"#9ecae1"},{"offset":"50%","color":"#6baed6"},{"offset":"75%","color":"#3182bd"},{"offset":"100%","color":"#08519c"}],"barchart":{"base":"#08519c","hover":"#08306b"}}},{"name":"Jim Webb","display_name":"Jim Webb","picture":"https://pbs.twimg.com/profile_images/603792003298656258/uAchir_7_400x400.jpg","id":"jim-webb","colors":{"sparkline":[{"offset":"0%","color":"#c6dbef"},{"offset":"25%","color":"#9ecae1"},{"offset":"50%","color":"#6baed6"},{"offset":"75%","color":"#3182bd"},{"offset":"100%","color":"#08519c"}],"barchart":{"base":"#08519c","hover":"#08306b"}}},{"name":"Donald Trump","display_name":"Donald Trump","picture":"https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_400x400.jpg","id":"donald-trump","colors":{"sparkline":[{"offset":"0%","color":"#fcbba1"},{"offset":"25%","color":"#fcae91"},{"offset":"50%","color":"#fb6a4a"},{"offset":"75%","color":"#de2d26"},{"offset":"100%","color":"#a50f15"}],"barchart":{"base":"#bd0026","hover":"#800026"}}}],"2015-10-13T21:00-0400","2015-10-13T23:00-0400"))</script>
+        <hr>
+        <div class="row">
+    <p class="text-center">Read more:</p>
+    <p class="text-center"><a href="{{ site.url }}/data/2015/08/15/profanity-power-index-to-polls.html">Comparing the Profanity Power Index to the Polls</a></p>
+    <p class="text-center"><a href="{{ site.url }}/streaming/2015/08/16/adventures-in-the-mesosphere.html">Adventures in the Mesosphere: How the DCOS Turned me into a Cluster Computing MacGyver</a></p>
+</div>
+<hr>
+<div class="row">
+<p class="text-center">Technical shit:</p>
+<p class="text-center">Collected with a laptop using <a href="http://twitter4j.org">Twitter4j</a>.</p> 
+<p class="text-center">Visualization built with <a href="http://d3js.org">d3.js</a>.</p>
+<p class="text-center">Check out the code on <a href="https://www.github.com/timothyrenner/ProfanityPowerIndex">Github</a>.</p>
+<hr>
+</div>
+</div>
+{% include footer.html %}
+</body></html>
