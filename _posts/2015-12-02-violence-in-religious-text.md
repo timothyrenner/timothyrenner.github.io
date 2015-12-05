@@ -87,7 +87,7 @@ Hit the code bar at your own risk.
 ;; Dhammapada: 87 - 1717
 ;; The Holy Bible: 45 - 79122
 ;; The Vedas: 4363 - 19604
-;; The Koran: 1034 - 27074
+;; The Koran: 1034 - 26633
 ;; Jewish Scriptures: 1509 - 147516
 ;; Book of Mormon: 133 - 39914
 
@@ -157,8 +157,8 @@ Hit the code bar at your own risk.
 (def koran
   ;; Read the file, split on lines.
   (->> (str/split (slurp "resources/the-koran.txt") #"\r\n")
-       ;; Take the first 27074 lines (lines prior to tail matter).
-       (take 27074)
+       ;; Take the first 26633 lines (lines prior to tail matter).
+       (take 26633)
        ;; Drop the introduction.
        (drop 1034)
        ;; Kill any leading / trailing whitespace.
@@ -250,7 +250,7 @@ How many sentences in each book?
 <center><table class="table"><tr><td>The Dhammapada</td><td>548</td></tr>
 <tr><td>The Holy Bible</td><td>36,316</td></tr>
 <tr><td>The Vedas</td><td>243</td></tr>
-<tr><td>The Koran</td><td>8,183</td></tr>
+<tr><td>The Koran</td><td>7,616</td></tr>
 <tr><td>The Jewish Scriptures</td><td>20,498</td></tr>
 <tr><td>The Book of Mormon</td><td>7,605</td></tr></table></center>
 
