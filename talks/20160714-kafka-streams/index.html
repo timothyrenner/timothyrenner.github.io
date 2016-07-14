@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Introduction To Kafka Streams">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title"><img src="images/kafka_logo.png" /></h1>
+  <h2 class="author"><strong>Introduction To Kafka Streams</strong></h2>
+  <h3 class="date">Tim Renner, <em>Intersys</em></h3>
+</section>
+
+<section id="about-me" class="slide level1">
+<h1>About Me</h1>
+<style>
+.reveal li {line-height: 1.5}
+.reveal h1 { font-size: 2.5em; } 
+.reveal h2 { font-size: 2.0em; }
+.reveal code { background-color: #ffffe5 }
+.reveal section img { border:none; box-shadow: none}
+.reveal section social-link {font-size: 20px; 
+                             font-weight: bold}
+.reveal site-link {font-size: 25px; font-weight: bold} 
+.reveal h1 mono-header {font-family: "Lucida Console", Monaco, monospace}
+</style>
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></p>
+<h3 id="data-scientist-data-engineer-intersys">Data Scientist / Data Engineer @ Intersys</h3>
+<p><br> <a href="http://timothyrenner.github.io" class=site-link>timothyrenner.github.io</a> <br><br> <a href="http://www.github.com/timothyrenner" class=social-link style="vertical-align: 30%">github.com/timothyrenner</a></p>
+</section>
+<section id="section" class="slide level1">
+<h1><img src="images/intersys-logo-horizontal.png" /></h1>
+<p>Consulting + Staffing</p>
+<p><br><br> Big Data and Analytics, Application Development, Data Warehousing</p>
+<p><br> <a href="http://www.twitter.com/intersysconsult" class=social-link style="vertical-align: 30%"><span class="citation" data-cites="intersysconsult">@intersysconsult</span></a>    <a href="http://www.intersysconsulting.com" class=site-link style="vertical-align: 30%">intersysconsulting.com</a></p>
+</section>
+<section id="this-talk-is-not" class="slide level1">
+<h1>This Talk is Not</h1>
+<ul>
+<li>Best practices</li>
+<li>Ops war story</li>
+<li>Detailed API Guide</li>
+</ul>
+<p><strong><em>Kafka Streams is &quot;alpha-quality&quot; software, meaning the API is unstable.</em></strong></p>
+</section>
+<section id="hipster-stream-processing" class="slide level1">
+<h1>Hipster Stream Processing</h1>
+<p><img src="images/hipster_processing.png" style="height:50%; width:50%; float:left;"></p>
+<div style="float:right;">
+<p><br><br> Time Ordering <br><br> State Durability <br><br> Network Shuffles <br><br> Windowing</p>
+</div>
+</section>
+<section id="hipster-stream-processing-1" class="slide level1">
+<h1>Hipster Stream Processing</h1>
+<p><img src="images/hipster_processing_2.png" style="height:50%; width:50%; float:left;"></p>
+<div style="float:right;">
+<p><br><br> Time Ordering <br><br> State Durability <br><br> Network Shuffles <br><br> Windowing</p>
+</div>
+</section>
+<section id="hipster-stream-processing-2" class="slide level1">
+<h1>Hipster Stream Processing</h1>
+<p><img src="images/hipster_processing.png" style="height: 50%; width:50%; float: left;"></p>
+<div style="float:right;">
+<p><br><br> <strong><em>Time Ordering</em></strong> <br><br> <strong><em>State Durability</em></strong> <br><br> <strong><em>Network Shuffles</em></strong> <br><br> Windowing</p>
+</div>
+</section>
+<section id="kafka-streams" class="slide level1">
+<h1>Kafka Streams</h1>
+<blockquote>
+<p>&quot;Kafka Streams is a Java library for building distributed stream processing apps using Apache Kafka.&quot;</p>
+<p>💕💕Jay Kreps💕💕</p>
+</blockquote>
+<h3 id="a-library-is-simpler-than-a-framework."><strong>A library is <em>simpler</em> than a framework.</strong></h3>
+</section>
+<section id="stream-semantics" class="slide level1">
+<h1>Stream Semantics</h1>
+<h3 style="float:left;">
+Collection Oriented
+</h3>
+<h3 style="float:right; clear:right;">
+Function Oriented
+</h3>
+<div style="float:left; width:50%">
+<p><br></p>
+<div class="sourceCode"><pre class="sourceCode scala"><code class="sourceCode scala">stream.<span class="fu">map</span>((k,v) =&gt; 
+         (k, v<span class="dv">+1</span>))
+      .<span class="fu">filter</span>((k,v) =&gt; 
+          v % <span class="dv">2</span> == <span class="dv">0</span>)
+      .<span class="fu">countByKey</span>()</code></pre></div>
+</div>
+<div style="float:right; width:50%;">
+<p><img src="images/topology-skeleton.png" style="height:50%; width:50%; float:right; clear:right; padding-right:50px;"></p>
+</div>
+<br>
+<div>
+<p><img src="images/spark-streaming-logo.png" style="height:20%; width:20%; float:left; clear:right; padding-left:135px"></p>
+</div>
+<div>
+<p><img src="images/storm-logo.png" style="height:25%; width:25%; float: right; padding-top:25px; padding-right: 50px;"></p>
+</div>
+</section>
+<section class="slide level1">
+
+<p><img src="images/not_looking_at_facebook.png" style="height:100%; width:100%;"></p>
+</section>
+<section id="kstream" class="slide level1">
+<h1>KStream</h1>
+<figure>
+<img src="images/stateless_solution.png" />
+</figure>
+<p> </p>
+</section>
+<section id="kstream-1" class="slide level1">
+<h1>KStream</h1>
+<figure>
+<img src="images/stateless_solution_2.png" />
+</figure>
+<p>The &quot;open&quot; topic is treated as a <strong>record</strong> stream.</p>
+</section>
+<section id="kstream-2" class="slide level1">
+<h1>KStream</h1>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java">
+<span class="co">// Stream from a Kafka topic.</span>
+builder.<span class="fu">stream</span>(<span class="st">&quot;open&quot;</span>)
+       
+       <span class="co">// Remove &quot;Open&quot; events.</span>
+       .<span class="fu">filter</span>((k,v) -&gt; v == <span class="st">&quot;Close&quot;</span>)
+       
+       <span class="co">// Add the helpful notification message.</span>
+       .<span class="fu">mapValues</span>(v -&gt; <span class="st">&quot;You are not currently viewing Facebook.&quot;</span>)
+       
+       <span class="co">// Sink to a Kafka topic.</span>
+       .<span class="fu">to</span>(<span class="st">&quot;notifications&quot;</span>);</code></pre></div>
+</section>
+<section id="ktable" class="slide level1">
+<h1>KTable</h1>
+<figure>
+<img src="images/stateful_solution.png" />
+</figure>
+<p>The &quot;open&quot; topic is now treated as a <strong>changelog</strong> stream.</p>
+</section>
+<section id="ktable-1" class="slide level1">
+<h1>KTable</h1>
+<figure>
+<img src="images/stateful_solution_2.png" />
+</figure>
+<p>The state of the application is a <strong>view</strong> of the changelog stream.</p>
+</section>
+<section id="ktable-2" class="slide level1">
+<h1>KTable</h1>
+<figure>
+<img src="images/stateful_solution_3.png" />
+</figure>
+<p>The &quot;tick&quot; stream can <strong>join</strong> against the always up-to-date table.</p>
+</section>
+<section id="ktable-3" class="slide level1">
+<h1>KTable</h1>
+<figure>
+<img src="images/stateful_solution_4.png" />
+</figure>
+<p>You're welcome Mark.</p>
+</section>
+<section id="ktable-4" class="slide level1">
+<h1>KTable</h1>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java">KStream&lt;String, String&gt; ticks = builder.<span class="fu">stream</span>(<span class="st">&quot;tick&quot;</span>);
+
+<span class="co">// Now we stream &quot;open&quot; as a table.</span>
+KTable&lt;String, String&gt;  open = builder.<span class="fu">table</span>(<span class="st">&quot;open&quot;</span>);
+
+<span class="co">// Join ticks to the open table.</span>
+KStream&lt;String, String&gt; closedTicks = 
+    ticks.<span class="fu">leftJoin</span>(open, (vtick, vopen) -&gt; vopen)
+
+         <span class="co">// Filter the &quot;closed&quot; entries in the new stream.</span>
+         .<span class="fu">filter</span>((k,v) -&gt; v == <span class="st">&quot;Closed&quot;</span>);
+
+        <span class="co">// Now fill in the message.</span>
+        .<span class="fu">mapValues</span>(v -&gt; <span class="st">&quot;You are not currently viewing Facebook.&quot;</span>);
+
+<span class="co">// Sink the messages to the &quot;notifications&quot; topic.</span>
+closedTicks.<span class="fu">to</span>(<span class="st">&quot;notifications&quot;</span>);</code></pre></div>
+</section>
+<section id="timewindows" class="slide level1">
+<h1>TimeWindows</h1>
+<p><img src="images/windows.png" style="height:75%; width:75%"></p>
+<p>Windows preserve state for a period of time.</p>
+</section>
+<section id="timewindows-1" class="slide level1">
+<h1>TimeWindows</h1>
+<p><img src="images/windows_2.png" style="height:75%; width:75%"></p>
+<p>The <em>keys</em> are what's windowed.</p>
+</section>
+<section id="timewindows-2" class="slide level1">
+<h1>TimeWindows</h1>
+<p><img src="images/windows_3.png" style="height:75%; width:75%"></p>
+<p>With an update, <em>each</em> windowed value is emitted.</p>
+</section>
+<section id="timewindows-3" class="slide level1">
+<h1>TimeWindows</h1>
+<p><img src="images/windows_4.png" style="height:75%; width:75%"></p>
+<p><code>of</code> controls duration, <code>advanceBy</code> controls &quot;hops&quot;</p>
+</section>
+<section id="timewindows-4" class="slide level1">
+<h1>TimeWindows</h1>
+<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java">KTable&lt;Windowed&lt;String&gt;, Long&gt; notificationCounts = 
+    closedTicks.<span class="fu">countByKey</span>(
+        TimeWindows.<span class="fu">of</span>(<span class="st">&quot;notificationCounts&quot;</span>, 60000L * <span class="dv">10</span>)
+                   <span class="co">// &quot;Hop&quot; the windows every minute.</span>
+                   .<span class="fu">advanceBy</span>(60000L)
+                   <span class="co">// Ignore late values.</span>
+                   .<span class="fu">until</span>(60000L * <span class="dv">10</span>));
+               
+<span class="co">// Convert the table updates to a stream.</span>
+<span class="co">// Note we need to extract the key from the window. </span>
+notificationCounts.<span class="fu">toStream</span>((k,v) -&gt; k.<span class="fu">key</span>())
+                  .<span class="fu">to</span>(<span class="st">&quot;metrics&quot;</span>);</code></pre></div>
+</section>
+<section id="processors" class="slide level1">
+<h1>Processors</h1>
+<figure>
+<img src="images/under_the_hood.png" />
+</figure>
+<p>Underneath the DSL is a function-oriented topology.</p>
+</section>
+<section id="processors-1" class="slide level1">
+<h1>Processors</h1>
+<figure>
+<img src="images/under_the_hood_2.png" />
+</figure>
+<p>Sources and sinks are (basically) producers and consumers.</p>
+</section>
+<section id="processors-2" class="slide level1">
+<h1>Processors</h1>
+<figure>
+<img src="images/under_the_hood_3.png" />
+</figure>
+<p>State stores are persisted to Kafka.</p>
+</section>
+<section id="processors-3" class="slide level1">
+<h1>Processors</h1>
+<figure>
+<img src="images/under_the_hood_4.png" />
+</figure>
+<p>Network shuffles are done with Kafka.</p>
+</section>
+<section id="scaling" class="slide level1">
+<h1>Scaling</h1>
+<figure>
+<img src="images/scaling.png" />
+</figure>
+<p>Each partition creates a <strong>task</strong>, distributed across machines.</p>
+</section>
+<section id="scaling-1" class="slide level1">
+<h1>Scaling</h1>
+<figure>
+<img src="images/scaling_2.png" />
+</figure>
+<p>If a machine fails, the other threads continue executing.</p>
+</section>
+<section id="scaling-2" class="slide level1">
+<h1>Scaling</h1>
+<figure>
+<img src="images/scaling_3.png" />
+</figure>
+<p>The task is restored on a live machine from Kafka.</p>
+</section>
+<section id="coming-soon" class="slide level1">
+<h1>Coming Soon</h1>
+<ul>
+<li><p>Exactly once semantics.</p></li>
+<li><p>API changes.</p></li>
+<li><p>Access to <code>KTable</code> instances from <em>within</em> the application.</p></li>
+</ul>
+</section>
+<section id="would-you-like-to-know-more" class="slide level1">
+<h1>Would You Like to Know More?</h1>
+<p><strong>Slides</strong>: <a href="http://timothyrenner.github.io/talks/20160714-kafkastreams/">timothyrenner.github.io/talks/20160714-kafkastreams</a></p>
+<p><strong>Github</strong>: <a href="https://github.com/timothyrenner/kafka-streams-ex/tree/master/not-looking-at-facebook" class="uri">https://github.com/timothyrenner/kafka-streams-ex/tree/master/not-looking-at-facebook</a></p>
+<p><strong>Github</strong>: <a href="https://github.com/timothyrenner/kafka-streams-ex">github.com/timothyrenner/kafka-streams-ex/</a></p>
+</section>
+<section id="would-you-like-to-know-more-1" class="slide level1">
+<h1>Would You Like To Know More?</h1>
+<p><strong>Intro Blog Post</strong>: <a href="http://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple" class="uri">http://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple</a></p>
+<p><strong>Confluent Docs</strong>: <a href="http://docs.confluent.io/3.0.0/streams/" class="uri">http://docs.confluent.io/3.0.0/streams/</a></p>
+<p><strong>Kafka Summit Talk (Neha Narkhede)</strong>: <a href="http://kafka-summit.org/sessions/introducing-kafka-streams-large-scale-stream-processing-with-kafka/" class="uri">http://kafka-summit.org/sessions/introducing-kafka-streams-large-scale-stream-processing-with-kafka/</a></p>
+<p><strong>Berlin Buzzwords Talk (Michael Noll)</strong>: <a href="https://youtu.be/o7zSLNiTZbA" class="uri">https://youtu.be/o7zSLNiTZbA</a></p>
+</section>
+<section id="references" class="slide level1">
+<h1>References</h1>
+<p><a href="http://www.theonion.com/article/new-facebook-notifications-alert-users-when-they-n-37795" class="uri">http://www.theonion.com/article/new-facebook-notifications-alert-users-when-they-n-37795</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({ transition: "none",
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
