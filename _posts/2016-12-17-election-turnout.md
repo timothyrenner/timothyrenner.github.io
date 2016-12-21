@@ -1,9 +1,9 @@
 ---
 title: "Election Turnout"
-output:
-  html_document: default
-  html_notebook: default
-  pdf_document: default
+tags: notebook rstats python
+categories: datascience
+layout: post
+tweet_text: "Do #Democrats really win when turnout is higher?"
 ---
 
 A little factoid gets thrown around a lot around election time that the Democrats tend to win when the voter turnout is high.
