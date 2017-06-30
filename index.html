@@ -17,11 +17,6 @@ title: timothyrenner.github.io
                     <div class="col-md-2">
                         <strong>{{ post.date | date: "%B %d %Y" }}</strong>
                     </div> <!-- Date col -->
-                    <!-- Twitter button -->
-                    <div class="col-md-1">
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ post.tweet_text }}" data-via="timothyrenner">Tweet</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                    </div> <!-- Tweet button col -->
                 </div> <!-- Front matter row -->
                 <div class="row">
                     <div class="col-md-8">
@@ -36,7 +31,6 @@ title: timothyrenner.github.io
                             {{ post.content }}
                             <hr>
                         </p>
-                        <a href="{{ post.url }}#disqus_thread">View Comments</a>
                     </div> <!-- Content column -->
                 </div> <!-- Content row -->
             </div> <!-- Content container -->
