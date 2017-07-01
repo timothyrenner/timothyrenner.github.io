@@ -143,8 +143,9 @@ import geopandas as gpd
 
 # Geopandas = pandas + (shapely * projection)
 bfro_reports = gpd.GeoDataFrame(bfro_reports_pd, geometry = None)\
-    .set_geometry([Point(r.longitude, r.latitude) for _,r in bfro_reports_pd.iterrows()],
-                  crs = {"init":"EPSG:4326"})
+    .set_geometry(
+      [Point(r.longitude, r.latitude) for _,r in bfro_reports_pd.iterrows()],
+      crs = {"init":"EPSG:4326"})
 {% endhighlight %}
 
 <p>I'll isolate the sightings to the continental US since I'm sure there are plenty of places there I can begin my search for Bigfoot.</p>
