@@ -1389,8 +1389,10 @@ Web tiling systems use a projection system called <a href="https://en.wikipedia.
 # This capability was imported when I called hv.notebook_extension('bokeh').
 
 # Dataset is the primary GeoViews abstraction for data.
-bfro_sighting_locations = gv.Dataset((bfro_reports.longitude, bfro_reports.latitude), kdims=['longitude','latitude'],
-                                      crs = ccrs.PlateCarree())
+bfro_sighting_locations = \
+  gv.Dataset((bfro_reports.longitude, bfro_reports.latitude), 
+              kdims=['longitude','latitude'],
+              crs = ccrs.PlateCarree())
 
 # This is really all it takes to make a map with GeoViews. Pretty neat!
 gv.WMTS(CARTODBPOSITRON_RETINA) * bfro_sighting_locations.to(gv.Points)
