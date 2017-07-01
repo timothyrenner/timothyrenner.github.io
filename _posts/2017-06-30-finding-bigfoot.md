@@ -13,6 +13,8 @@ Like literally everyone who just read that linked article I want in, but where d
 If only there was a huge collected list of geocoded Bigfoot sightings I can use to figure out the best places to look.
 Well, there is.
 
+![bigfoot](https://www.geek.com/wp-content/uploads/2016/03/bigfoot-625x440.jpg)
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
