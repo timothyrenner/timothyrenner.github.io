@@ -1,0 +1,94 @@
+---
+title: "Profanity Power Index"
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">Profanity Power Index</h1>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <p>
+                The Profanity Power Index is a program that tracks the usage of profanity for specified targets on the Twitter public timeline, bundled with an interactive data visualization built with D3.js.
+            </p>
+            <p>
+                Naturally the target for this has been politicians.
+                I've run it during several of the Republican presidential primary debates as well as during the general election debates between Donald Trump and Hillary Clinton.
+                You can probably guess what those plots look like.
+                In principle you can run this through any trackable term, but honestly no target's more fun than watching people curse at politicians in real time.
+            </p>
+            <p>
+                From a technical perspective there have been several iterations: the first was a Scala program that ran on Spark and wrote to HDFS, with the visualization built with a Clojure templating engine.
+                Though there were a couple in between, the latest version is 100% Clojure, and writes to Elasticsearch.
+            </p>
+            <p>
+                <b>Code: &nbsp;</b><a href="https://github.com/timothyrenner/ProfanityPowerIndex">https://github.com/timothyrenner/ProfanityPowerIndex</a>
+            </p>
+            <p>
+                <b>Relevant Posts:</b>
+                <ul>
+                    <li> <a href="{{ site.url }}/projects/2015/08/07/introducing-the-profanity-power-index.html">Introducing the Profanity Power Index</a> </li>
+                    <li> <a href="{{ site.url }}/data/2015/08/15/profanity-power-index-to-polls.html">Comparing the Profanity Power Index to the Polls</a> </li>
+                    <li> <a href="{{ site.url }}/streaming/2015/08/16/adventures-in-the-mesosphere.html">Adventures in the Mesosphere</a> </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3">
+            <a class="lead" href="{{ site.url }}/projects/profanitypowerindex/20161019-presidential">10-19-2016 Presidential Debate</a>
+        </div>
+        <div class="col-md-5">
+            The October 19, 2016 presidential debate between Donald Trump and Hillary Clinton. Such a nasty debate.
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3">
+            <a class="lead" href="{{ site.url }}/projects/profanitypowerindex/20161009-presidential">10-09-2016 Presidential Debate</a>
+        </div>
+        <div class="col-md-5">
+            The October 9, 2016 presidential debate between Donald Trump and Hillary Clinton.
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3">
+            <a class="lead" href="{{ site.url }}/projects/profanitypowerindex/20160303-foxnews">3-3-2016 Republican Primary Debate</a>
+        </div>
+        <div class="col-md-5">
+            The March 3rd, 2016 Republican Primary debate on Fox News, in which Donald Trump referred to the size of his ... not hands.
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3">
+            <a class="lead" href="{{ site.url }}/projects/profanitypowerindex/20151013-cnn">10-13-2015 Democratic Primary Debate</a>
+        </div>
+        <div class="col-md-5">
+            The October 13th, 2015 Democratic Primary debate hosted by CNN, where Bernie Sanders was "tired of Hillary Clinton's damned emails."
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3">
+            <a class="lead" href="{{ site.url }}/projects/profanitypowerindex/20150916-cnn">9-16-2015 Republican Primary Debate</a>
+        </div>
+        <div class="col-md-5">
+            The September 16th, 2015 Republican Primary debate hosted by CNN, in which we suddenly remember at one point Mike Huckabee ran in this primary.
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-3">
+            <a class="lead" href="{{ site.url }}/projects/profanitypowerindex/20150806-foxnews">2015-08-06 Republican Primary Debate</a>
+        </div>
+        <div class="col-md-5">
+            The August 6th, 2015 Republican Primary debate on Fox News. I got nothing for this one. Total shitshow.
+        </div>
+    </div>
+</div>
+        
