@@ -63,7 +63,8 @@ app.layout = html.Div([
                 "Data pulled from ",
                 html.A("bfro.net", href="http://www.bfro.net/"),
                 ". Grab it at ",
-                html.A("data.world", href="https://data.world/timothyrenner/bfro-sightings-data"),
+                html.A("data.world",
+                       href="https://data.world/timothyrenner/bfro-sightings-data"),
                 "."
             ], style={"text-align": "right"})
         ], className="col-md-6")
@@ -166,7 +167,8 @@ app.layout = html.Div([
                 "Data pulled from ",
                 html.A("bfro.net", href="http://www.bfro.net/"),
                 ". Grab it at ",
-                html.A("data.world", href="https://data.world/timothyrenner/bfro-sightings-data"),
+                html.A("data.world", 
+                       href="https://data.world/timothyrenner/bfro-sightings-data"),
                 "."
             ], style={"text-align": "right"})
         ], className="col-md-6")
