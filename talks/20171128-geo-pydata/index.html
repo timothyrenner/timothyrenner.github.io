@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Tim Renner">
+  <title>Geography with PyData</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.line-block{white-space: pre-line;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+div.sourceLine, a.sourceLine { display: inline-block; min-height: 1.25em; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; }
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+div.sourceLine, a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource div.sourceLine, .numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource div.sourceLine::before, .numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em; }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; color: #aaaaaa;  padding-left: 4px; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; color: initial; }
+}
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.bn { color: #40a070; } /* BaseN */
+code span.fl { color: #40a070; } /* Float */
+code span.ch { color: #4070a0; } /* Char */
+code span.st { color: #4070a0; } /* String */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.ot { color: #007020; } /* Other */
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.fu { color: #06287e; } /* Function */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code span.cn { color: #880000; } /* Constant */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.im { } /* Import */
+code span.va { color: #19177c; } /* Variable */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.op { color: #666666; } /* Operator */
+code span.bu { } /* BuiltIn */
+code span.ex { } /* Extension */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.at { color: #7d9029; } /* Attribute */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Geography with PyData</h1>
+  <p class="author">Tim Renner</p>
+  <p class="date">PyData Meetup, 11/28/2017</p>
+</section>
+
+<section id="about-me" class="slide level2">
+<h2>About Me</h2>
+<p><strong>Data Science Manager, Geography at HomeAway</strong></p>
+<p><a href="https://timothyrenner.github.io">timothyrenner.github.io</a></p>
+<p><a href="https://github.com/timothyrenner">github.com/timothyrenner</a></p>
+<p>Really like Makefiles</p>
+</section>
+<section id="not-about" class="slide level2">
+<h2>Not About</h2>
+<style>
+    .reveal li {line-height: 1.0; margin-bottom: 35px}
+    .reveal code { background-color: #ffffe5 }
+    .reveal section img { border:none; box-shadow: none}
+</style>
+<ul>
+<li>ArcGIS / Arcpy</li>
+<li>Geospatial statistics</li>
+<li>Bigfoot</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><img data-src="http://1.bp.blogspot.com/-fOF1t2r7Fgk/TcW01yvCVrI/AAAAAAAAAA0/ttSOxTge3F8/s1600/ufo.jpg" /></p>
+<p>90,000 geocoded UFO sightings from the National UFO Reporting Center (NUFORC).</p>
+</section>
+<section id="about" class="slide level2">
+<h2>About</h2>
+<ul>
+<li>Extracting and ingesting geocoded data</li>
+<li>Manipulating shapes and making maps</li>
+<li>Running machine learning algorithms on geospatial data</li>
+<li>Aliens?</li>
+</ul>
+</section>
+<section id="ingesting-the-sightings" class="slide level2">
+<h2>Ingesting the Sightings</h2>
+<pre class="sourceCode python" id="cb1"><code class="sourceCode python"><div class="sourceLine" id="cb1-1" data-line-number="1"><span class="im">import</span> pandas <span class="im">as</span> pd</div>
+<div class="sourceLine" id="cb1-2" data-line-number="2"><span class="im">import</span> geopandas <span class="im">as</span> gpd</div>
+<div class="sourceLine" id="cb1-3" data-line-number="3"></div>
+<div class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># Pandas data frame first.</span></div>
+<div class="sourceLine" id="cb1-5" data-line-number="5">ufo_sightings <span class="op">=</span> pd.read_csv(<span class="st">&#39;ufo_sightings.csv&#39;</span>)</div></code></pre>
+<p>Common serialization: CSV with longitude / latitude.</p>
+</section>
+<section id="shapely" class="slide level2">
+<h2>Shapely</h2>
+<pre class="sourceCode python" id="cb2"><code class="sourceCode python"><div class="sourceLine" id="cb2-1" data-line-number="1"><span class="im">from</span> shapely.geometry <span class="im">import</span> MultiPoint</div>
+<div class="sourceLine" id="cb2-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb2-3" data-line-number="3">ufo_sighting_points <span class="op">=</span> <span class="bu">list</span>(</div>
+<div class="sourceLine" id="cb2-4" data-line-number="4">    MultiPoint(</div>
+<div class="sourceLine" id="cb2-5" data-line-number="5">    </div>
+<div class="sourceLine" id="cb2-6" data-line-number="6">        <span class="co"># Shapely can take numpy arrays as inputs for points.</span></div>
+<div class="sourceLine" id="cb2-7" data-line-number="7">        ufo_sightings[[<span class="st">&#39;longitude&#39;</span>,<span class="st">&#39;latitude&#39;</span>]].values</div>
+<div class="sourceLine" id="cb2-8" data-line-number="8">    </div>
+<div class="sourceLine" id="cb2-9" data-line-number="9">    ).geoms</div>
+<div class="sourceLine" id="cb2-10" data-line-number="10">)</div></code></pre>
+<p>Shapely is an object-oriented library for geometric manipulations.</p>
+</section>
+<section id="geography-101" class="slide level2">
+<h2>Geography 101</h2>
+<p><img data-src="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/08/Geography.jpg?w=487&amp;ssl=1" /></p>
+<p>Longitude is x.</p>
+</section>
+<section id="shapely-1" class="slide level2">
+<h2>Shapely</h2>
+<pre class="sourceCode python" id="cb3"><code class="sourceCode python"><div class="sourceLine" id="cb3-1" data-line-number="1"><span class="im">from</span> shapely.geometry <span class="im">import</span> Point</div>
+<div class="sourceLine" id="cb3-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb3-3" data-line-number="3">point_a <span class="op">=</span> Point(<span class="fl">0.0</span>, <span class="fl">0.0</span>)</div>
+<div class="sourceLine" id="cb3-4" data-line-number="4">point_b <span class="op">=</span> Point(<span class="fl">1.0</span>, <span class="fl">1.0</span>)</div>
+<div class="sourceLine" id="cb3-5" data-line-number="5"></div>
+<div class="sourceLine" id="cb3-6" data-line-number="6">point_a.distance(point_b)</div>
+<div class="sourceLine" id="cb3-7" data-line-number="7"><span class="co"># [0] 1.4142135623730951 &lt;===== This is NOT kilometers.</span></div></code></pre>
+<p>Shapely performs <em>planar</em> geometric operations irrespective of any coordinate system.</p>
+</section>
+<section id="geopandas" class="slide level2">
+<h2>Geopandas</h2>
+<pre class="sourceCode python" id="cb4"><code class="sourceCode python"><div class="sourceLine" id="cb4-1" data-line-number="1"><span class="im">import</span> geopandas <span class="im">as</span> gpd</div>
+<div class="sourceLine" id="cb4-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb4-3" data-line-number="3">ufo_sightings_geo <span class="op">=</span> gpd.GeoDataFrame(</div>
+<div class="sourceLine" id="cb4-4" data-line-number="4">    ufo_sightings,</div>
+<div class="sourceLine" id="cb4-5" data-line-number="5">    </div>
+<div class="sourceLine" id="cb4-6" data-line-number="6">    <span class="co"># Geometry is a special column in geopandas.</span></div>
+<div class="sourceLine" id="cb4-7" data-line-number="7">    geometry <span class="op">=</span> ufo_sighting_points,</div>
+<div class="sourceLine" id="cb4-8" data-line-number="8">    </div>
+<div class="sourceLine" id="cb4-9" data-line-number="9">    <span class="co"># GeoPandas also adds a coordinate system.</span></div>
+<div class="sourceLine" id="cb4-10" data-line-number="10">    <span class="co"># EPSG 4326 is standard lon/lat in degrees.</span></div>
+<div class="sourceLine" id="cb4-11" data-line-number="11">    crs<span class="op">=</span>{<span class="st">&quot;init&quot;</span>: <span class="st">&quot;EPSG:4326&quot;</span>}</div>
+<div class="sourceLine" id="cb4-12" data-line-number="12">)</div></code></pre>
+<p>Geopandas attaches a list of Shapely objects to a pandas DataFrame.</p>
+</section>
+<section id="shapefiles" class="slide level2">
+<h2>Shapefiles</h2>
+<pre class="sourceCode python" id="cb5"><code class="sourceCode python"><div class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># This shapefile contains polygons for each US state.</span></div>
+<div class="sourceLine" id="cb5-2" data-line-number="2">usa <span class="op">=</span> gpd.read_file(<span class="st">&#39;cb_2016_us_state_500k.shp&#39;</span>)</div></code></pre>
+<p>Geopandas reads ESRI shapefiles easily.</p>
+<p>These files contain geometry and CRS information, as well as data columns.</p>
+</section>
+<section id="geoplot" class="slide level2">
+<h2>Geoplot</h2>
+<pre class="sourceCode python" id="cb6"><code class="sourceCode python"><div class="sourceLine" id="cb6-1" data-line-number="1"><span class="im">import</span> geoplot <span class="im">as</span> gplt</div>
+<div class="sourceLine" id="cb6-2" data-line-number="2"><span class="im">import</span> matplotlib.pyplot</div>
+<div class="sourceLine" id="cb6-3" data-line-number="3"></div>
+<div class="sourceLine" id="cb6-4" data-line-number="4"><span class="co"># The projection is pretty important to ensure an accurate </span></div>
+<div class="sourceLine" id="cb6-5" data-line-number="5"><span class="co"># visual representation of the data.</span></div>
+<div class="sourceLine" id="cb6-6" data-line-number="6">proj <span class="op">=</span> gplt.crs.AlbersEqualArea(</div>
+<div class="sourceLine" id="cb6-7" data-line-number="7">    central_longitude<span class="op">=-</span><span class="dv">98</span>, </div>
+<div class="sourceLine" id="cb6-8" data-line-number="8">    central_latitude<span class="op">=</span><span class="fl">39.5</span></div>
+<div class="sourceLine" id="cb6-9" data-line-number="9">)</div>
+<div class="sourceLine" id="cb6-10" data-line-number="10"></div>
+<div class="sourceLine" id="cb6-11" data-line-number="11"><span class="co"># Start the plot with the standard matplotlib way.</span></div>
+<div class="sourceLine" id="cb6-12" data-line-number="12">fig,ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">16</span>,<span class="dv">12</span>))</div></code></pre>
+<p>Geoplot is a high level mapping library designed for geopandas and built on matplotlib.</p>
+</section>
+<section id="polyplot" class="slide level2">
+<h2>Polyplot</h2>
+<pre class="sourceCode python" id="cb7"><code class="sourceCode python"><div class="sourceLine" id="cb7-1" data-line-number="1">gplt.polyplot(</div>
+<div class="sourceLine" id="cb7-2" data-line-number="2">    <span class="co"># First argument is a geopandas GeoDataFrame.</span></div>
+<div class="sourceLine" id="cb7-3" data-line-number="3">    usa, </div>
+<div class="sourceLine" id="cb7-4" data-line-number="4">    </div>
+<div class="sourceLine" id="cb7-5" data-line-number="5">    <span class="co"># Pass the _plot_ projection we defined earlier.</span></div>
+<div class="sourceLine" id="cb7-6" data-line-number="6">    projection<span class="op">=</span>proj,</div>
+<div class="sourceLine" id="cb7-7" data-line-number="7">    </div>
+<div class="sourceLine" id="cb7-8" data-line-number="8">    <span class="co"># The rest is plain matplotlib stuff.</span></div>
+<div class="sourceLine" id="cb7-9" data-line-number="9">    ax<span class="op">=</span>ax, linewidth<span class="op">=</span><span class="fl">0.5</span>,</div>
+<div class="sourceLine" id="cb7-10" data-line-number="10">    facecolor<span class="op">=</span><span class="st">&#39;lightgray&#39;</span>, alpha<span class="op">=</span><span class="fl">0.1</span></div>
+<div class="sourceLine" id="cb7-11" data-line-number="11">)</div></code></pre>
+<p><code>polyplot</code> plots GeoDataFrames with polygons in the <code>geometry</code> column.</p>
+</section>
+<section id="pointplot" class="slide level2">
+<h2>Pointplot</h2>
+<pre class="sourceCode python" id="cb8"><code class="sourceCode python"><div class="sourceLine" id="cb8-1" data-line-number="1">gplt.pointplot(</div>
+<div class="sourceLine" id="cb8-2" data-line-number="2">    <span class="co"># First argument is a geopandas GeoDataFrame.</span></div>
+<div class="sourceLine" id="cb8-3" data-line-number="3">    ufo_sightings_geo, </div>
+<div class="sourceLine" id="cb8-4" data-line-number="4">    </div>
+<div class="sourceLine" id="cb8-5" data-line-number="5">    <span class="co"># Pass the _plot_ projection we defined earlier.</span></div>
+<div class="sourceLine" id="cb8-6" data-line-number="6">    projection<span class="op">=</span>proj, </div>
+<div class="sourceLine" id="cb8-7" data-line-number="7">    </div>
+<div class="sourceLine" id="cb8-8" data-line-number="8">    <span class="co"># Regular matplotlib stuff.</span></div>
+<div class="sourceLine" id="cb8-9" data-line-number="9">    ax<span class="op">=</span>ax, s<span class="op">=</span><span class="fl">0.75</span>, alpha<span class="op">=</span><span class="fl">0.25</span></div>
+<div class="sourceLine" id="cb8-10" data-line-number="10">)</div></code></pre>
+<p><code>pointplot</code> plots GeoDataFrames with points in the <code>geometry</code> column.</p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="images/ufo_sightings.png" /></p>
+</section>
+<section id="air-force-bases" class="slide level2">
+<h2>Air Force Bases</h2>
+<pre class="sourceCode python" id="cb9"><code class="sourceCode python"><div class="sourceLine" id="cb9-1" data-line-number="1">bases <span class="op">=</span> pd.read_csv(<span class="st">&#39;military_bases.csv&#39;</span>)</div></code></pre>
+<p>Distance queries are geometric. To find UFO sightings near Air Force bases, draw a circle around each base.</p>
+</section>
+<section id="buffer-attempt-1" class="slide level2">
+<h2>Buffer, Attempt 1</h2>
+<pre class="sourceCode python" id="cb10"><code class="sourceCode python"><div class="sourceLine" id="cb10-1" data-line-number="1">earth_radius <span class="op">=</span> <span class="fl">6371.0</span> <span class="co"># kilometers.</span></div>
+<div class="sourceLine" id="cb10-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb10-3" data-line-number="3">central_point <span class="op">=</span> Point(<span class="op">-</span><span class="dv">98</span>, <span class="fl">39.5</span>)</div>
+<div class="sourceLine" id="cb10-4" data-line-number="4"></div>
+<div class="sourceLine" id="cb10-5" data-line-number="5">central_buffer <span class="op">=</span> central_point.<span class="bu">buffer</span>(</div>
+<div class="sourceLine" id="cb10-6" data-line-number="6">    (<span class="fl">150.0</span> <span class="op">/</span> earth_radius) <span class="op">*</span> (<span class="fl">180.0</span> <span class="op">/</span> np.pi)</div>
+<div class="sourceLine" id="cb10-7" data-line-number="7">)</div></code></pre>
+<p>A naive buffer would be to convert kilometers to radians.</p>
+</section>
+<section class="slide level2">
+
+<p><img src="images/naive_buffer.png" style="height:75%; width:75%"></p>
+</section>
+<section class="slide level2">
+
+<p><img src="https://media.npr.org/assets/img/2017/11/22/ap_17324142065466-a7fff59cbbc425fc3b5a8b8b7771ddd67230e3d1-s1600-c85.jpg" style="height:70%; width:70%"></p>
+<p>The earth is not flat.</p>
+</section>
+<section id="transverse-mercator" class="slide level2">
+<h2>Transverse Mercator</h2>
+<p><img src="http://gisgeography.com/wp-content/uploads/2016/05/Universe-Transverse-Mercator-Cylinder.png" style="height:70%; width:70%"></p>
+</section>
+<section id="pyproj" class="slide level2">
+<h2>Pyproj</h2>
+<pre class="sourceCode python" id="cb11"><code class="sourceCode python"><div class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">def</span> tmerc_transforms(geometry):</div>
+<div class="sourceLine" id="cb11-2" data-line-number="2">    <span class="co"># Some projections are so common they&#39;re named.</span></div>
+<div class="sourceLine" id="cb11-3" data-line-number="3">    lonlat <span class="op">=</span> pyproj.Proj(init<span class="op">=</span><span class="st">&#39;EPSG:4326&#39;</span>)</div>
+<div class="sourceLine" id="cb11-4" data-line-number="4"></div>
+<div class="sourceLine" id="cb11-5" data-line-number="5">    <span class="co"># Some projections need to be defined manually.</span></div>
+<div class="sourceLine" id="cb11-6" data-line-number="6">    tmerc <span class="op">=</span> pyproj.Proj(</div>
+<div class="sourceLine" id="cb11-7" data-line-number="7">        proj<span class="op">=</span><span class="st">&#39;tmerc&#39;</span>, ellps<span class="op">=</span><span class="st">&#39;WGS84&#39;</span>, datum<span class="op">=</span><span class="st">&#39;WGS84&#39;</span>,</div>
+<div class="sourceLine" id="cb11-8" data-line-number="8">        lon_0<span class="op">=</span>geometry.centroid.x <span class="co"># &lt;- Central meridian.</span></div>
+<div class="sourceLine" id="cb11-9" data-line-number="9">    )</div>
+<div class="sourceLine" id="cb11-10" data-line-number="10"></div>
+<div class="sourceLine" id="cb11-11" data-line-number="11">    tmerc2lonlat <span class="op">=</span> curry(pyproj.transform)(tmerc,lonlat)</div>
+<div class="sourceLine" id="cb11-12" data-line-number="12">    lonlat2tmerc <span class="op">=</span> curry(pyproj.transform)(lonlat,tmerc)</div>
+<div class="sourceLine" id="cb11-13" data-line-number="13"></div>
+<div class="sourceLine" id="cb11-14" data-line-number="14">    <span class="cf">return</span> tmerc2lonlat,lonlat2tmerc</div></code></pre>
+<p>Pyproj performs every projection we’ll need.</p>
+</section>
+<section id="buffer-attempt-2" class="slide level2">
+<h2>Buffer, Attempt 2</h2>
+<pre class="sourceCode python" id="cb12"><code class="sourceCode python"><div class="sourceLine" id="cb12-1" data-line-number="1"><span class="kw">def</span> geographic_buffer(geometry, distance_km):</div>
+<div class="sourceLine" id="cb12-2" data-line-number="2">    tmerc2lonlat,lonlat2tmerc <span class="op">=</span> tmerc_transforms(geometry)</div>
+<div class="sourceLine" id="cb12-3" data-line-number="3">    </div>
+<div class="sourceLine" id="cb12-4" data-line-number="4">    <span class="co"># First, put the geometry into transverse Mercator.</span></div>
+<div class="sourceLine" id="cb12-5" data-line-number="5">    geo_tmerc <span class="op">=</span> shapely.ops.transform(lonlat2tmerc, geometry)</div>
+<div class="sourceLine" id="cb12-6" data-line-number="6">    </div>
+<div class="sourceLine" id="cb12-7" data-line-number="7">    <span class="co"># Draw the buffer in transverse Mercator coordinates.</span></div>
+<div class="sourceLine" id="cb12-8" data-line-number="8">    geo_tmerc_buffered <span class="op">=</span> geo_tmerc.<span class="bu">buffer</span>(distance_km<span class="op">*</span><span class="dv">1000</span>)</div>
+<div class="sourceLine" id="cb12-9" data-line-number="9">    </div>
+<div class="sourceLine" id="cb12-10" data-line-number="10">    <span class="co"># Transform back into lon/lat.</span></div>
+<div class="sourceLine" id="cb12-11" data-line-number="11">    geo_buffered <span class="op">=</span> <span class="op">\</span></div>
+<div class="sourceLine" id="cb12-12" data-line-number="12">        shapely.ops.transform(tmerc2lonlat, geo_tmerc_buffered)</div>
+<div class="sourceLine" id="cb12-13" data-line-number="13">    </div>
+<div class="sourceLine" id="cb12-14" data-line-number="14">    <span class="cf">return</span> geo_buffered</div></code></pre>
+<p>Draw the buffer in tranverse Mercator to remove distortion.</p>
+</section>
+<section class="slide level2">
+
+<p><img src="images/geographic_buffer.png" style="height:65%; width:65%"></p>
+</section>
+<section id="air-force-buffers" class="slide level2">
+<h2>Air Force Buffers</h2>
+<pre class="sourceCode python" id="cb13"><code class="sourceCode python"><div class="sourceLine" id="cb13-1" data-line-number="1">air_force_base_vicinities <span class="op">=</span> [</div>
+<div class="sourceLine" id="cb13-2" data-line-number="2">    <span class="co"># Use geographic_buffer to draw circles around the points.</span></div>
+<div class="sourceLine" id="cb13-3" data-line-number="3">    geographic_buffer(Point(row.longitude, row.latitude), <span class="fl">150.0</span>)</div>
+<div class="sourceLine" id="cb13-4" data-line-number="4">    <span class="cf">for</span> _,row <span class="kw">in</span> air_force_bases.iterrows()</div>
+<div class="sourceLine" id="cb13-5" data-line-number="5">]</div>
+<div class="sourceLine" id="cb13-6" data-line-number="6"></div>
+<div class="sourceLine" id="cb13-7" data-line-number="7">air_force_bases_geo <span class="op">=</span> gpd.GeoDataFrame(</div>
+<div class="sourceLine" id="cb13-8" data-line-number="8">    air_force_bases,</div>
+<div class="sourceLine" id="cb13-9" data-line-number="9"></div>
+<div class="sourceLine" id="cb13-10" data-line-number="10">    <span class="co"># Add polygons as a geometry column.</span></div>
+<div class="sourceLine" id="cb13-11" data-line-number="11">    geometry<span class="op">=</span>air_force_base_vicinities,</div>
+<div class="sourceLine" id="cb13-12" data-line-number="12"></div>
+<div class="sourceLine" id="cb13-13" data-line-number="13">    crs<span class="op">=</span>{<span class="st">&quot;init&quot;</span>: <span class="st">&quot;EPSG:4326&quot;</span>}</div>
+<div class="sourceLine" id="cb13-14" data-line-number="14">)</div></code></pre>
+<p>Drawing the buffers around each point creates a polygon for each base.</p>
+</section>
+<section id="ufo-sightings-near-air-force-bases" class="slide level2">
+<h2>UFO Sightings Near Air Force Bases</h2>
+<pre class="sourceCode python" id="cb14"><code class="sourceCode python"><div class="sourceLine" id="cb14-1" data-line-number="1"><span class="co"># ... the USA and UFO sightings.</span></div>
+<div class="sourceLine" id="cb14-2" data-line-number="2">gplt.polyplot(</div>
+<div class="sourceLine" id="cb14-3" data-line-number="3">    air_force_bases_geo,</div>
+<div class="sourceLine" id="cb14-4" data-line-number="4">    ax<span class="op">=</span>ax, </div>
+<div class="sourceLine" id="cb14-5" data-line-number="5">    projection<span class="op">=</span>proj, </div>
+<div class="sourceLine" id="cb14-6" data-line-number="6">    linewidth<span class="op">=</span><span class="fl">0.5</span>,</div>
+<div class="sourceLine" id="cb14-7" data-line-number="7">    facecolor<span class="op">=</span><span class="st">&#39;none&#39;</span>,</div>
+<div class="sourceLine" id="cb14-8" data-line-number="8">    edgecolor<span class="op">=</span><span class="st">&#39;red&#39;</span></div>
+<div class="sourceLine" id="cb14-9" data-line-number="9">)</div></code></pre>
+</section>
+<section class="slide level2">
+
+<p><img data-src="images/ufo_sightings_air_force_bases.png" /></p>
+</section>
+<section id="explained" class="slide level2">
+<h2>Explained</h2>
+<p><img data-src="images/air_force.jpg" /></p>
+<p>You’re welcome.</p>
+</section>
+<section id="bonus-time" class="slide level2">
+<h2>Bonus Time!</h2>
+<p><img data-src="images/ufo_sightings_day_of_year.png" /></p>
+</section>
+<section id="clustering" class="slide level2">
+<h2>Clustering</h2>
+<pre class="sourceCode python" id="cb15"><code class="sourceCode python"><div class="sourceLine" id="cb15-1" data-line-number="1"><span class="im">import</span> hdbscan</div>
+<div class="sourceLine" id="cb15-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb15-3" data-line-number="3">clusterer <span class="op">=</span> hdbscan.HDBSCAN(</div>
+<div class="sourceLine" id="cb15-4" data-line-number="4">    min_cluster_size<span class="op">=</span><span class="dv">50</span>, </div>
+<div class="sourceLine" id="cb15-5" data-line-number="5">    min_samples<span class="op">=</span><span class="dv">1</span>, </div>
+<div class="sourceLine" id="cb15-6" data-line-number="6">    metric<span class="op">=</span><span class="st">&quot;haversine&quot;</span> <span class="co"># &lt;=== Slow, but not wrong.</span></div>
+<div class="sourceLine" id="cb15-7" data-line-number="7">)</div></code></pre>
+<p>HDBSCAN clusters dense points when the density is highly varying.</p>
+</section>
+<section id="clustering-1" class="slide level2">
+<h2>Clustering</h2>
+<pre class="sourceCode python" id="cb16"><code class="sourceCode python"><div class="sourceLine" id="cb16-1" data-line-number="1"><span class="im">import</span> hdbscan</div>
+<div class="sourceLine" id="cb16-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb16-3" data-line-number="3">clusterer <span class="op">=</span> hdbscan.HDBSCAN(</div>
+<div class="sourceLine" id="cb16-4" data-line-number="4">    min_cluster_size<span class="op">=</span><span class="dv">50</span>, </div>
+<div class="sourceLine" id="cb16-5" data-line-number="5">    min_samples<span class="op">=</span><span class="dv">1</span>, </div>
+<div class="sourceLine" id="cb16-6" data-line-number="6">    metric<span class="op">=</span><span class="st">&quot;haversine&quot;</span> <span class="co"># &lt;=== Slow, but not wrong.</span></div>
+<div class="sourceLine" id="cb16-7" data-line-number="7">)</div></code></pre>
+<p>Clustering on a curved earth requires either a projection or a different distance metric.</p>
+</section>
+<section id="clustering-2" class="slide level2">
+<h2>Clustering</h2>
+<pre class="sourceCode python" id="cb17"><code class="sourceCode python"><div class="sourceLine" id="cb17-1" data-line-number="1"><span class="co"># For haversine, HDBSCAN needs an Nx2 numpy array.</span></div>
+<div class="sourceLine" id="cb17-2" data-line-number="2">ufo_sighting_coordinates <span class="op">=</span> np.radians(</div>
+<div class="sourceLine" id="cb17-3" data-line-number="3">    ufo_sightings_geo[[<span class="st">&#39;latitude&#39;</span>, <span class="st">&#39;longitude&#39;</span>]].values</div>
+<div class="sourceLine" id="cb17-4" data-line-number="4">)</div>
+<div class="sourceLine" id="cb17-5" data-line-number="5"></div>
+<div class="sourceLine" id="cb17-6" data-line-number="6"><span class="co"># HDBSCAN implements the usual scikit-learn API.</span></div>
+<div class="sourceLine" id="cb17-7" data-line-number="7">ufo_sightings_geo.loc[:,<span class="st">&#39;cluster_label&#39;</span>] <span class="op">=</span> <span class="op">\</span></div>
+<div class="sourceLine" id="cb17-8" data-line-number="8">    clusterer.fit_predict(ufo_sighting_coordinates)</div></code></pre>
+<p>The haversine metric defines distance on a sphere, but needs <em>lat</em>,<em>lon</em> coordinates in radians.</p>
+</section>
+<section id="geography-102" class="slide level2">
+<h2>Geography 102</h2>
+<p><img data-src="https://i2.wp.com/flowingdata.com/wp-content/uploads/2014/08/Geography.jpg?w=487&amp;ssl=1" /></p>
+<p>Sometimes latitude is x?</p>
+</section>
+<section id="convex-hulls" class="slide level2">
+<h2>Convex Hulls</h2>
+<pre class="sourceCode python" id="cb18"><code class="sourceCode python"><div class="sourceLine" id="cb18-1" data-line-number="1">cluster_polygons <span class="op">=</span> [</div>
+<div class="sourceLine" id="cb18-2" data-line-number="2">    </div>
+<div class="sourceLine" id="cb18-3" data-line-number="3">    <span class="co"># Every geometry has the convex_hull attribute - </span></div>
+<div class="sourceLine" id="cb18-4" data-line-number="4">    <span class="co"># it&#39;s not always a polygon.</span></div>
+<div class="sourceLine" id="cb18-5" data-line-number="5">    MultiPoint(</div>
+<div class="sourceLine" id="cb18-6" data-line-number="6">        group[[<span class="st">&#39;longitude&#39;</span>,<span class="st">&#39;latitude&#39;</span>]].values</div>
+<div class="sourceLine" id="cb18-7" data-line-number="7">    ).convex_hull</div>
+<div class="sourceLine" id="cb18-8" data-line-number="8">    </div>
+<div class="sourceLine" id="cb18-9" data-line-number="9">    <span class="cf">for</span> label,group <span class="kw">in</span> ufo_sightings_geo.groupby(<span class="st">&#39;cluster_label&#39;</span>)</div>
+<div class="sourceLine" id="cb18-10" data-line-number="10">    <span class="cf">if</span> label <span class="op">!=</span> <span class="dv">-1</span></div>
+<div class="sourceLine" id="cb18-11" data-line-number="11">]</div></code></pre>
+<p>Convex hulls are a really simple way to turn collections of points into polygons.</p>
+</section>
+<section id="ufo-sightings-with-clusters" class="slide level2">
+<h2>UFO Sightings with Clusters</h2>
+<pre class="sourceCode python" id="cb19"><code class="sourceCode python"><div class="sourceLine" id="cb19-1" data-line-number="1"><span class="co"># ... the USA and UFO sightings.</span></div>
+<div class="sourceLine" id="cb19-2" data-line-number="2">gplt.polyplot(</div>
+<div class="sourceLine" id="cb19-3" data-line-number="3">    </div>
+<div class="sourceLine" id="cb19-4" data-line-number="4">    <span class="co"># Add a CRS to turn a list of polygons into a GeoSeries.</span></div>
+<div class="sourceLine" id="cb19-5" data-line-number="5">    gpd.GeoSeries(</div>
+<div class="sourceLine" id="cb19-6" data-line-number="6">        cluster_polygons,</div>
+<div class="sourceLine" id="cb19-7" data-line-number="7">        crs<span class="op">=</span>{<span class="st">&quot;init&quot;</span>: <span class="st">&quot;EPSG:4326&quot;</span>}</div>
+<div class="sourceLine" id="cb19-8" data-line-number="8">    ),</div>
+<div class="sourceLine" id="cb19-9" data-line-number="9">    </div>
+<div class="sourceLine" id="cb19-10" data-line-number="10">    ax<span class="op">=</span>ax, projection<span class="op">=</span>proj, </div>
+<div class="sourceLine" id="cb19-11" data-line-number="11">    linewidth<span class="op">=</span><span class="fl">0.5</span>, facecolor<span class="op">=</span><span class="st">&#39;none&#39;</span>, edgecolor<span class="op">=</span><span class="st">&#39;red&#39;</span></div>
+<div class="sourceLine" id="cb19-12" data-line-number="12">)</div></code></pre>
+<p>The GeoSeries object is like a pandas series for geometries.</p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="images/ufo_sightings_with_clusters.png" /></p>
+</section>
+<section id="outliers" class="slide level2">
+<h2>Outliers</h2>
+<pre class="sourceCode python" id="cb20"><code class="sourceCode python"><div class="sourceLine" id="cb20-1" data-line-number="1">points_to_polygons <span class="op">=</span> np.array([</div>
+<div class="sourceLine" id="cb20-2" data-line-number="2">    [</div>
+<div class="sourceLine" id="cb20-3" data-line-number="3">        <span class="co"># This is planar distance, but we only want the </span></div>
+<div class="sourceLine" id="cb20-4" data-line-number="4">        <span class="co"># rank, not the value.</span></div>
+<div class="sourceLine" id="cb20-5" data-line-number="5">        p.geometry.distance(poly) </div>
+<div class="sourceLine" id="cb20-6" data-line-number="6">        <span class="cf">for</span> poly <span class="kw">in</span> cluster_polygons_neighbors</div>
+<div class="sourceLine" id="cb20-7" data-line-number="7">    ]</div>
+<div class="sourceLine" id="cb20-8" data-line-number="8">    <span class="cf">for</span> _,p <span class="kw">in</span> ufo_sightings_geo.iterrows()</div>
+<div class="sourceLine" id="cb20-9" data-line-number="9">])</div>
+<div class="sourceLine" id="cb20-10" data-line-number="10"></div>
+<div class="sourceLine" id="cb20-11" data-line-number="11">new_cluster_labels <span class="op">=</span> np.argmin(points_to_polygons, axis<span class="op">=</span><span class="dv">1</span>)</div></code></pre>
+<p>Naively assigning each point to its nearest cluster is computationally expensive.</p>
+</section>
+<section id="rtree" class="slide level2">
+<h2>RTree</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/R-tree.svg/943px-R-tree.svg.png" style="height:50%;width:50%"></p>
+</section>
+<section id="spatial-indexes" class="slide level2">
+<h2>Spatial Indexes</h2>
+<pre class="sourceCode python" id="cb21"><code class="sourceCode python"><div class="sourceLine" id="cb21-1" data-line-number="1"><span class="im">import</span> rtree</div>
+<div class="sourceLine" id="cb21-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb21-3" data-line-number="3"><span class="co"># This generator loads the index.</span></div>
+<div class="sourceLine" id="cb21-4" data-line-number="4"><span class="kw">def</span> cluster_polygon_loader(polygons):</div>
+<div class="sourceLine" id="cb21-5" data-line-number="5">    <span class="cf">for</span> ii,polygon <span class="kw">in</span> <span class="bu">enumerate</span>(polygons):</div>
+<div class="sourceLine" id="cb21-6" data-line-number="6">        <span class="co"># Takes an ID, bounding box, and payload.</span></div>
+<div class="sourceLine" id="cb21-7" data-line-number="7">        <span class="cf">yield</span> (ii, polygon.bounds, ii)</div>
+<div class="sourceLine" id="cb21-8" data-line-number="8"></div>
+<div class="sourceLine" id="cb21-9" data-line-number="9"><span class="co"># Rtree&#39;s constructor takes an optional generator for</span></div>
+<div class="sourceLine" id="cb21-10" data-line-number="10"><span class="co"># faster loading speed.</span></div>
+<div class="sourceLine" id="cb21-11" data-line-number="11">polygon_index <span class="op">=</span> rtree.index.Index(</div>
+<div class="sourceLine" id="cb21-12" data-line-number="12">    cluster_polygon_loader(cluster_polygons)</div>
+<div class="sourceLine" id="cb21-13" data-line-number="13">)</div></code></pre>
+<p>Indexing the polygons with rtree enables fast nearest neighbor searches.</p>
+</section>
+<section id="spatial-indexes-1" class="slide level2">
+<h2>Spatial Indexes</h2>
+<pre class="sourceCode python" id="cb22"><code class="sourceCode python"><div class="sourceLine" id="cb22-1" data-line-number="1"><span class="im">import</span> rtree</div>
+<div class="sourceLine" id="cb22-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb22-3" data-line-number="3"><span class="co"># This generator loads the index.</span></div>
+<div class="sourceLine" id="cb22-4" data-line-number="4"><span class="kw">def</span> cluster_polygon_loader(polygons):</div>
+<div class="sourceLine" id="cb22-5" data-line-number="5">    <span class="cf">for</span> ii,polygon <span class="kw">in</span> <span class="bu">enumerate</span>(polygons):</div>
+<div class="sourceLine" id="cb22-6" data-line-number="6">        <span class="co"># Takes an ID, bounding box, and payload.</span></div>
+<div class="sourceLine" id="cb22-7" data-line-number="7">        <span class="cf">yield</span> (ii, polygon.bounds, ii)</div>
+<div class="sourceLine" id="cb22-8" data-line-number="8"></div>
+<div class="sourceLine" id="cb22-9" data-line-number="9"><span class="co"># Rtree&#39;s constructor takes an optional generator for</span></div>
+<div class="sourceLine" id="cb22-10" data-line-number="10"><span class="co"># faster loading speed.</span></div>
+<div class="sourceLine" id="cb22-11" data-line-number="11">polygon_index <span class="op">=</span> rtree.index.Index(</div>
+<div class="sourceLine" id="cb22-12" data-line-number="12">    cluster_polygon_loader(cluster_polygons)</div>
+<div class="sourceLine" id="cb22-13" data-line-number="13">)</div></code></pre>
+<p>The rtree indexes bounding boxes, which are <code>.bounds</code> in Shapely.</p>
+</section>
+<section id="nearest-cluster-labels" class="slide level2">
+<h2>Nearest Cluster Labels</h2>
+<pre class="sourceCode python" id="cb23"><code class="sourceCode python"><div class="sourceLine" id="cb23-1" data-line-number="1"><span class="kw">def</span> nearest_cluster(lon,lat):</div>
+<div class="sourceLine" id="cb23-2" data-line-number="2">    </div>
+<div class="sourceLine" id="cb23-3" data-line-number="3">    <span class="co"># The returned results need to be wrangled a bit.</span></div>
+<div class="sourceLine" id="cb23-4" data-line-number="4">    <span class="cf">return</span> <span class="bu">list</span>(polygon_index.nearest((lon,lat)<span class="op">*</span><span class="dv">2</span>, <span class="dv">1</span>))[<span class="dv">0</span>]</div>
+<div class="sourceLine" id="cb23-5" data-line-number="5"></div>
+<div class="sourceLine" id="cb23-6" data-line-number="6">ufo_sightings_geo.loc[:,<span class="st">&#39;cluster_label_neighbor&#39;</span>] <span class="op">=</span> np.array([</div>
+<div class="sourceLine" id="cb23-7" data-line-number="7">    </div>
+<div class="sourceLine" id="cb23-8" data-line-number="8">    <span class="co"># This gives us the index of each point&#39;s nearest</span></div>
+<div class="sourceLine" id="cb23-9" data-line-number="9">    <span class="co"># cluster polygon.</span></div>
+<div class="sourceLine" id="cb23-10" data-line-number="10">    nearest_cluster(row.longitude, row.latitude) </div>
+<div class="sourceLine" id="cb23-11" data-line-number="11">    </div>
+<div class="sourceLine" id="cb23-12" data-line-number="12">    <span class="cf">for</span> _,row <span class="kw">in</span> ufo_sightings_geo.iterrows()</div>
+<div class="sourceLine" id="cb23-13" data-line-number="13">])</div></code></pre>
+<p>Querying the rtree index is fairly straightforward. Each point with the same nearest cluster gets the same label.</p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="images/ufo_sightings_with_neighbors_clusters.png" /></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="http://www.latest-ufo-sightings.net/wp-content/uploads/2014/10/bigfoot-ufos.png" /></p>
+</section>
+<section id="spatial-joins" class="slide level2">
+<h2>Spatial Joins</h2>
+<pre class="sourceCode python" id="cb24"><code class="sourceCode python"><div class="sourceLine" id="cb24-1" data-line-number="1">ufo_in_bigfoot_polygons <span class="op">=</span> gpd.sjoin(</div>
+<div class="sourceLine" id="cb24-2" data-line-number="2">    <span class="co"># Left and right frames.</span></div>
+<div class="sourceLine" id="cb24-3" data-line-number="3">    bigfoot_polygons_frame, <span class="co"># &lt;=== geometry + polygon label</span></div>
+<div class="sourceLine" id="cb24-4" data-line-number="4">    ufo_sightings_geo,</div>
+<div class="sourceLine" id="cb24-5" data-line-number="5">    </div>
+<div class="sourceLine" id="cb24-6" data-line-number="6">    <span class="co"># Just like pandas.</span></div>
+<div class="sourceLine" id="cb24-7" data-line-number="7">    how<span class="op">=</span><span class="st">&quot;left&quot;</span>,</div>
+<div class="sourceLine" id="cb24-8" data-line-number="8"></div>
+<div class="sourceLine" id="cb24-9" data-line-number="9">    <span class="co"># Can be intersects, contains, or within.</span></div>
+<div class="sourceLine" id="cb24-10" data-line-number="10">    op<span class="op">=</span><span class="st">&quot;intersects&quot;</span></div>
+<div class="sourceLine" id="cb24-11" data-line-number="11">)</div></code></pre>
+<p>Spatial joins use geometric operations as join keys.</p>
+</section>
+<section id="geodataframe-regular-joins" class="slide level2">
+<h2>GeoDataFrame Regular Joins</h2>
+<pre class="sourceCode python" id="cb25"><code class="sourceCode python"><div class="sourceLine" id="cb25-1" data-line-number="1">bigfoot_polygons_count <span class="op">=</span> <span class="op">\</span></div>
+<div class="sourceLine" id="cb25-2" data-line-number="2">    ufo_in_bigfoot_polygons<span class="op">\</span></div>
+<div class="sourceLine" id="cb25-3" data-line-number="3">        .groupby(<span class="st">&#39;bigfoot_polygon_label&#39;</span>)<span class="op">\</span></div>
+<div class="sourceLine" id="cb25-4" data-line-number="4">        .agg({<span class="st">&#39;report_link&#39;</span>:<span class="st">&#39;count&#39;</span>})</div>
+<div class="sourceLine" id="cb25-5" data-line-number="5">    </div>
+<div class="sourceLine" id="cb25-6" data-line-number="6">bigfoot_polygons_frame <span class="op">=</span> <span class="op">\</span></div>
+<div class="sourceLine" id="cb25-7" data-line-number="7">    bigfoot_polygons_frame.join(</div>
+<div class="sourceLine" id="cb25-8" data-line-number="8">        bigfoot_polygons_count, </div>
+<div class="sourceLine" id="cb25-9" data-line-number="9">        on<span class="op">=</span><span class="st">&quot;bigfoot_polygon_label&quot;</span></div>
+<div class="sourceLine" id="cb25-10" data-line-number="10">    )</div></code></pre>
+<p>GeoDataFrames do regular joins too.</p>
+</section>
+<section id="choropleth-map" class="slide level2">
+<h2>Choropleth Map</h2>
+<p><img data-src="https://i2.wp.com/flowingdata.com/wp-content/uploads/2012/11/Divided-nation.jpg?w=600&amp;ssl=1" /></p>
+<p>Polygons are differentiated by color.</p>
+</section>
+<section id="choropleth-ish-map" class="slide level2">
+<h2>Choropleth-ish Map</h2>
+<pre class="sourceCode python" id="cb26"><code class="sourceCode python"><div class="sourceLine" id="cb26-1" data-line-number="1"><span class="co"># ... add the USA.</span></div>
+<div class="sourceLine" id="cb26-2" data-line-number="2"></div>
+<div class="sourceLine" id="cb26-3" data-line-number="3">gplt.choropleth(</div>
+<div class="sourceLine" id="cb26-4" data-line-number="4">    bigfoot_polygons_frame,</div>
+<div class="sourceLine" id="cb26-5" data-line-number="5">    hue<span class="op">=</span><span class="st">&#39;ufo_sightings&#39;</span>, <span class="co"># &lt;=== Color by count.</span></div>
+<div class="sourceLine" id="cb26-6" data-line-number="6">    </div>
+<div class="sourceLine" id="cb26-7" data-line-number="7">    <span class="co"># Geoplot stuff.</span></div>
+<div class="sourceLine" id="cb26-8" data-line-number="8">    projection<span class="op">=</span>proj, ax<span class="op">=</span>ax,</div>
+<div class="sourceLine" id="cb26-9" data-line-number="9">    </div>
+<div class="sourceLine" id="cb26-10" data-line-number="10">    <span class="co"># MPL stuff.</span></div>
+<div class="sourceLine" id="cb26-11" data-line-number="11">    legend<span class="op">=</span><span class="va">True</span>,</div>
+<div class="sourceLine" id="cb26-12" data-line-number="12">    cmap<span class="op">=</span><span class="st">&quot;YlOrRd&quot;</span>, <span class="co"># &lt;=== matplotlib color map.</span></div>
+<div class="sourceLine" id="cb26-13" data-line-number="13">    k<span class="op">=</span><span class="va">None</span> <span class="co"># &lt;=== None for continuous.</span></div>
+<div class="sourceLine" id="cb26-14" data-line-number="14">)</div></code></pre>
+<p>Typically they’re used to cover the entire area, so this map stretches the definition a little bit.</p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="images/ufos_bigfoot_hotspots.png" /></p>
+</section>
+<section id="libraries-we-talked-about" class="slide level2">
+<h2>Libraries We Talked About</h2>
+<ul>
+<li><strong>shapely</strong> (<a href="https://github.com/Toblerity/Shapely">github.com/Toblerity/Shapely</a>)</li>
+<li><strong>geopandas</strong> (<a href="http://geopandas.org/">geopandas.org</a>)</li>
+<li><strong>geoplot</strong> (<a href="https://residentmario.github.io/geoplot/index.html">residentmario.github.io/geoplot</a>)</li>
+<li><strong>pyproj</strong> (<a href="https://jswhit.github.io/pyproj/">jswhit.github.io/pyproj</a>)</li>
+<li><strong>rtree</strong> (<a href="http://toblerity.org/rtree/">toblerity.org/rtree</a>)</li>
+<li><strong>hdbscan</strong> (<a href="https://hdbscan.readthedocs.io/en/latest/">hdbscan.readthedocs.io</a>)</li>
+</ul>
+</section>
+<section id="libraries-we-didnt-talk-about" class="slide level2">
+<h2>Libraries We Didn’t Talk About</h2>
+<ul>
+<li><strong>arcpy</strong> (<a href="http://pro.arcgis.com/en/pro-app/arcpy/main/arcgis-pro-arcpy-reference.htm">pro.arcgis.com/en/pro-app/arcpy/</a>)</li>
+<li><strong>geopy</strong> (<a href="https://github.com/geopy/geopy">github.com/geopy/geopy</a>)</li>
+<li><strong>pysal</strong> (<a href="http://pysal.readthedocs.io/en/latest/">pysal.readthedocs.io</a>)</li>
+<li><strong>bokeh</strong> (<a href="https://bokeh.pydata.org/en/latest/">bokeh.pydata.org</a>)</li>
+<li><strong>datashader</strong> (<a href="http://datashader.readthedocs.io/en/latest/">datashader.readthedocs.io</a>)</li>
+<li><strong>holoviews / geoviews</strong> (<a href="http://geo.holoviews.org/">geo.holoviews.org</a>)</li>
+</ul>
+</section>
+<section id="other-operations" class="slide level2">
+<h2>Other Operations</h2>
+<ul>
+<li><strong>Unions and cascaded unions</strong> - geometric merging in Shapely.</li>
+<li><strong>Differences and intersections</strong> - other geometric set operations in Shapely.</li>
+<li><strong>Vectorized geometric operations</strong> in GeoPandas.</li>
+<li><strong>Overlays</strong> in GeoPandas.</li>
+</ul>
+</section>
+<section id="other-links" class="slide level2">
+<h2>Other Links</h2>
+<ul>
+<li>UFO sightings dataset - <a href="https://data.world/timothyrenner/ufo-sightings">data.world/timothyrenner/ufo-sightings</a></li>
+<li>Bigfoot sightings dataset - <a href="https://data.world/timothyrenner/bfro-sightings-data">data.world/timothyrenner/bfro-sightings-data</a></li>
+<li>This talk - <a href="https://timothyrenner.github.io/talks/20171128-geo-pydata">timothyrenner.github.io/talks/20171128-geo-pydata</a></li>
+<li>Blog - <a href="https://timothyrenner.github.io/datascience/2017/10/28/not-so-close-encounters.html">timothyrenner.github.io</a></li>
+<li>NPR - <a href="https://www.npr.org/sections/thetwo-way/2017/11/22/565926690/i-dont-believe-in-science-says-flat-earther-set-to-launch-himself-in-own-rocket">‘I Don’t Believe In Science,’ Says Flat-Earther Set To Launch Himself In Own Rocket</a></li>
+</ul>
+</section>
+<section id="questions" class="slide level2">
+<h2>Questions?</h2>
+<!-- ![](http://www.agentsofguard.com/wp-content/uploads/2016/01/X-Files.jpg) {style="height:75%;width:75%"} -->
+<p><img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492185172/articles/2015/03/24/the-x-files-creator-chris-carter-on-the-show-s-summer-return/150324-joiner-xfiles-tease_wqaji5" style="height:100%; width:100%"></p>
+</section>
+<section id="images" class="slide level2">
+<h2>Images</h2>
+<ul>
+<li>Hong Kong, Obama’s Divided Nation - <a href="http://flowingdata.com/">flowingdata.com</a></li>
+<li>Sasquatch Meets UFO - <a href="http://www.latest-ufo-sightings.net/">latest-ufo-sightings.net</a></li>
+<li>Transverse Mercator - <a href="http://gisgeography.com/">gisgeography.com</a></li>
+<li>RTree - Wikipedia</li>
+<li>Rocket Man - AP</li>
+<li>X-Files - 20th Century Fox</li>
+</ul>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
