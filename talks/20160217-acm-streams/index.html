@@ -8,15 +8,15 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" href="../reveal.js/css/theme/simple.css" id="theme">
   <!-- Printing and PDF exports -->
   <script>
     var link = document.createElement( 'link' );
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   <!--[if lt IE 9]>
@@ -37,9 +37,9 @@
 <section id="about-me" class="slide level1">
 <h1>About Me</h1>
 <style>
-.reveal li {line-height: 1.5}
-.reveal h1 { font-size: 2.5em; } 
-.reveal h2 { font-size: 2.0em; }
+.reveal li {line-height: 1.0; margin-bottom: 10px; margin-top: 10px}
+.reveal h1 { font-size: 1.5em; } 
+.reveal h2 { font-size: 1.0em; }
 .reveal code { background-color: #ffffe5 }
 .reveal section img { border:none; box-shadow: none}
 .reveal section social-link {font-size: 20px; 
@@ -394,8 +394,8 @@ Different kind of &quot;stream crossing&quot; - still not recommended.
     </div>
   </div>
 
-  <script src="reveal.js/lib/js/head.min.js"></script>
-  <script src="reveal.js/js/reveal.js"></script>
+  <script src="../reveal.js/lib/js/head.min.js"></script>
+  <script src="../reveal.js/js/reveal.js"></script>
 
   <script>
 
@@ -405,9 +405,9 @@ Different kind of &quot;stream crossing&quot; - still not recommended.
 
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
         ]
       });
     </script>
