@@ -1,0 +1,3186 @@
+time,word,subject,count
+2019-04-22T00:45:00Z,fuck,jon snow,0
+2019-04-22T00:45:00Z,fuck,daenerys,0
+2019-04-22T00:45:00Z,fuck,cersei,1
+2019-04-22T00:45:00Z,fuck,tyrion,0
+2019-04-22T00:45:00Z,fuck,arya,3
+2019-04-22T00:45:00Z,fuck,sansa,1
+2019-04-22T00:45:00Z,fuck,jaime,1
+2019-04-22T00:45:00Z,shit,jon snow,0
+2019-04-22T00:45:00Z,shit,daenerys,0
+2019-04-22T00:45:00Z,shit,cersei,0
+2019-04-22T00:45:00Z,shit,tyrion,0
+2019-04-22T00:45:00Z,shit,arya,0
+2019-04-22T00:45:00Z,shit,sansa,0
+2019-04-22T00:45:00Z,shit,jaime,0
+2019-04-22T00:45:00Z,bitch,jon snow,0
+2019-04-22T00:45:00Z,bitch,daenerys,0
+2019-04-22T00:45:00Z,bitch,cersei,1
+2019-04-22T00:45:00Z,bitch,tyrion,0
+2019-04-22T00:45:00Z,bitch,arya,1
+2019-04-22T00:45:00Z,bitch,sansa,0
+2019-04-22T00:45:00Z,bitch,jaime,2
+2019-04-22T00:45:00Z,ass,jon snow,0
+2019-04-22T00:45:00Z,ass,daenerys,0
+2019-04-22T00:45:00Z,ass,cersei,0
+2019-04-22T00:45:00Z,ass,tyrion,0
+2019-04-22T00:45:00Z,ass,arya,0
+2019-04-22T00:45:00Z,ass,sansa,0
+2019-04-22T00:45:00Z,ass,jaime,2
+2019-04-22T00:45:00Z,dick,jon snow,0
+2019-04-22T00:45:00Z,dick,daenerys,0
+2019-04-22T00:45:00Z,dick,cersei,0
+2019-04-22T00:45:00Z,dick,tyrion,0
+2019-04-22T00:45:00Z,dick,arya,1
+2019-04-22T00:45:00Z,dick,sansa,1
+2019-04-22T00:45:00Z,dick,jaime,1
+2019-04-22T00:46:00Z,fuck,jon snow,1
+2019-04-22T00:46:00Z,fuck,daenerys,0
+2019-04-22T00:46:00Z,fuck,cersei,0
+2019-04-22T00:46:00Z,fuck,tyrion,0
+2019-04-22T00:46:00Z,fuck,arya,3
+2019-04-22T00:46:00Z,fuck,sansa,0
+2019-04-22T00:46:00Z,fuck,jaime,0
+2019-04-22T00:46:00Z,shit,jon snow,0
+2019-04-22T00:46:00Z,shit,daenerys,0
+2019-04-22T00:46:00Z,shit,cersei,0
+2019-04-22T00:46:00Z,shit,tyrion,0
+2019-04-22T00:46:00Z,shit,arya,0
+2019-04-22T00:46:00Z,shit,sansa,0
+2019-04-22T00:46:00Z,shit,jaime,0
+2019-04-22T00:46:00Z,bitch,jon snow,0
+2019-04-22T00:46:00Z,bitch,daenerys,0
+2019-04-22T00:46:00Z,bitch,cersei,1
+2019-04-22T00:46:00Z,bitch,tyrion,0
+2019-04-22T00:46:00Z,bitch,arya,2
+2019-04-22T00:46:00Z,bitch,sansa,0
+2019-04-22T00:46:00Z,bitch,jaime,0
+2019-04-22T00:46:00Z,ass,jon snow,0
+2019-04-22T00:46:00Z,ass,daenerys,0
+2019-04-22T00:46:00Z,ass,cersei,1
+2019-04-22T00:46:00Z,ass,tyrion,0
+2019-04-22T00:46:00Z,ass,arya,0
+2019-04-22T00:46:00Z,ass,sansa,0
+2019-04-22T00:46:00Z,ass,jaime,0
+2019-04-22T00:46:00Z,dick,jon snow,0
+2019-04-22T00:46:00Z,dick,daenerys,0
+2019-04-22T00:46:00Z,dick,cersei,0
+2019-04-22T00:46:00Z,dick,tyrion,0
+2019-04-22T00:46:00Z,dick,arya,0
+2019-04-22T00:46:00Z,dick,sansa,0
+2019-04-22T00:46:00Z,dick,jaime,0
+2019-04-22T00:47:00Z,fuck,jon snow,1
+2019-04-22T00:47:00Z,fuck,daenerys,0
+2019-04-22T00:47:00Z,fuck,cersei,0
+2019-04-22T00:47:00Z,fuck,tyrion,0
+2019-04-22T00:47:00Z,fuck,arya,4
+2019-04-22T00:47:00Z,fuck,sansa,0
+2019-04-22T00:47:00Z,fuck,jaime,1
+2019-04-22T00:47:00Z,shit,jon snow,1
+2019-04-22T00:47:00Z,shit,daenerys,0
+2019-04-22T00:47:00Z,shit,cersei,1
+2019-04-22T00:47:00Z,shit,tyrion,0
+2019-04-22T00:47:00Z,shit,arya,1
+2019-04-22T00:47:00Z,shit,sansa,1
+2019-04-22T00:47:00Z,shit,jaime,1
+2019-04-22T00:47:00Z,bitch,jon snow,0
+2019-04-22T00:47:00Z,bitch,daenerys,0
+2019-04-22T00:47:00Z,bitch,cersei,2
+2019-04-22T00:47:00Z,bitch,tyrion,0
+2019-04-22T00:47:00Z,bitch,arya,1
+2019-04-22T00:47:00Z,bitch,sansa,2
+2019-04-22T00:47:00Z,bitch,jaime,0
+2019-04-22T00:47:00Z,ass,jon snow,0
+2019-04-22T00:47:00Z,ass,daenerys,0
+2019-04-22T00:47:00Z,ass,cersei,1
+2019-04-22T00:47:00Z,ass,tyrion,0
+2019-04-22T00:47:00Z,ass,arya,0
+2019-04-22T00:47:00Z,ass,sansa,1
+2019-04-22T00:47:00Z,ass,jaime,0
+2019-04-22T00:47:00Z,dick,jon snow,0
+2019-04-22T00:47:00Z,dick,daenerys,0
+2019-04-22T00:47:00Z,dick,cersei,0
+2019-04-22T00:47:00Z,dick,tyrion,0
+2019-04-22T00:47:00Z,dick,arya,0
+2019-04-22T00:47:00Z,dick,sansa,1
+2019-04-22T00:47:00Z,dick,jaime,2
+2019-04-22T00:48:00Z,fuck,jon snow,0
+2019-04-22T00:48:00Z,fuck,daenerys,0
+2019-04-22T00:48:00Z,fuck,cersei,1
+2019-04-22T00:48:00Z,fuck,tyrion,0
+2019-04-22T00:48:00Z,fuck,arya,2
+2019-04-22T00:48:00Z,fuck,sansa,2
+2019-04-22T00:48:00Z,fuck,jaime,1
+2019-04-22T00:48:00Z,shit,jon snow,2
+2019-04-22T00:48:00Z,shit,daenerys,0
+2019-04-22T00:48:00Z,shit,cersei,0
+2019-04-22T00:48:00Z,shit,tyrion,0
+2019-04-22T00:48:00Z,shit,arya,0
+2019-04-22T00:48:00Z,shit,sansa,1
+2019-04-22T00:48:00Z,shit,jaime,0
+2019-04-22T00:48:00Z,bitch,jon snow,0
+2019-04-22T00:48:00Z,bitch,daenerys,2
+2019-04-22T00:48:00Z,bitch,cersei,0
+2019-04-22T00:48:00Z,bitch,tyrion,0
+2019-04-22T00:48:00Z,bitch,arya,0
+2019-04-22T00:48:00Z,bitch,sansa,0
+2019-04-22T00:48:00Z,bitch,jaime,0
+2019-04-22T00:48:00Z,ass,jon snow,0
+2019-04-22T00:48:00Z,ass,daenerys,1
+2019-04-22T00:48:00Z,ass,cersei,0
+2019-04-22T00:48:00Z,ass,tyrion,0
+2019-04-22T00:48:00Z,ass,arya,0
+2019-04-22T00:48:00Z,ass,sansa,0
+2019-04-22T00:48:00Z,ass,jaime,0
+2019-04-22T00:48:00Z,dick,jon snow,0
+2019-04-22T00:48:00Z,dick,daenerys,0
+2019-04-22T00:48:00Z,dick,cersei,0
+2019-04-22T00:48:00Z,dick,tyrion,0
+2019-04-22T00:48:00Z,dick,arya,1
+2019-04-22T00:48:00Z,dick,sansa,0
+2019-04-22T00:48:00Z,dick,jaime,1
+2019-04-22T00:49:00Z,fuck,jon snow,0
+2019-04-22T00:49:00Z,fuck,daenerys,1
+2019-04-22T00:49:00Z,fuck,cersei,0
+2019-04-22T00:49:00Z,fuck,tyrion,0
+2019-04-22T00:49:00Z,fuck,arya,1
+2019-04-22T00:49:00Z,fuck,sansa,2
+2019-04-22T00:49:00Z,fuck,jaime,0
+2019-04-22T00:49:00Z,shit,jon snow,2
+2019-04-22T00:49:00Z,shit,daenerys,0
+2019-04-22T00:49:00Z,shit,cersei,0
+2019-04-22T00:49:00Z,shit,tyrion,1
+2019-04-22T00:49:00Z,shit,arya,0
+2019-04-22T00:49:00Z,shit,sansa,1
+2019-04-22T00:49:00Z,shit,jaime,1
+2019-04-22T00:49:00Z,bitch,jon snow,0
+2019-04-22T00:49:00Z,bitch,daenerys,0
+2019-04-22T00:49:00Z,bitch,cersei,0
+2019-04-22T00:49:00Z,bitch,tyrion,0
+2019-04-22T00:49:00Z,bitch,arya,0
+2019-04-22T00:49:00Z,bitch,sansa,0
+2019-04-22T00:49:00Z,bitch,jaime,0
+2019-04-22T00:49:00Z,ass,jon snow,0
+2019-04-22T00:49:00Z,ass,daenerys,0
+2019-04-22T00:49:00Z,ass,cersei,0
+2019-04-22T00:49:00Z,ass,tyrion,0
+2019-04-22T00:49:00Z,ass,arya,0
+2019-04-22T00:49:00Z,ass,sansa,0
+2019-04-22T00:49:00Z,ass,jaime,0
+2019-04-22T00:49:00Z,dick,jon snow,0
+2019-04-22T00:49:00Z,dick,daenerys,0
+2019-04-22T00:49:00Z,dick,cersei,0
+2019-04-22T00:49:00Z,dick,tyrion,0
+2019-04-22T00:49:00Z,dick,arya,2
+2019-04-22T00:49:00Z,dick,sansa,0
+2019-04-22T00:49:00Z,dick,jaime,1
+2019-04-22T00:50:00Z,fuck,jon snow,0
+2019-04-22T00:50:00Z,fuck,daenerys,0
+2019-04-22T00:50:00Z,fuck,cersei,0
+2019-04-22T00:50:00Z,fuck,tyrion,0
+2019-04-22T00:50:00Z,fuck,arya,0
+2019-04-22T00:50:00Z,fuck,sansa,0
+2019-04-22T00:50:00Z,fuck,jaime,0
+2019-04-22T00:50:00Z,shit,jon snow,1
+2019-04-22T00:50:00Z,shit,daenerys,0
+2019-04-22T00:50:00Z,shit,cersei,0
+2019-04-22T00:50:00Z,shit,tyrion,0
+2019-04-22T00:50:00Z,shit,arya,1
+2019-04-22T00:50:00Z,shit,sansa,1
+2019-04-22T00:50:00Z,shit,jaime,0
+2019-04-22T00:50:00Z,bitch,jon snow,0
+2019-04-22T00:50:00Z,bitch,daenerys,0
+2019-04-22T00:50:00Z,bitch,cersei,0
+2019-04-22T00:50:00Z,bitch,tyrion,0
+2019-04-22T00:50:00Z,bitch,arya,0
+2019-04-22T00:50:00Z,bitch,sansa,0
+2019-04-22T00:50:00Z,bitch,jaime,0
+2019-04-22T00:50:00Z,ass,jon snow,0
+2019-04-22T00:50:00Z,ass,daenerys,0
+2019-04-22T00:50:00Z,ass,cersei,0
+2019-04-22T00:50:00Z,ass,tyrion,0
+2019-04-22T00:50:00Z,ass,arya,0
+2019-04-22T00:50:00Z,ass,sansa,0
+2019-04-22T00:50:00Z,ass,jaime,0
+2019-04-22T00:50:00Z,dick,jon snow,0
+2019-04-22T00:50:00Z,dick,daenerys,0
+2019-04-22T00:50:00Z,dick,cersei,0
+2019-04-22T00:50:00Z,dick,tyrion,0
+2019-04-22T00:50:00Z,dick,arya,0
+2019-04-22T00:50:00Z,dick,sansa,0
+2019-04-22T00:50:00Z,dick,jaime,1
+2019-04-22T00:51:00Z,fuck,jon snow,0
+2019-04-22T00:51:00Z,fuck,daenerys,0
+2019-04-22T00:51:00Z,fuck,cersei,0
+2019-04-22T00:51:00Z,fuck,tyrion,0
+2019-04-22T00:51:00Z,fuck,arya,1
+2019-04-22T00:51:00Z,fuck,sansa,1
+2019-04-22T00:51:00Z,fuck,jaime,1
+2019-04-22T00:51:00Z,shit,jon snow,1
+2019-04-22T00:51:00Z,shit,daenerys,0
+2019-04-22T00:51:00Z,shit,cersei,1
+2019-04-22T00:51:00Z,shit,tyrion,0
+2019-04-22T00:51:00Z,shit,arya,0
+2019-04-22T00:51:00Z,shit,sansa,0
+2019-04-22T00:51:00Z,shit,jaime,0
+2019-04-22T00:51:00Z,bitch,jon snow,0
+2019-04-22T00:51:00Z,bitch,daenerys,0
+2019-04-22T00:51:00Z,bitch,cersei,0
+2019-04-22T00:51:00Z,bitch,tyrion,0
+2019-04-22T00:51:00Z,bitch,arya,0
+2019-04-22T00:51:00Z,bitch,sansa,2
+2019-04-22T00:51:00Z,bitch,jaime,0
+2019-04-22T00:51:00Z,ass,jon snow,1
+2019-04-22T00:51:00Z,ass,daenerys,0
+2019-04-22T00:51:00Z,ass,cersei,0
+2019-04-22T00:51:00Z,ass,tyrion,0
+2019-04-22T00:51:00Z,ass,arya,0
+2019-04-22T00:51:00Z,ass,sansa,1
+2019-04-22T00:51:00Z,ass,jaime,0
+2019-04-22T00:51:00Z,dick,jon snow,0
+2019-04-22T00:51:00Z,dick,daenerys,0
+2019-04-22T00:51:00Z,dick,cersei,0
+2019-04-22T00:51:00Z,dick,tyrion,0
+2019-04-22T00:51:00Z,dick,arya,0
+2019-04-22T00:51:00Z,dick,sansa,0
+2019-04-22T00:51:00Z,dick,jaime,1
+2019-04-22T00:52:00Z,fuck,jon snow,0
+2019-04-22T00:52:00Z,fuck,daenerys,0
+2019-04-22T00:52:00Z,fuck,cersei,2
+2019-04-22T00:52:00Z,fuck,tyrion,0
+2019-04-22T00:52:00Z,fuck,arya,1
+2019-04-22T00:52:00Z,fuck,sansa,2
+2019-04-22T00:52:00Z,fuck,jaime,3
+2019-04-22T00:52:00Z,shit,jon snow,1
+2019-04-22T00:52:00Z,shit,daenerys,1
+2019-04-22T00:52:00Z,shit,cersei,0
+2019-04-22T00:52:00Z,shit,tyrion,0
+2019-04-22T00:52:00Z,shit,arya,0
+2019-04-22T00:52:00Z,shit,sansa,2
+2019-04-22T00:52:00Z,shit,jaime,0
+2019-04-22T00:52:00Z,bitch,jon snow,0
+2019-04-22T00:52:00Z,bitch,daenerys,1
+2019-04-22T00:52:00Z,bitch,cersei,1
+2019-04-22T00:52:00Z,bitch,tyrion,0
+2019-04-22T00:52:00Z,bitch,arya,1
+2019-04-22T00:52:00Z,bitch,sansa,0
+2019-04-22T00:52:00Z,bitch,jaime,1
+2019-04-22T00:52:00Z,ass,jon snow,0
+2019-04-22T00:52:00Z,ass,daenerys,0
+2019-04-22T00:52:00Z,ass,cersei,0
+2019-04-22T00:52:00Z,ass,tyrion,0
+2019-04-22T00:52:00Z,ass,arya,1
+2019-04-22T00:52:00Z,ass,sansa,0
+2019-04-22T00:52:00Z,ass,jaime,1
+2019-04-22T00:52:00Z,dick,jon snow,0
+2019-04-22T00:52:00Z,dick,daenerys,0
+2019-04-22T00:52:00Z,dick,cersei,0
+2019-04-22T00:52:00Z,dick,tyrion,0
+2019-04-22T00:52:00Z,dick,arya,0
+2019-04-22T00:52:00Z,dick,sansa,1
+2019-04-22T00:52:00Z,dick,jaime,0
+2019-04-22T00:53:00Z,fuck,jon snow,0
+2019-04-22T00:53:00Z,fuck,daenerys,1
+2019-04-22T00:53:00Z,fuck,cersei,0
+2019-04-22T00:53:00Z,fuck,tyrion,0
+2019-04-22T00:53:00Z,fuck,arya,0
+2019-04-22T00:53:00Z,fuck,sansa,2
+2019-04-22T00:53:00Z,fuck,jaime,3
+2019-04-22T00:53:00Z,shit,jon snow,1
+2019-04-22T00:53:00Z,shit,daenerys,0
+2019-04-22T00:53:00Z,shit,cersei,0
+2019-04-22T00:53:00Z,shit,tyrion,0
+2019-04-22T00:53:00Z,shit,arya,1
+2019-04-22T00:53:00Z,shit,sansa,1
+2019-04-22T00:53:00Z,shit,jaime,4
+2019-04-22T00:53:00Z,bitch,jon snow,0
+2019-04-22T00:53:00Z,bitch,daenerys,0
+2019-04-22T00:53:00Z,bitch,cersei,0
+2019-04-22T00:53:00Z,bitch,tyrion,0
+2019-04-22T00:53:00Z,bitch,arya,0
+2019-04-22T00:53:00Z,bitch,sansa,1
+2019-04-22T00:53:00Z,bitch,jaime,1
+2019-04-22T00:53:00Z,ass,jon snow,0
+2019-04-22T00:53:00Z,ass,daenerys,0
+2019-04-22T00:53:00Z,ass,cersei,0
+2019-04-22T00:53:00Z,ass,tyrion,0
+2019-04-22T00:53:00Z,ass,arya,0
+2019-04-22T00:53:00Z,ass,sansa,0
+2019-04-22T00:53:00Z,ass,jaime,0
+2019-04-22T00:53:00Z,dick,jon snow,0
+2019-04-22T00:53:00Z,dick,daenerys,0
+2019-04-22T00:53:00Z,dick,cersei,0
+2019-04-22T00:53:00Z,dick,tyrion,0
+2019-04-22T00:53:00Z,dick,arya,0
+2019-04-22T00:53:00Z,dick,sansa,1
+2019-04-22T00:53:00Z,dick,jaime,2
+2019-04-22T00:54:00Z,fuck,jon snow,1
+2019-04-22T00:54:00Z,fuck,daenerys,0
+2019-04-22T00:54:00Z,fuck,cersei,1
+2019-04-22T00:54:00Z,fuck,tyrion,0
+2019-04-22T00:54:00Z,fuck,arya,3
+2019-04-22T00:54:00Z,fuck,sansa,0
+2019-04-22T00:54:00Z,fuck,jaime,1
+2019-04-22T00:54:00Z,shit,jon snow,1
+2019-04-22T00:54:00Z,shit,daenerys,1
+2019-04-22T00:54:00Z,shit,cersei,1
+2019-04-22T00:54:00Z,shit,tyrion,0
+2019-04-22T00:54:00Z,shit,arya,0
+2019-04-22T00:54:00Z,shit,sansa,1
+2019-04-22T00:54:00Z,shit,jaime,0
+2019-04-22T00:54:00Z,bitch,jon snow,0
+2019-04-22T00:54:00Z,bitch,daenerys,0
+2019-04-22T00:54:00Z,bitch,cersei,1
+2019-04-22T00:54:00Z,bitch,tyrion,0
+2019-04-22T00:54:00Z,bitch,arya,0
+2019-04-22T00:54:00Z,bitch,sansa,2
+2019-04-22T00:54:00Z,bitch,jaime,0
+2019-04-22T00:54:00Z,ass,jon snow,0
+2019-04-22T00:54:00Z,ass,daenerys,0
+2019-04-22T00:54:00Z,ass,cersei,0
+2019-04-22T00:54:00Z,ass,tyrion,0
+2019-04-22T00:54:00Z,ass,arya,0
+2019-04-22T00:54:00Z,ass,sansa,1
+2019-04-22T00:54:00Z,ass,jaime,0
+2019-04-22T00:54:00Z,dick,jon snow,1
+2019-04-22T00:54:00Z,dick,daenerys,0
+2019-04-22T00:54:00Z,dick,cersei,1
+2019-04-22T00:54:00Z,dick,tyrion,0
+2019-04-22T00:54:00Z,dick,arya,0
+2019-04-22T00:54:00Z,dick,sansa,0
+2019-04-22T00:54:00Z,dick,jaime,0
+2019-04-22T00:55:00Z,fuck,jon snow,0
+2019-04-22T00:55:00Z,fuck,daenerys,0
+2019-04-22T00:55:00Z,fuck,cersei,0
+2019-04-22T00:55:00Z,fuck,tyrion,0
+2019-04-22T00:55:00Z,fuck,arya,0
+2019-04-22T00:55:00Z,fuck,sansa,2
+2019-04-22T00:55:00Z,fuck,jaime,0
+2019-04-22T00:55:00Z,shit,jon snow,0
+2019-04-22T00:55:00Z,shit,daenerys,0
+2019-04-22T00:55:00Z,shit,cersei,0
+2019-04-22T00:55:00Z,shit,tyrion,0
+2019-04-22T00:55:00Z,shit,arya,0
+2019-04-22T00:55:00Z,shit,sansa,2
+2019-04-22T00:55:00Z,shit,jaime,0
+2019-04-22T00:55:00Z,bitch,jon snow,0
+2019-04-22T00:55:00Z,bitch,daenerys,0
+2019-04-22T00:55:00Z,bitch,cersei,2
+2019-04-22T00:55:00Z,bitch,tyrion,0
+2019-04-22T00:55:00Z,bitch,arya,0
+2019-04-22T00:55:00Z,bitch,sansa,4
+2019-04-22T00:55:00Z,bitch,jaime,0
+2019-04-22T00:55:00Z,ass,jon snow,0
+2019-04-22T00:55:00Z,ass,daenerys,0
+2019-04-22T00:55:00Z,ass,cersei,0
+2019-04-22T00:55:00Z,ass,tyrion,0
+2019-04-22T00:55:00Z,ass,arya,0
+2019-04-22T00:55:00Z,ass,sansa,2
+2019-04-22T00:55:00Z,ass,jaime,1
+2019-04-22T00:55:00Z,dick,jon snow,1
+2019-04-22T00:55:00Z,dick,daenerys,0
+2019-04-22T00:55:00Z,dick,cersei,0
+2019-04-22T00:55:00Z,dick,tyrion,0
+2019-04-22T00:55:00Z,dick,arya,0
+2019-04-22T00:55:00Z,dick,sansa,1
+2019-04-22T00:55:00Z,dick,jaime,0
+2019-04-22T00:56:00Z,fuck,jon snow,1
+2019-04-22T00:56:00Z,fuck,daenerys,1
+2019-04-22T00:56:00Z,fuck,cersei,0
+2019-04-22T00:56:00Z,fuck,tyrion,0
+2019-04-22T00:56:00Z,fuck,arya,1
+2019-04-22T00:56:00Z,fuck,sansa,0
+2019-04-22T00:56:00Z,fuck,jaime,1
+2019-04-22T00:56:00Z,shit,jon snow,0
+2019-04-22T00:56:00Z,shit,daenerys,0
+2019-04-22T00:56:00Z,shit,cersei,0
+2019-04-22T00:56:00Z,shit,tyrion,0
+2019-04-22T00:56:00Z,shit,arya,0
+2019-04-22T00:56:00Z,shit,sansa,2
+2019-04-22T00:56:00Z,shit,jaime,1
+2019-04-22T00:56:00Z,bitch,jon snow,1
+2019-04-22T00:56:00Z,bitch,daenerys,1
+2019-04-22T00:56:00Z,bitch,cersei,0
+2019-04-22T00:56:00Z,bitch,tyrion,0
+2019-04-22T00:56:00Z,bitch,arya,0
+2019-04-22T00:56:00Z,bitch,sansa,1
+2019-04-22T00:56:00Z,bitch,jaime,0
+2019-04-22T00:56:00Z,ass,jon snow,0
+2019-04-22T00:56:00Z,ass,daenerys,0
+2019-04-22T00:56:00Z,ass,cersei,0
+2019-04-22T00:56:00Z,ass,tyrion,0
+2019-04-22T00:56:00Z,ass,arya,0
+2019-04-22T00:56:00Z,ass,sansa,0
+2019-04-22T00:56:00Z,ass,jaime,0
+2019-04-22T00:56:00Z,dick,jon snow,0
+2019-04-22T00:56:00Z,dick,daenerys,0
+2019-04-22T00:56:00Z,dick,cersei,0
+2019-04-22T00:56:00Z,dick,tyrion,0
+2019-04-22T00:56:00Z,dick,arya,0
+2019-04-22T00:56:00Z,dick,sansa,0
+2019-04-22T00:56:00Z,dick,jaime,0
+2019-04-22T00:57:00Z,fuck,jon snow,3
+2019-04-22T00:57:00Z,fuck,daenerys,0
+2019-04-22T00:57:00Z,fuck,cersei,1
+2019-04-22T00:57:00Z,fuck,tyrion,0
+2019-04-22T00:57:00Z,fuck,arya,0
+2019-04-22T00:57:00Z,fuck,sansa,1
+2019-04-22T00:57:00Z,fuck,jaime,1
+2019-04-22T00:57:00Z,shit,jon snow,1
+2019-04-22T00:57:00Z,shit,daenerys,0
+2019-04-22T00:57:00Z,shit,cersei,1
+2019-04-22T00:57:00Z,shit,tyrion,0
+2019-04-22T00:57:00Z,shit,arya,0
+2019-04-22T00:57:00Z,shit,sansa,0
+2019-04-22T00:57:00Z,shit,jaime,2
+2019-04-22T00:57:00Z,bitch,jon snow,1
+2019-04-22T00:57:00Z,bitch,daenerys,0
+2019-04-22T00:57:00Z,bitch,cersei,0
+2019-04-22T00:57:00Z,bitch,tyrion,0
+2019-04-22T00:57:00Z,bitch,arya,0
+2019-04-22T00:57:00Z,bitch,sansa,1
+2019-04-22T00:57:00Z,bitch,jaime,0
+2019-04-22T00:57:00Z,ass,jon snow,0
+2019-04-22T00:57:00Z,ass,daenerys,0
+2019-04-22T00:57:00Z,ass,cersei,0
+2019-04-22T00:57:00Z,ass,tyrion,0
+2019-04-22T00:57:00Z,ass,arya,0
+2019-04-22T00:57:00Z,ass,sansa,0
+2019-04-22T00:57:00Z,ass,jaime,0
+2019-04-22T00:57:00Z,dick,jon snow,0
+2019-04-22T00:57:00Z,dick,daenerys,0
+2019-04-22T00:57:00Z,dick,cersei,0
+2019-04-22T00:57:00Z,dick,tyrion,0
+2019-04-22T00:57:00Z,dick,arya,0
+2019-04-22T00:57:00Z,dick,sansa,0
+2019-04-22T00:57:00Z,dick,jaime,0
+2019-04-22T00:58:00Z,fuck,jon snow,0
+2019-04-22T00:58:00Z,fuck,daenerys,0
+2019-04-22T00:58:00Z,fuck,cersei,0
+2019-04-22T00:58:00Z,fuck,tyrion,2
+2019-04-22T00:58:00Z,fuck,arya,1
+2019-04-22T00:58:00Z,fuck,sansa,2
+2019-04-22T00:58:00Z,fuck,jaime,0
+2019-04-22T00:58:00Z,shit,jon snow,0
+2019-04-22T00:58:00Z,shit,daenerys,1
+2019-04-22T00:58:00Z,shit,cersei,0
+2019-04-22T00:58:00Z,shit,tyrion,0
+2019-04-22T00:58:00Z,shit,arya,0
+2019-04-22T00:58:00Z,shit,sansa,1
+2019-04-22T00:58:00Z,shit,jaime,0
+2019-04-22T00:58:00Z,bitch,jon snow,1
+2019-04-22T00:58:00Z,bitch,daenerys,0
+2019-04-22T00:58:00Z,bitch,cersei,1
+2019-04-22T00:58:00Z,bitch,tyrion,0
+2019-04-22T00:58:00Z,bitch,arya,0
+2019-04-22T00:58:00Z,bitch,sansa,0
+2019-04-22T00:58:00Z,bitch,jaime,1
+2019-04-22T00:58:00Z,ass,jon snow,0
+2019-04-22T00:58:00Z,ass,daenerys,0
+2019-04-22T00:58:00Z,ass,cersei,1
+2019-04-22T00:58:00Z,ass,tyrion,0
+2019-04-22T00:58:00Z,ass,arya,0
+2019-04-22T00:58:00Z,ass,sansa,1
+2019-04-22T00:58:00Z,ass,jaime,1
+2019-04-22T00:58:00Z,dick,jon snow,0
+2019-04-22T00:58:00Z,dick,daenerys,0
+2019-04-22T00:58:00Z,dick,cersei,0
+2019-04-22T00:58:00Z,dick,tyrion,0
+2019-04-22T00:58:00Z,dick,arya,0
+2019-04-22T00:58:00Z,dick,sansa,0
+2019-04-22T00:58:00Z,dick,jaime,0
+2019-04-22T00:59:00Z,fuck,jon snow,2
+2019-04-22T00:59:00Z,fuck,daenerys,0
+2019-04-22T00:59:00Z,fuck,cersei,3
+2019-04-22T00:59:00Z,fuck,tyrion,1
+2019-04-22T00:59:00Z,fuck,arya,1
+2019-04-22T00:59:00Z,fuck,sansa,1
+2019-04-22T00:59:00Z,fuck,jaime,2
+2019-04-22T00:59:00Z,shit,jon snow,1
+2019-04-22T00:59:00Z,shit,daenerys,1
+2019-04-22T00:59:00Z,shit,cersei,0
+2019-04-22T00:59:00Z,shit,tyrion,0
+2019-04-22T00:59:00Z,shit,arya,0
+2019-04-22T00:59:00Z,shit,sansa,2
+2019-04-22T00:59:00Z,shit,jaime,1
+2019-04-22T00:59:00Z,bitch,jon snow,0
+2019-04-22T00:59:00Z,bitch,daenerys,0
+2019-04-22T00:59:00Z,bitch,cersei,2
+2019-04-22T00:59:00Z,bitch,tyrion,0
+2019-04-22T00:59:00Z,bitch,arya,0
+2019-04-22T00:59:00Z,bitch,sansa,1
+2019-04-22T00:59:00Z,bitch,jaime,0
+2019-04-22T00:59:00Z,ass,jon snow,0
+2019-04-22T00:59:00Z,ass,daenerys,0
+2019-04-22T00:59:00Z,ass,cersei,0
+2019-04-22T00:59:00Z,ass,tyrion,0
+2019-04-22T00:59:00Z,ass,arya,0
+2019-04-22T00:59:00Z,ass,sansa,0
+2019-04-22T00:59:00Z,ass,jaime,2
+2019-04-22T00:59:00Z,dick,jon snow,1
+2019-04-22T00:59:00Z,dick,daenerys,0
+2019-04-22T00:59:00Z,dick,cersei,1
+2019-04-22T00:59:00Z,dick,tyrion,0
+2019-04-22T00:59:00Z,dick,arya,1
+2019-04-22T00:59:00Z,dick,sansa,0
+2019-04-22T00:59:00Z,dick,jaime,0
+2019-04-22T01:00:00Z,fuck,jon snow,0
+2019-04-22T01:00:00Z,fuck,daenerys,1
+2019-04-22T01:00:00Z,fuck,cersei,1
+2019-04-22T01:00:00Z,fuck,tyrion,0
+2019-04-22T01:00:00Z,fuck,arya,0
+2019-04-22T01:00:00Z,fuck,sansa,2
+2019-04-22T01:00:00Z,fuck,jaime,1
+2019-04-22T01:00:00Z,shit,jon snow,1
+2019-04-22T01:00:00Z,shit,daenerys,1
+2019-04-22T01:00:00Z,shit,cersei,0
+2019-04-22T01:00:00Z,shit,tyrion,0
+2019-04-22T01:00:00Z,shit,arya,0
+2019-04-22T01:00:00Z,shit,sansa,2
+2019-04-22T01:00:00Z,shit,jaime,0
+2019-04-22T01:00:00Z,bitch,jon snow,0
+2019-04-22T01:00:00Z,bitch,daenerys,1
+2019-04-22T01:00:00Z,bitch,cersei,0
+2019-04-22T01:00:00Z,bitch,tyrion,0
+2019-04-22T01:00:00Z,bitch,arya,0
+2019-04-22T01:00:00Z,bitch,sansa,2
+2019-04-22T01:00:00Z,bitch,jaime,0
+2019-04-22T01:00:00Z,ass,jon snow,0
+2019-04-22T01:00:00Z,ass,daenerys,0
+2019-04-22T01:00:00Z,ass,cersei,0
+2019-04-22T01:00:00Z,ass,tyrion,0
+2019-04-22T01:00:00Z,ass,arya,0
+2019-04-22T01:00:00Z,ass,sansa,0
+2019-04-22T01:00:00Z,ass,jaime,1
+2019-04-22T01:00:00Z,dick,jon snow,1
+2019-04-22T01:00:00Z,dick,daenerys,0
+2019-04-22T01:00:00Z,dick,cersei,0
+2019-04-22T01:00:00Z,dick,tyrion,0
+2019-04-22T01:00:00Z,dick,arya,0
+2019-04-22T01:00:00Z,dick,sansa,1
+2019-04-22T01:00:00Z,dick,jaime,0
+2019-04-22T01:01:00Z,fuck,jon snow,2
+2019-04-22T01:01:00Z,fuck,daenerys,1
+2019-04-22T01:01:00Z,fuck,cersei,2
+2019-04-22T01:01:00Z,fuck,tyrion,2
+2019-04-22T01:01:00Z,fuck,arya,4
+2019-04-22T01:01:00Z,fuck,sansa,2
+2019-04-22T01:01:00Z,fuck,jaime,2
+2019-04-22T01:01:00Z,shit,jon snow,0
+2019-04-22T01:01:00Z,shit,daenerys,2
+2019-04-22T01:01:00Z,shit,cersei,0
+2019-04-22T01:01:00Z,shit,tyrion,0
+2019-04-22T01:01:00Z,shit,arya,0
+2019-04-22T01:01:00Z,shit,sansa,3
+2019-04-22T01:01:00Z,shit,jaime,0
+2019-04-22T01:01:00Z,bitch,jon snow,0
+2019-04-22T01:01:00Z,bitch,daenerys,0
+2019-04-22T01:01:00Z,bitch,cersei,0
+2019-04-22T01:01:00Z,bitch,tyrion,0
+2019-04-22T01:01:00Z,bitch,arya,0
+2019-04-22T01:01:00Z,bitch,sansa,2
+2019-04-22T01:01:00Z,bitch,jaime,0
+2019-04-22T01:01:00Z,ass,jon snow,0
+2019-04-22T01:01:00Z,ass,daenerys,1
+2019-04-22T01:01:00Z,ass,cersei,0
+2019-04-22T01:01:00Z,ass,tyrion,0
+2019-04-22T01:01:00Z,ass,arya,1
+2019-04-22T01:01:00Z,ass,sansa,0
+2019-04-22T01:01:00Z,ass,jaime,1
+2019-04-22T01:01:00Z,dick,jon snow,2
+2019-04-22T01:01:00Z,dick,daenerys,1
+2019-04-22T01:01:00Z,dick,cersei,2
+2019-04-22T01:01:00Z,dick,tyrion,0
+2019-04-22T01:01:00Z,dick,arya,0
+2019-04-22T01:01:00Z,dick,sansa,1
+2019-04-22T01:01:00Z,dick,jaime,0
+2019-04-22T01:02:00Z,fuck,jon snow,2
+2019-04-22T01:02:00Z,fuck,daenerys,0
+2019-04-22T01:02:00Z,fuck,cersei,3
+2019-04-22T01:02:00Z,fuck,tyrion,3
+2019-04-22T01:02:00Z,fuck,arya,1
+2019-04-22T01:02:00Z,fuck,sansa,4
+2019-04-22T01:02:00Z,fuck,jaime,4
+2019-04-22T01:02:00Z,shit,jon snow,1
+2019-04-22T01:02:00Z,shit,daenerys,0
+2019-04-22T01:02:00Z,shit,cersei,1
+2019-04-22T01:02:00Z,shit,tyrion,1
+2019-04-22T01:02:00Z,shit,arya,0
+2019-04-22T01:02:00Z,shit,sansa,1
+2019-04-22T01:02:00Z,shit,jaime,1
+2019-04-22T01:02:00Z,bitch,jon snow,0
+2019-04-22T01:02:00Z,bitch,daenerys,1
+2019-04-22T01:02:00Z,bitch,cersei,5
+2019-04-22T01:02:00Z,bitch,tyrion,0
+2019-04-22T01:02:00Z,bitch,arya,0
+2019-04-22T01:02:00Z,bitch,sansa,1
+2019-04-22T01:02:00Z,bitch,jaime,1
+2019-04-22T01:02:00Z,ass,jon snow,0
+2019-04-22T01:02:00Z,ass,daenerys,0
+2019-04-22T01:02:00Z,ass,cersei,0
+2019-04-22T01:02:00Z,ass,tyrion,0
+2019-04-22T01:02:00Z,ass,arya,0
+2019-04-22T01:02:00Z,ass,sansa,1
+2019-04-22T01:02:00Z,ass,jaime,3
+2019-04-22T01:02:00Z,dick,jon snow,0
+2019-04-22T01:02:00Z,dick,daenerys,0
+2019-04-22T01:02:00Z,dick,cersei,0
+2019-04-22T01:02:00Z,dick,tyrion,0
+2019-04-22T01:02:00Z,dick,arya,0
+2019-04-22T01:02:00Z,dick,sansa,0
+2019-04-22T01:02:00Z,dick,jaime,0
+2019-04-22T01:03:00Z,fuck,jon snow,0
+2019-04-22T01:03:00Z,fuck,daenerys,3
+2019-04-22T01:03:00Z,fuck,cersei,4
+2019-04-22T01:03:00Z,fuck,tyrion,3
+2019-04-22T01:03:00Z,fuck,arya,0
+2019-04-22T01:03:00Z,fuck,sansa,3
+2019-04-22T01:03:00Z,fuck,jaime,8
+2019-04-22T01:03:00Z,shit,jon snow,0
+2019-04-22T01:03:00Z,shit,daenerys,4
+2019-04-22T01:03:00Z,shit,cersei,1
+2019-04-22T01:03:00Z,shit,tyrion,0
+2019-04-22T01:03:00Z,shit,arya,0
+2019-04-22T01:03:00Z,shit,sansa,1
+2019-04-22T01:03:00Z,shit,jaime,1
+2019-04-22T01:03:00Z,bitch,jon snow,0
+2019-04-22T01:03:00Z,bitch,daenerys,0
+2019-04-22T01:03:00Z,bitch,cersei,0
+2019-04-22T01:03:00Z,bitch,tyrion,1
+2019-04-22T01:03:00Z,bitch,arya,1
+2019-04-22T01:03:00Z,bitch,sansa,0
+2019-04-22T01:03:00Z,bitch,jaime,1
+2019-04-22T01:03:00Z,ass,jon snow,0
+2019-04-22T01:03:00Z,ass,daenerys,0
+2019-04-22T01:03:00Z,ass,cersei,1
+2019-04-22T01:03:00Z,ass,tyrion,0
+2019-04-22T01:03:00Z,ass,arya,0
+2019-04-22T01:03:00Z,ass,sansa,0
+2019-04-22T01:03:00Z,ass,jaime,1
+2019-04-22T01:03:00Z,dick,jon snow,0
+2019-04-22T01:03:00Z,dick,daenerys,0
+2019-04-22T01:03:00Z,dick,cersei,0
+2019-04-22T01:03:00Z,dick,tyrion,0
+2019-04-22T01:03:00Z,dick,arya,1
+2019-04-22T01:03:00Z,dick,sansa,0
+2019-04-22T01:03:00Z,dick,jaime,0
+2019-04-22T01:04:00Z,fuck,jon snow,1
+2019-04-22T01:04:00Z,fuck,daenerys,4
+2019-04-22T01:04:00Z,fuck,cersei,1
+2019-04-22T01:04:00Z,fuck,tyrion,1
+2019-04-22T01:04:00Z,fuck,arya,0
+2019-04-22T01:04:00Z,fuck,sansa,7
+2019-04-22T01:04:00Z,fuck,jaime,8
+2019-04-22T01:04:00Z,shit,jon snow,1
+2019-04-22T01:04:00Z,shit,daenerys,1
+2019-04-22T01:04:00Z,shit,cersei,0
+2019-04-22T01:04:00Z,shit,tyrion,2
+2019-04-22T01:04:00Z,shit,arya,0
+2019-04-22T01:04:00Z,shit,sansa,1
+2019-04-22T01:04:00Z,shit,jaime,10
+2019-04-22T01:04:00Z,bitch,jon snow,0
+2019-04-22T01:04:00Z,bitch,daenerys,1
+2019-04-22T01:04:00Z,bitch,cersei,0
+2019-04-22T01:04:00Z,bitch,tyrion,0
+2019-04-22T01:04:00Z,bitch,arya,0
+2019-04-22T01:04:00Z,bitch,sansa,0
+2019-04-22T01:04:00Z,bitch,jaime,3
+2019-04-22T01:04:00Z,ass,jon snow,0
+2019-04-22T01:04:00Z,ass,daenerys,0
+2019-04-22T01:04:00Z,ass,cersei,1
+2019-04-22T01:04:00Z,ass,tyrion,0
+2019-04-22T01:04:00Z,ass,arya,1
+2019-04-22T01:04:00Z,ass,sansa,0
+2019-04-22T01:04:00Z,ass,jaime,5
+2019-04-22T01:04:00Z,dick,jon snow,0
+2019-04-22T01:04:00Z,dick,daenerys,0
+2019-04-22T01:04:00Z,dick,cersei,0
+2019-04-22T01:04:00Z,dick,tyrion,0
+2019-04-22T01:04:00Z,dick,arya,0
+2019-04-22T01:04:00Z,dick,sansa,0
+2019-04-22T01:04:00Z,dick,jaime,3
+2019-04-22T01:05:00Z,fuck,jon snow,2
+2019-04-22T01:05:00Z,fuck,daenerys,15
+2019-04-22T01:05:00Z,fuck,cersei,1
+2019-04-22T01:05:00Z,fuck,tyrion,6
+2019-04-22T01:05:00Z,fuck,arya,5
+2019-04-22T01:05:00Z,fuck,sansa,6
+2019-04-22T01:05:00Z,fuck,jaime,12
+2019-04-22T01:05:00Z,shit,jon snow,0
+2019-04-22T01:05:00Z,shit,daenerys,4
+2019-04-22T01:05:00Z,shit,cersei,4
+2019-04-22T01:05:00Z,shit,tyrion,3
+2019-04-22T01:05:00Z,shit,arya,1
+2019-04-22T01:05:00Z,shit,sansa,2
+2019-04-22T01:05:00Z,shit,jaime,14
+2019-04-22T01:05:00Z,bitch,jon snow,0
+2019-04-22T01:05:00Z,bitch,daenerys,1
+2019-04-22T01:05:00Z,bitch,cersei,1
+2019-04-22T01:05:00Z,bitch,tyrion,1
+2019-04-22T01:05:00Z,bitch,arya,1
+2019-04-22T01:05:00Z,bitch,sansa,5
+2019-04-22T01:05:00Z,bitch,jaime,5
+2019-04-22T01:05:00Z,ass,jon snow,0
+2019-04-22T01:05:00Z,ass,daenerys,3
+2019-04-22T01:05:00Z,ass,cersei,4
+2019-04-22T01:05:00Z,ass,tyrion,1
+2019-04-22T01:05:00Z,ass,arya,0
+2019-04-22T01:05:00Z,ass,sansa,1
+2019-04-22T01:05:00Z,ass,jaime,1
+2019-04-22T01:05:00Z,dick,jon snow,0
+2019-04-22T01:05:00Z,dick,daenerys,1
+2019-04-22T01:05:00Z,dick,cersei,0
+2019-04-22T01:05:00Z,dick,tyrion,0
+2019-04-22T01:05:00Z,dick,arya,0
+2019-04-22T01:05:00Z,dick,sansa,0
+2019-04-22T01:05:00Z,dick,jaime,1
+2019-04-22T01:06:00Z,fuck,jon snow,2
+2019-04-22T01:06:00Z,fuck,daenerys,15
+2019-04-22T01:06:00Z,fuck,cersei,1
+2019-04-22T01:06:00Z,fuck,tyrion,8
+2019-04-22T01:06:00Z,fuck,arya,6
+2019-04-22T01:06:00Z,fuck,sansa,7
+2019-04-22T01:06:00Z,fuck,jaime,13
+2019-04-22T01:06:00Z,shit,jon snow,0
+2019-04-22T01:06:00Z,shit,daenerys,3
+2019-04-22T01:06:00Z,shit,cersei,1
+2019-04-22T01:06:00Z,shit,tyrion,6
+2019-04-22T01:06:00Z,shit,arya,1
+2019-04-22T01:06:00Z,shit,sansa,4
+2019-04-22T01:06:00Z,shit,jaime,9
+2019-04-22T01:06:00Z,bitch,jon snow,1
+2019-04-22T01:06:00Z,bitch,daenerys,6
+2019-04-22T01:06:00Z,bitch,cersei,1
+2019-04-22T01:06:00Z,bitch,tyrion,3
+2019-04-22T01:06:00Z,bitch,arya,1
+2019-04-22T01:06:00Z,bitch,sansa,4
+2019-04-22T01:06:00Z,bitch,jaime,8
+2019-04-22T01:06:00Z,ass,jon snow,0
+2019-04-22T01:06:00Z,ass,daenerys,1
+2019-04-22T01:06:00Z,ass,cersei,5
+2019-04-22T01:06:00Z,ass,tyrion,3
+2019-04-22T01:06:00Z,ass,arya,1
+2019-04-22T01:06:00Z,ass,sansa,2
+2019-04-22T01:06:00Z,ass,jaime,6
+2019-04-22T01:06:00Z,dick,jon snow,0
+2019-04-22T01:06:00Z,dick,daenerys,0
+2019-04-22T01:06:00Z,dick,cersei,0
+2019-04-22T01:06:00Z,dick,tyrion,0
+2019-04-22T01:06:00Z,dick,arya,1
+2019-04-22T01:06:00Z,dick,sansa,1
+2019-04-22T01:06:00Z,dick,jaime,1
+2019-04-22T01:07:00Z,fuck,jon snow,3
+2019-04-22T01:07:00Z,fuck,daenerys,13
+2019-04-22T01:07:00Z,fuck,cersei,1
+2019-04-22T01:07:00Z,fuck,tyrion,9
+2019-04-22T01:07:00Z,fuck,arya,6
+2019-04-22T01:07:00Z,fuck,sansa,11
+2019-04-22T01:07:00Z,fuck,jaime,24
+2019-04-22T01:07:00Z,shit,jon snow,1
+2019-04-22T01:07:00Z,shit,daenerys,0
+2019-04-22T01:07:00Z,shit,cersei,2
+2019-04-22T01:07:00Z,shit,tyrion,1
+2019-04-22T01:07:00Z,shit,arya,2
+2019-04-22T01:07:00Z,shit,sansa,7
+2019-04-22T01:07:00Z,shit,jaime,9
+2019-04-22T01:07:00Z,bitch,jon snow,2
+2019-04-22T01:07:00Z,bitch,daenerys,2
+2019-04-22T01:07:00Z,bitch,cersei,0
+2019-04-22T01:07:00Z,bitch,tyrion,0
+2019-04-22T01:07:00Z,bitch,arya,2
+2019-04-22T01:07:00Z,bitch,sansa,10
+2019-04-22T01:07:00Z,bitch,jaime,7
+2019-04-22T01:07:00Z,ass,jon snow,0
+2019-04-22T01:07:00Z,ass,daenerys,3
+2019-04-22T01:07:00Z,ass,cersei,5
+2019-04-22T01:07:00Z,ass,tyrion,1
+2019-04-22T01:07:00Z,ass,arya,1
+2019-04-22T01:07:00Z,ass,sansa,0
+2019-04-22T01:07:00Z,ass,jaime,5
+2019-04-22T01:07:00Z,dick,jon snow,0
+2019-04-22T01:07:00Z,dick,daenerys,0
+2019-04-22T01:07:00Z,dick,cersei,0
+2019-04-22T01:07:00Z,dick,tyrion,0
+2019-04-22T01:07:00Z,dick,arya,3
+2019-04-22T01:07:00Z,dick,sansa,1
+2019-04-22T01:07:00Z,dick,jaime,4
+2019-04-22T01:08:00Z,fuck,jon snow,3
+2019-04-22T01:08:00Z,fuck,daenerys,8
+2019-04-22T01:08:00Z,fuck,cersei,2
+2019-04-22T01:08:00Z,fuck,tyrion,4
+2019-04-22T01:08:00Z,fuck,arya,12
+2019-04-22T01:08:00Z,fuck,sansa,17
+2019-04-22T01:08:00Z,fuck,jaime,26
+2019-04-22T01:08:00Z,shit,jon snow,1
+2019-04-22T01:08:00Z,shit,daenerys,2
+2019-04-22T01:08:00Z,shit,cersei,1
+2019-04-22T01:08:00Z,shit,tyrion,6
+2019-04-22T01:08:00Z,shit,arya,6
+2019-04-22T01:08:00Z,shit,sansa,8
+2019-04-22T01:08:00Z,shit,jaime,15
+2019-04-22T01:08:00Z,bitch,jon snow,1
+2019-04-22T01:08:00Z,bitch,daenerys,8
+2019-04-22T01:08:00Z,bitch,cersei,1
+2019-04-22T01:08:00Z,bitch,tyrion,2
+2019-04-22T01:08:00Z,bitch,arya,6
+2019-04-22T01:08:00Z,bitch,sansa,12
+2019-04-22T01:08:00Z,bitch,jaime,2
+2019-04-22T01:08:00Z,ass,jon snow,1
+2019-04-22T01:08:00Z,ass,daenerys,2
+2019-04-22T01:08:00Z,ass,cersei,2
+2019-04-22T01:08:00Z,ass,tyrion,1
+2019-04-22T01:08:00Z,ass,arya,3
+2019-04-22T01:08:00Z,ass,sansa,4
+2019-04-22T01:08:00Z,ass,jaime,3
+2019-04-22T01:08:00Z,dick,jon snow,0
+2019-04-22T01:08:00Z,dick,daenerys,0
+2019-04-22T01:08:00Z,dick,cersei,0
+2019-04-22T01:08:00Z,dick,tyrion,0
+2019-04-22T01:08:00Z,dick,arya,2
+2019-04-22T01:08:00Z,dick,sansa,0
+2019-04-22T01:08:00Z,dick,jaime,1
+2019-04-22T01:09:00Z,fuck,jon snow,1
+2019-04-22T01:09:00Z,fuck,daenerys,16
+2019-04-22T01:09:00Z,fuck,cersei,3
+2019-04-22T01:09:00Z,fuck,tyrion,7
+2019-04-22T01:09:00Z,fuck,arya,14
+2019-04-22T01:09:00Z,fuck,sansa,15
+2019-04-22T01:09:00Z,fuck,jaime,25
+2019-04-22T01:09:00Z,shit,jon snow,14
+2019-04-22T01:09:00Z,shit,daenerys,3
+2019-04-22T01:09:00Z,shit,cersei,0
+2019-04-22T01:09:00Z,shit,tyrion,14
+2019-04-22T01:09:00Z,shit,arya,7
+2019-04-22T01:09:00Z,shit,sansa,9
+2019-04-22T01:09:00Z,shit,jaime,17
+2019-04-22T01:09:00Z,bitch,jon snow,1
+2019-04-22T01:09:00Z,bitch,daenerys,8
+2019-04-22T01:09:00Z,bitch,cersei,2
+2019-04-22T01:09:00Z,bitch,tyrion,2
+2019-04-22T01:09:00Z,bitch,arya,15
+2019-04-22T01:09:00Z,bitch,sansa,6
+2019-04-22T01:09:00Z,bitch,jaime,3
+2019-04-22T01:09:00Z,ass,jon snow,1
+2019-04-22T01:09:00Z,ass,daenerys,6
+2019-04-22T01:09:00Z,ass,cersei,0
+2019-04-22T01:09:00Z,ass,tyrion,1
+2019-04-22T01:09:00Z,ass,arya,4
+2019-04-22T01:09:00Z,ass,sansa,3
+2019-04-22T01:09:00Z,ass,jaime,5
+2019-04-22T01:09:00Z,dick,jon snow,8
+2019-04-22T01:09:00Z,dick,daenerys,0
+2019-04-22T01:09:00Z,dick,cersei,0
+2019-04-22T01:09:00Z,dick,tyrion,0
+2019-04-22T01:09:00Z,dick,arya,6
+2019-04-22T01:09:00Z,dick,sansa,0
+2019-04-22T01:09:00Z,dick,jaime,0
+2019-04-22T01:10:00Z,fuck,jon snow,1
+2019-04-22T01:10:00Z,fuck,daenerys,10
+2019-04-22T01:10:00Z,fuck,cersei,2
+2019-04-22T01:10:00Z,fuck,tyrion,15
+2019-04-22T01:10:00Z,fuck,arya,36
+2019-04-22T01:10:00Z,fuck,sansa,6
+2019-04-22T01:10:00Z,fuck,jaime,14
+2019-04-22T01:10:00Z,shit,jon snow,27
+2019-04-22T01:10:00Z,shit,daenerys,7
+2019-04-22T01:10:00Z,shit,cersei,1
+2019-04-22T01:10:00Z,shit,tyrion,28
+2019-04-22T01:10:00Z,shit,arya,14
+2019-04-22T01:10:00Z,shit,sansa,7
+2019-04-22T01:10:00Z,shit,jaime,30
+2019-04-22T01:10:00Z,bitch,jon snow,2
+2019-04-22T01:10:00Z,bitch,daenerys,12
+2019-04-22T01:10:00Z,bitch,cersei,3
+2019-04-22T01:10:00Z,bitch,tyrion,6
+2019-04-22T01:10:00Z,bitch,arya,33
+2019-04-22T01:10:00Z,bitch,sansa,9
+2019-04-22T01:10:00Z,bitch,jaime,2
+2019-04-22T01:10:00Z,ass,jon snow,2
+2019-04-22T01:10:00Z,ass,daenerys,2
+2019-04-22T01:10:00Z,ass,cersei,2
+2019-04-22T01:10:00Z,ass,tyrion,0
+2019-04-22T01:10:00Z,ass,arya,11
+2019-04-22T01:10:00Z,ass,sansa,3
+2019-04-22T01:10:00Z,ass,jaime,3
+2019-04-22T01:10:00Z,dick,jon snow,8
+2019-04-22T01:10:00Z,dick,daenerys,0
+2019-04-22T01:10:00Z,dick,cersei,0
+2019-04-22T01:10:00Z,dick,tyrion,1
+2019-04-22T01:10:00Z,dick,arya,15
+2019-04-22T01:10:00Z,dick,sansa,1
+2019-04-22T01:10:00Z,dick,jaime,4
+2019-04-22T01:11:00Z,fuck,jon snow,4
+2019-04-22T01:11:00Z,fuck,daenerys,9
+2019-04-22T01:11:00Z,fuck,cersei,2
+2019-04-22T01:11:00Z,fuck,tyrion,5
+2019-04-22T01:11:00Z,fuck,arya,47
+2019-04-22T01:11:00Z,fuck,sansa,6
+2019-04-22T01:11:00Z,fuck,jaime,9
+2019-04-22T01:11:00Z,shit,jon snow,14
+2019-04-22T01:11:00Z,shit,daenerys,1
+2019-04-22T01:11:00Z,shit,cersei,0
+2019-04-22T01:11:00Z,shit,tyrion,20
+2019-04-22T01:11:00Z,shit,arya,25
+2019-04-22T01:11:00Z,shit,sansa,0
+2019-04-22T01:11:00Z,shit,jaime,16
+2019-04-22T01:11:00Z,bitch,jon snow,2
+2019-04-22T01:11:00Z,bitch,daenerys,5
+2019-04-22T01:11:00Z,bitch,cersei,1
+2019-04-22T01:11:00Z,bitch,tyrion,4
+2019-04-22T01:11:00Z,bitch,arya,42
+2019-04-22T01:11:00Z,bitch,sansa,7
+2019-04-22T01:11:00Z,bitch,jaime,2
+2019-04-22T01:11:00Z,ass,jon snow,0
+2019-04-22T01:11:00Z,ass,daenerys,1
+2019-04-22T01:11:00Z,ass,cersei,0
+2019-04-22T01:11:00Z,ass,tyrion,0
+2019-04-22T01:11:00Z,ass,arya,15
+2019-04-22T01:11:00Z,ass,sansa,1
+2019-04-22T01:11:00Z,ass,jaime,1
+2019-04-22T01:11:00Z,dick,jon snow,8
+2019-04-22T01:11:00Z,dick,daenerys,1
+2019-04-22T01:11:00Z,dick,cersei,0
+2019-04-22T01:11:00Z,dick,tyrion,0
+2019-04-22T01:11:00Z,dick,arya,26
+2019-04-22T01:11:00Z,dick,sansa,0
+2019-04-22T01:11:00Z,dick,jaime,2
+2019-04-22T01:12:00Z,fuck,jon snow,1
+2019-04-22T01:12:00Z,fuck,daenerys,7
+2019-04-22T01:12:00Z,fuck,cersei,0
+2019-04-22T01:12:00Z,fuck,tyrion,5
+2019-04-22T01:12:00Z,fuck,arya,87
+2019-04-22T01:12:00Z,fuck,sansa,1
+2019-04-22T01:12:00Z,fuck,jaime,9
+2019-04-22T01:12:00Z,shit,jon snow,9
+2019-04-22T01:12:00Z,shit,daenerys,0
+2019-04-22T01:12:00Z,shit,cersei,1
+2019-04-22T01:12:00Z,shit,tyrion,9
+2019-04-22T01:12:00Z,shit,arya,43
+2019-04-22T01:12:00Z,shit,sansa,0
+2019-04-22T01:12:00Z,shit,jaime,13
+2019-04-22T01:12:00Z,bitch,jon snow,1
+2019-04-22T01:12:00Z,bitch,daenerys,6
+2019-04-22T01:12:00Z,bitch,cersei,2
+2019-04-22T01:12:00Z,bitch,tyrion,3
+2019-04-22T01:12:00Z,bitch,arya,78
+2019-04-22T01:12:00Z,bitch,sansa,4
+2019-04-22T01:12:00Z,bitch,jaime,2
+2019-04-22T01:12:00Z,ass,jon snow,1
+2019-04-22T01:12:00Z,ass,daenerys,0
+2019-04-22T01:12:00Z,ass,cersei,1
+2019-04-22T01:12:00Z,ass,tyrion,2
+2019-04-22T01:12:00Z,ass,arya,23
+2019-04-22T01:12:00Z,ass,sansa,2
+2019-04-22T01:12:00Z,ass,jaime,1
+2019-04-22T01:12:00Z,dick,jon snow,6
+2019-04-22T01:12:00Z,dick,daenerys,0
+2019-04-22T01:12:00Z,dick,cersei,0
+2019-04-22T01:12:00Z,dick,tyrion,0
+2019-04-22T01:12:00Z,dick,arya,18
+2019-04-22T01:12:00Z,dick,sansa,0
+2019-04-22T01:12:00Z,dick,jaime,1
+2019-04-22T01:13:00Z,fuck,jon snow,1
+2019-04-22T01:13:00Z,fuck,daenerys,4
+2019-04-22T01:13:00Z,fuck,cersei,2
+2019-04-22T01:13:00Z,fuck,tyrion,4
+2019-04-22T01:13:00Z,fuck,arya,100
+2019-04-22T01:13:00Z,fuck,sansa,3
+2019-04-22T01:13:00Z,fuck,jaime,7
+2019-04-22T01:13:00Z,shit,jon snow,4
+2019-04-22T01:13:00Z,shit,daenerys,0
+2019-04-22T01:13:00Z,shit,cersei,1
+2019-04-22T01:13:00Z,shit,tyrion,6
+2019-04-22T01:13:00Z,shit,arya,35
+2019-04-22T01:13:00Z,shit,sansa,0
+2019-04-22T01:13:00Z,shit,jaime,14
+2019-04-22T01:13:00Z,bitch,jon snow,0
+2019-04-22T01:13:00Z,bitch,daenerys,1
+2019-04-22T01:13:00Z,bitch,cersei,0
+2019-04-22T01:13:00Z,bitch,tyrion,1
+2019-04-22T01:13:00Z,bitch,arya,99
+2019-04-22T01:13:00Z,bitch,sansa,2
+2019-04-22T01:13:00Z,bitch,jaime,1
+2019-04-22T01:13:00Z,ass,jon snow,0
+2019-04-22T01:13:00Z,ass,daenerys,1
+2019-04-22T01:13:00Z,ass,cersei,0
+2019-04-22T01:13:00Z,ass,tyrion,0
+2019-04-22T01:13:00Z,ass,arya,20
+2019-04-22T01:13:00Z,ass,sansa,0
+2019-04-22T01:13:00Z,ass,jaime,1
+2019-04-22T01:13:00Z,dick,jon snow,7
+2019-04-22T01:13:00Z,dick,daenerys,0
+2019-04-22T01:13:00Z,dick,cersei,0
+2019-04-22T01:13:00Z,dick,tyrion,0
+2019-04-22T01:13:00Z,dick,arya,23
+2019-04-22T01:13:00Z,dick,sansa,1
+2019-04-22T01:13:00Z,dick,jaime,1
+2019-04-22T01:14:00Z,fuck,jon snow,0
+2019-04-22T01:14:00Z,fuck,daenerys,1
+2019-04-22T01:14:00Z,fuck,cersei,1
+2019-04-22T01:14:00Z,fuck,tyrion,1
+2019-04-22T01:14:00Z,fuck,arya,56
+2019-04-22T01:14:00Z,fuck,sansa,1
+2019-04-22T01:14:00Z,fuck,jaime,6
+2019-04-22T01:14:00Z,shit,jon snow,3
+2019-04-22T01:14:00Z,shit,daenerys,2
+2019-04-22T01:14:00Z,shit,cersei,0
+2019-04-22T01:14:00Z,shit,tyrion,3
+2019-04-22T01:14:00Z,shit,arya,11
+2019-04-22T01:14:00Z,shit,sansa,1
+2019-04-22T01:14:00Z,shit,jaime,11
+2019-04-22T01:14:00Z,bitch,jon snow,0
+2019-04-22T01:14:00Z,bitch,daenerys,2
+2019-04-22T01:14:00Z,bitch,cersei,1
+2019-04-22T01:14:00Z,bitch,tyrion,2
+2019-04-22T01:14:00Z,bitch,arya,53
+2019-04-22T01:14:00Z,bitch,sansa,1
+2019-04-22T01:14:00Z,bitch,jaime,4
+2019-04-22T01:14:00Z,ass,jon snow,0
+2019-04-22T01:14:00Z,ass,daenerys,0
+2019-04-22T01:14:00Z,ass,cersei,0
+2019-04-22T01:14:00Z,ass,tyrion,2
+2019-04-22T01:14:00Z,ass,arya,13
+2019-04-22T01:14:00Z,ass,sansa,0
+2019-04-22T01:14:00Z,ass,jaime,6
+2019-04-22T01:14:00Z,dick,jon snow,5
+2019-04-22T01:14:00Z,dick,daenerys,0
+2019-04-22T01:14:00Z,dick,cersei,0
+2019-04-22T01:14:00Z,dick,tyrion,0
+2019-04-22T01:14:00Z,dick,arya,23
+2019-04-22T01:14:00Z,dick,sansa,0
+2019-04-22T01:14:00Z,dick,jaime,1
+2019-04-22T01:15:00Z,fuck,jon snow,1
+2019-04-22T01:15:00Z,fuck,daenerys,2
+2019-04-22T01:15:00Z,fuck,cersei,4
+2019-04-22T01:15:00Z,fuck,tyrion,2
+2019-04-22T01:15:00Z,fuck,arya,46
+2019-04-22T01:15:00Z,fuck,sansa,3
+2019-04-22T01:15:00Z,fuck,jaime,17
+2019-04-22T01:15:00Z,shit,jon snow,2
+2019-04-22T01:15:00Z,shit,daenerys,1
+2019-04-22T01:15:00Z,shit,cersei,0
+2019-04-22T01:15:00Z,shit,tyrion,6
+2019-04-22T01:15:00Z,shit,arya,11
+2019-04-22T01:15:00Z,shit,sansa,0
+2019-04-22T01:15:00Z,shit,jaime,6
+2019-04-22T01:15:00Z,bitch,jon snow,0
+2019-04-22T01:15:00Z,bitch,daenerys,4
+2019-04-22T01:15:00Z,bitch,cersei,2
+2019-04-22T01:15:00Z,bitch,tyrion,1
+2019-04-22T01:15:00Z,bitch,arya,33
+2019-04-22T01:15:00Z,bitch,sansa,2
+2019-04-22T01:15:00Z,bitch,jaime,5
+2019-04-22T01:15:00Z,ass,jon snow,0
+2019-04-22T01:15:00Z,ass,daenerys,0
+2019-04-22T01:15:00Z,ass,cersei,0
+2019-04-22T01:15:00Z,ass,tyrion,6
+2019-04-22T01:15:00Z,ass,arya,3
+2019-04-22T01:15:00Z,ass,sansa,0
+2019-04-22T01:15:00Z,ass,jaime,2
+2019-04-22T01:15:00Z,dick,jon snow,6
+2019-04-22T01:15:00Z,dick,daenerys,0
+2019-04-22T01:15:00Z,dick,cersei,0
+2019-04-22T01:15:00Z,dick,tyrion,1
+2019-04-22T01:15:00Z,dick,arya,19
+2019-04-22T01:15:00Z,dick,sansa,0
+2019-04-22T01:15:00Z,dick,jaime,2
+2019-04-22T01:16:00Z,fuck,jon snow,0
+2019-04-22T01:16:00Z,fuck,daenerys,3
+2019-04-22T01:16:00Z,fuck,cersei,7
+2019-04-22T01:16:00Z,fuck,tyrion,4
+2019-04-22T01:16:00Z,fuck,arya,33
+2019-04-22T01:16:00Z,fuck,sansa,3
+2019-04-22T01:16:00Z,fuck,jaime,12
+2019-04-22T01:16:00Z,shit,jon snow,2
+2019-04-22T01:16:00Z,shit,daenerys,2
+2019-04-22T01:16:00Z,shit,cersei,6
+2019-04-22T01:16:00Z,shit,tyrion,3
+2019-04-22T01:16:00Z,shit,arya,9
+2019-04-22T01:16:00Z,shit,sansa,1
+2019-04-22T01:16:00Z,shit,jaime,7
+2019-04-22T01:16:00Z,bitch,jon snow,1
+2019-04-22T01:16:00Z,bitch,daenerys,2
+2019-04-22T01:16:00Z,bitch,cersei,2
+2019-04-22T01:16:00Z,bitch,tyrion,1
+2019-04-22T01:16:00Z,bitch,arya,29
+2019-04-22T01:16:00Z,bitch,sansa,1
+2019-04-22T01:16:00Z,bitch,jaime,3
+2019-04-22T01:16:00Z,ass,jon snow,0
+2019-04-22T01:16:00Z,ass,daenerys,0
+2019-04-22T01:16:00Z,ass,cersei,0
+2019-04-22T01:16:00Z,ass,tyrion,0
+2019-04-22T01:16:00Z,ass,arya,2
+2019-04-22T01:16:00Z,ass,sansa,0
+2019-04-22T01:16:00Z,ass,jaime,4
+2019-04-22T01:16:00Z,dick,jon snow,7
+2019-04-22T01:16:00Z,dick,daenerys,0
+2019-04-22T01:16:00Z,dick,cersei,0
+2019-04-22T01:16:00Z,dick,tyrion,0
+2019-04-22T01:16:00Z,dick,arya,11
+2019-04-22T01:16:00Z,dick,sansa,0
+2019-04-22T01:16:00Z,dick,jaime,1
+2019-04-22T01:17:00Z,fuck,jon snow,1
+2019-04-22T01:17:00Z,fuck,daenerys,3
+2019-04-22T01:17:00Z,fuck,cersei,7
+2019-04-22T01:17:00Z,fuck,tyrion,3
+2019-04-22T01:17:00Z,fuck,arya,23
+2019-04-22T01:17:00Z,fuck,sansa,3
+2019-04-22T01:17:00Z,fuck,jaime,25
+2019-04-22T01:17:00Z,shit,jon snow,1
+2019-04-22T01:17:00Z,shit,daenerys,3
+2019-04-22T01:17:00Z,shit,cersei,5
+2019-04-22T01:17:00Z,shit,tyrion,6
+2019-04-22T01:17:00Z,shit,arya,3
+2019-04-22T01:17:00Z,shit,sansa,3
+2019-04-22T01:17:00Z,shit,jaime,4
+2019-04-22T01:17:00Z,bitch,jon snow,0
+2019-04-22T01:17:00Z,bitch,daenerys,2
+2019-04-22T01:17:00Z,bitch,cersei,2
+2019-04-22T01:17:00Z,bitch,tyrion,6
+2019-04-22T01:17:00Z,bitch,arya,8
+2019-04-22T01:17:00Z,bitch,sansa,2
+2019-04-22T01:17:00Z,bitch,jaime,4
+2019-04-22T01:17:00Z,ass,jon snow,0
+2019-04-22T01:17:00Z,ass,daenerys,0
+2019-04-22T01:17:00Z,ass,cersei,1
+2019-04-22T01:17:00Z,ass,tyrion,2
+2019-04-22T01:17:00Z,ass,arya,0
+2019-04-22T01:17:00Z,ass,sansa,0
+2019-04-22T01:17:00Z,ass,jaime,9
+2019-04-22T01:17:00Z,dick,jon snow,4
+2019-04-22T01:17:00Z,dick,daenerys,0
+2019-04-22T01:17:00Z,dick,cersei,0
+2019-04-22T01:17:00Z,dick,tyrion,0
+2019-04-22T01:17:00Z,dick,arya,9
+2019-04-22T01:17:00Z,dick,sansa,2
+2019-04-22T01:17:00Z,dick,jaime,3
+2019-04-22T01:18:00Z,fuck,jon snow,0
+2019-04-22T01:18:00Z,fuck,daenerys,4
+2019-04-22T01:18:00Z,fuck,cersei,3
+2019-04-22T01:18:00Z,fuck,tyrion,5
+2019-04-22T01:18:00Z,fuck,arya,25
+2019-04-22T01:18:00Z,fuck,sansa,3
+2019-04-22T01:18:00Z,fuck,jaime,40
+2019-04-22T01:18:00Z,shit,jon snow,0
+2019-04-22T01:18:00Z,shit,daenerys,0
+2019-04-22T01:18:00Z,shit,cersei,9
+2019-04-22T01:18:00Z,shit,tyrion,9
+2019-04-22T01:18:00Z,shit,arya,3
+2019-04-22T01:18:00Z,shit,sansa,6
+2019-04-22T01:18:00Z,shit,jaime,9
+2019-04-22T01:18:00Z,bitch,jon snow,0
+2019-04-22T01:18:00Z,bitch,daenerys,1
+2019-04-22T01:18:00Z,bitch,cersei,0
+2019-04-22T01:18:00Z,bitch,tyrion,2
+2019-04-22T01:18:00Z,bitch,arya,15
+2019-04-22T01:18:00Z,bitch,sansa,9
+2019-04-22T01:18:00Z,bitch,jaime,11
+2019-04-22T01:18:00Z,ass,jon snow,0
+2019-04-22T01:18:00Z,ass,daenerys,0
+2019-04-22T01:18:00Z,ass,cersei,2
+2019-04-22T01:18:00Z,ass,tyrion,1
+2019-04-22T01:18:00Z,ass,arya,2
+2019-04-22T01:18:00Z,ass,sansa,1
+2019-04-22T01:18:00Z,ass,jaime,6
+2019-04-22T01:18:00Z,dick,jon snow,6
+2019-04-22T01:18:00Z,dick,daenerys,0
+2019-04-22T01:18:00Z,dick,cersei,2
+2019-04-22T01:18:00Z,dick,tyrion,0
+2019-04-22T01:18:00Z,dick,arya,4
+2019-04-22T01:18:00Z,dick,sansa,0
+2019-04-22T01:18:00Z,dick,jaime,3
+2019-04-22T01:19:00Z,fuck,jon snow,0
+2019-04-22T01:19:00Z,fuck,daenerys,1
+2019-04-22T01:19:00Z,fuck,cersei,3
+2019-04-22T01:19:00Z,fuck,tyrion,4
+2019-04-22T01:19:00Z,fuck,arya,30
+2019-04-22T01:19:00Z,fuck,sansa,6
+2019-04-22T01:19:00Z,fuck,jaime,46
+2019-04-22T01:19:00Z,shit,jon snow,1
+2019-04-22T01:19:00Z,shit,daenerys,3
+2019-04-22T01:19:00Z,shit,cersei,3
+2019-04-22T01:19:00Z,shit,tyrion,7
+2019-04-22T01:19:00Z,shit,arya,2
+2019-04-22T01:19:00Z,shit,sansa,6
+2019-04-22T01:19:00Z,shit,jaime,9
+2019-04-22T01:19:00Z,bitch,jon snow,0
+2019-04-22T01:19:00Z,bitch,daenerys,1
+2019-04-22T01:19:00Z,bitch,cersei,1
+2019-04-22T01:19:00Z,bitch,tyrion,1
+2019-04-22T01:19:00Z,bitch,arya,11
+2019-04-22T01:19:00Z,bitch,sansa,8
+2019-04-22T01:19:00Z,bitch,jaime,10
+2019-04-22T01:19:00Z,ass,jon snow,0
+2019-04-22T01:19:00Z,ass,daenerys,1
+2019-04-22T01:19:00Z,ass,cersei,1
+2019-04-22T01:19:00Z,ass,tyrion,0
+2019-04-22T01:19:00Z,ass,arya,3
+2019-04-22T01:19:00Z,ass,sansa,1
+2019-04-22T01:19:00Z,ass,jaime,2
+2019-04-22T01:19:00Z,dick,jon snow,6
+2019-04-22T01:19:00Z,dick,daenerys,0
+2019-04-22T01:19:00Z,dick,cersei,0
+2019-04-22T01:19:00Z,dick,tyrion,0
+2019-04-22T01:19:00Z,dick,arya,2
+2019-04-22T01:19:00Z,dick,sansa,0
+2019-04-22T01:19:00Z,dick,jaime,1
+2019-04-22T01:20:00Z,fuck,jon snow,5
+2019-04-22T01:20:00Z,fuck,daenerys,10
+2019-04-22T01:20:00Z,fuck,cersei,3
+2019-04-22T01:20:00Z,fuck,tyrion,3
+2019-04-22T01:20:00Z,fuck,arya,21
+2019-04-22T01:20:00Z,fuck,sansa,22
+2019-04-22T01:20:00Z,fuck,jaime,45
+2019-04-22T01:20:00Z,shit,jon snow,3
+2019-04-22T01:20:00Z,shit,daenerys,3
+2019-04-22T01:20:00Z,shit,cersei,1
+2019-04-22T01:20:00Z,shit,tyrion,6
+2019-04-22T01:20:00Z,shit,arya,6
+2019-04-22T01:20:00Z,shit,sansa,9
+2019-04-22T01:20:00Z,shit,jaime,5
+2019-04-22T01:20:00Z,bitch,jon snow,0
+2019-04-22T01:20:00Z,bitch,daenerys,4
+2019-04-22T01:20:00Z,bitch,cersei,0
+2019-04-22T01:20:00Z,bitch,tyrion,2
+2019-04-22T01:20:00Z,bitch,arya,7
+2019-04-22T01:20:00Z,bitch,sansa,8
+2019-04-22T01:20:00Z,bitch,jaime,5
+2019-04-22T01:20:00Z,ass,jon snow,0
+2019-04-22T01:20:00Z,ass,daenerys,1
+2019-04-22T01:20:00Z,ass,cersei,1
+2019-04-22T01:20:00Z,ass,tyrion,0
+2019-04-22T01:20:00Z,ass,arya,2
+2019-04-22T01:20:00Z,ass,sansa,2
+2019-04-22T01:20:00Z,ass,jaime,3
+2019-04-22T01:20:00Z,dick,jon snow,10
+2019-04-22T01:20:00Z,dick,daenerys,0
+2019-04-22T01:20:00Z,dick,cersei,0
+2019-04-22T01:20:00Z,dick,tyrion,0
+2019-04-22T01:20:00Z,dick,arya,4
+2019-04-22T01:20:00Z,dick,sansa,5
+2019-04-22T01:20:00Z,dick,jaime,0
+2019-04-22T01:21:00Z,fuck,jon snow,1
+2019-04-22T01:21:00Z,fuck,daenerys,8
+2019-04-22T01:21:00Z,fuck,cersei,2
+2019-04-22T01:21:00Z,fuck,tyrion,3
+2019-04-22T01:21:00Z,fuck,arya,20
+2019-04-22T01:21:00Z,fuck,sansa,29
+2019-04-22T01:21:00Z,fuck,jaime,29
+2019-04-22T01:21:00Z,shit,jon snow,1
+2019-04-22T01:21:00Z,shit,daenerys,7
+2019-04-22T01:21:00Z,shit,cersei,3
+2019-04-22T01:21:00Z,shit,tyrion,7
+2019-04-22T01:21:00Z,shit,arya,3
+2019-04-22T01:21:00Z,shit,sansa,28
+2019-04-22T01:21:00Z,shit,jaime,6
+2019-04-22T01:21:00Z,bitch,jon snow,0
+2019-04-22T01:21:00Z,bitch,daenerys,3
+2019-04-22T01:21:00Z,bitch,cersei,0
+2019-04-22T01:21:00Z,bitch,tyrion,2
+2019-04-22T01:21:00Z,bitch,arya,5
+2019-04-22T01:21:00Z,bitch,sansa,27
+2019-04-22T01:21:00Z,bitch,jaime,6
+2019-04-22T01:21:00Z,ass,jon snow,0
+2019-04-22T01:21:00Z,ass,daenerys,1
+2019-04-22T01:21:00Z,ass,cersei,2
+2019-04-22T01:21:00Z,ass,tyrion,0
+2019-04-22T01:21:00Z,ass,arya,1
+2019-04-22T01:21:00Z,ass,sansa,10
+2019-04-22T01:21:00Z,ass,jaime,3
+2019-04-22T01:21:00Z,dick,jon snow,4
+2019-04-22T01:21:00Z,dick,daenerys,1
+2019-04-22T01:21:00Z,dick,cersei,1
+2019-04-22T01:21:00Z,dick,tyrion,0
+2019-04-22T01:21:00Z,dick,arya,3
+2019-04-22T01:21:00Z,dick,sansa,1
+2019-04-22T01:21:00Z,dick,jaime,2
+2019-04-22T01:22:00Z,fuck,jon snow,3
+2019-04-22T01:22:00Z,fuck,daenerys,8
+2019-04-22T01:22:00Z,fuck,cersei,3
+2019-04-22T01:22:00Z,fuck,tyrion,1
+2019-04-22T01:22:00Z,fuck,arya,12
+2019-04-22T01:22:00Z,fuck,sansa,47
+2019-04-22T01:22:00Z,fuck,jaime,32
+2019-04-22T01:22:00Z,shit,jon snow,1
+2019-04-22T01:22:00Z,shit,daenerys,11
+2019-04-22T01:22:00Z,shit,cersei,1
+2019-04-22T01:22:00Z,shit,tyrion,3
+2019-04-22T01:22:00Z,shit,arya,2
+2019-04-22T01:22:00Z,shit,sansa,39
+2019-04-22T01:22:00Z,shit,jaime,4
+2019-04-22T01:22:00Z,bitch,jon snow,0
+2019-04-22T01:22:00Z,bitch,daenerys,7
+2019-04-22T01:22:00Z,bitch,cersei,1
+2019-04-22T01:22:00Z,bitch,tyrion,1
+2019-04-22T01:22:00Z,bitch,arya,4
+2019-04-22T01:22:00Z,bitch,sansa,30
+2019-04-22T01:22:00Z,bitch,jaime,5
+2019-04-22T01:22:00Z,ass,jon snow,2
+2019-04-22T01:22:00Z,ass,daenerys,6
+2019-04-22T01:22:00Z,ass,cersei,2
+2019-04-22T01:22:00Z,ass,tyrion,1
+2019-04-22T01:22:00Z,ass,arya,1
+2019-04-22T01:22:00Z,ass,sansa,11
+2019-04-22T01:22:00Z,ass,jaime,1
+2019-04-22T01:22:00Z,dick,jon snow,5
+2019-04-22T01:22:00Z,dick,daenerys,0
+2019-04-22T01:22:00Z,dick,cersei,0
+2019-04-22T01:22:00Z,dick,tyrion,0
+2019-04-22T01:22:00Z,dick,arya,3
+2019-04-22T01:22:00Z,dick,sansa,2
+2019-04-22T01:22:00Z,dick,jaime,1
+2019-04-22T01:23:00Z,fuck,jon snow,3
+2019-04-22T01:23:00Z,fuck,daenerys,5
+2019-04-22T01:23:00Z,fuck,cersei,1
+2019-04-22T01:23:00Z,fuck,tyrion,5
+2019-04-22T01:23:00Z,fuck,arya,13
+2019-04-22T01:23:00Z,fuck,sansa,40
+2019-04-22T01:23:00Z,fuck,jaime,34
+2019-04-22T01:23:00Z,shit,jon snow,1
+2019-04-22T01:23:00Z,shit,daenerys,9
+2019-04-22T01:23:00Z,shit,cersei,1
+2019-04-22T01:23:00Z,shit,tyrion,1
+2019-04-22T01:23:00Z,shit,arya,3
+2019-04-22T01:23:00Z,shit,sansa,43
+2019-04-22T01:23:00Z,shit,jaime,1
+2019-04-22T01:23:00Z,bitch,jon snow,2
+2019-04-22T01:23:00Z,bitch,daenerys,4
+2019-04-22T01:23:00Z,bitch,cersei,1
+2019-04-22T01:23:00Z,bitch,tyrion,4
+2019-04-22T01:23:00Z,bitch,arya,7
+2019-04-22T01:23:00Z,bitch,sansa,35
+2019-04-22T01:23:00Z,bitch,jaime,2
+2019-04-22T01:23:00Z,ass,jon snow,1
+2019-04-22T01:23:00Z,ass,daenerys,7
+2019-04-22T01:23:00Z,ass,cersei,0
+2019-04-22T01:23:00Z,ass,tyrion,1
+2019-04-22T01:23:00Z,ass,arya,0
+2019-04-22T01:23:00Z,ass,sansa,17
+2019-04-22T01:23:00Z,ass,jaime,1
+2019-04-22T01:23:00Z,dick,jon snow,6
+2019-04-22T01:23:00Z,dick,daenerys,2
+2019-04-22T01:23:00Z,dick,cersei,0
+2019-04-22T01:23:00Z,dick,tyrion,0
+2019-04-22T01:23:00Z,dick,arya,3
+2019-04-22T01:23:00Z,dick,sansa,4
+2019-04-22T01:23:00Z,dick,jaime,0
+2019-04-22T01:24:00Z,fuck,jon snow,4
+2019-04-22T01:24:00Z,fuck,daenerys,7
+2019-04-22T01:24:00Z,fuck,cersei,1
+2019-04-22T01:24:00Z,fuck,tyrion,0
+2019-04-22T01:24:00Z,fuck,arya,5
+2019-04-22T01:24:00Z,fuck,sansa,43
+2019-04-22T01:24:00Z,fuck,jaime,15
+2019-04-22T01:24:00Z,shit,jon snow,1
+2019-04-22T01:24:00Z,shit,daenerys,7
+2019-04-22T01:24:00Z,shit,cersei,1
+2019-04-22T01:24:00Z,shit,tyrion,2
+2019-04-22T01:24:00Z,shit,arya,1
+2019-04-22T01:24:00Z,shit,sansa,44
+2019-04-22T01:24:00Z,shit,jaime,1
+2019-04-22T01:24:00Z,bitch,jon snow,8
+2019-04-22T01:24:00Z,bitch,daenerys,8
+2019-04-22T01:24:00Z,bitch,cersei,0
+2019-04-22T01:24:00Z,bitch,tyrion,1
+2019-04-22T01:24:00Z,bitch,arya,3
+2019-04-22T01:24:00Z,bitch,sansa,49
+2019-04-22T01:24:00Z,bitch,jaime,1
+2019-04-22T01:24:00Z,ass,jon snow,0
+2019-04-22T01:24:00Z,ass,daenerys,3
+2019-04-22T01:24:00Z,ass,cersei,1
+2019-04-22T01:24:00Z,ass,tyrion,1
+2019-04-22T01:24:00Z,ass,arya,0
+2019-04-22T01:24:00Z,ass,sansa,17
+2019-04-22T01:24:00Z,ass,jaime,0
+2019-04-22T01:24:00Z,dick,jon snow,3
+2019-04-22T01:24:00Z,dick,daenerys,2
+2019-04-22T01:24:00Z,dick,cersei,0
+2019-04-22T01:24:00Z,dick,tyrion,0
+2019-04-22T01:24:00Z,dick,arya,2
+2019-04-22T01:24:00Z,dick,sansa,4
+2019-04-22T01:24:00Z,dick,jaime,1
+2019-04-22T01:25:00Z,fuck,jon snow,2
+2019-04-22T01:25:00Z,fuck,daenerys,7
+2019-04-22T01:25:00Z,fuck,cersei,2
+2019-04-22T01:25:00Z,fuck,tyrion,1
+2019-04-22T01:25:00Z,fuck,arya,6
+2019-04-22T01:25:00Z,fuck,sansa,46
+2019-04-22T01:25:00Z,fuck,jaime,17
+2019-04-22T01:25:00Z,shit,jon snow,2
+2019-04-22T01:25:00Z,shit,daenerys,11
+2019-04-22T01:25:00Z,shit,cersei,0
+2019-04-22T01:25:00Z,shit,tyrion,4
+2019-04-22T01:25:00Z,shit,arya,2
+2019-04-22T01:25:00Z,shit,sansa,52
+2019-04-22T01:25:00Z,shit,jaime,2
+2019-04-22T01:25:00Z,bitch,jon snow,3
+2019-04-22T01:25:00Z,bitch,daenerys,4
+2019-04-22T01:25:00Z,bitch,cersei,2
+2019-04-22T01:25:00Z,bitch,tyrion,1
+2019-04-22T01:25:00Z,bitch,arya,4
+2019-04-22T01:25:00Z,bitch,sansa,57
+2019-04-22T01:25:00Z,bitch,jaime,5
+2019-04-22T01:25:00Z,ass,jon snow,0
+2019-04-22T01:25:00Z,ass,daenerys,0
+2019-04-22T01:25:00Z,ass,cersei,0
+2019-04-22T01:25:00Z,ass,tyrion,0
+2019-04-22T01:25:00Z,ass,arya,0
+2019-04-22T01:25:00Z,ass,sansa,12
+2019-04-22T01:25:00Z,ass,jaime,3
+2019-04-22T01:25:00Z,dick,jon snow,4
+2019-04-22T01:25:00Z,dick,daenerys,0
+2019-04-22T01:25:00Z,dick,cersei,2
+2019-04-22T01:25:00Z,dick,tyrion,0
+2019-04-22T01:25:00Z,dick,arya,4
+2019-04-22T01:25:00Z,dick,sansa,6
+2019-04-22T01:25:00Z,dick,jaime,0
+2019-04-22T01:26:00Z,fuck,jon snow,4
+2019-04-22T01:26:00Z,fuck,daenerys,6
+2019-04-22T01:26:00Z,fuck,cersei,1
+2019-04-22T01:26:00Z,fuck,tyrion,0
+2019-04-22T01:26:00Z,fuck,arya,14
+2019-04-22T01:26:00Z,fuck,sansa,45
+2019-04-22T01:26:00Z,fuck,jaime,7
+2019-04-22T01:26:00Z,shit,jon snow,1
+2019-04-22T01:26:00Z,shit,daenerys,9
+2019-04-22T01:26:00Z,shit,cersei,0
+2019-04-22T01:26:00Z,shit,tyrion,1
+2019-04-22T01:26:00Z,shit,arya,3
+2019-04-22T01:26:00Z,shit,sansa,25
+2019-04-22T01:26:00Z,shit,jaime,1
+2019-04-22T01:26:00Z,bitch,jon snow,5
+2019-04-22T01:26:00Z,bitch,daenerys,2
+2019-04-22T01:26:00Z,bitch,cersei,0
+2019-04-22T01:26:00Z,bitch,tyrion,1
+2019-04-22T01:26:00Z,bitch,arya,3
+2019-04-22T01:26:00Z,bitch,sansa,25
+2019-04-22T01:26:00Z,bitch,jaime,1
+2019-04-22T01:26:00Z,ass,jon snow,0
+2019-04-22T01:26:00Z,ass,daenerys,4
+2019-04-22T01:26:00Z,ass,cersei,0
+2019-04-22T01:26:00Z,ass,tyrion,1
+2019-04-22T01:26:00Z,ass,arya,0
+2019-04-22T01:26:00Z,ass,sansa,7
+2019-04-22T01:26:00Z,ass,jaime,0
+2019-04-22T01:26:00Z,dick,jon snow,4
+2019-04-22T01:26:00Z,dick,daenerys,0
+2019-04-22T01:26:00Z,dick,cersei,0
+2019-04-22T01:26:00Z,dick,tyrion,0
+2019-04-22T01:26:00Z,dick,arya,5
+2019-04-22T01:26:00Z,dick,sansa,2
+2019-04-22T01:26:00Z,dick,jaime,0
+2019-04-22T01:27:00Z,fuck,jon snow,4
+2019-04-22T01:27:00Z,fuck,daenerys,9
+2019-04-22T01:27:00Z,fuck,cersei,2
+2019-04-22T01:27:00Z,fuck,tyrion,1
+2019-04-22T01:27:00Z,fuck,arya,11
+2019-04-22T01:27:00Z,fuck,sansa,35
+2019-04-22T01:27:00Z,fuck,jaime,22
+2019-04-22T01:27:00Z,shit,jon snow,1
+2019-04-22T01:27:00Z,shit,daenerys,6
+2019-04-22T01:27:00Z,shit,cersei,0
+2019-04-22T01:27:00Z,shit,tyrion,0
+2019-04-22T01:27:00Z,shit,arya,5
+2019-04-22T01:27:00Z,shit,sansa,33
+2019-04-22T01:27:00Z,shit,jaime,1
+2019-04-22T01:27:00Z,bitch,jon snow,7
+2019-04-22T01:27:00Z,bitch,daenerys,5
+2019-04-22T01:27:00Z,bitch,cersei,0
+2019-04-22T01:27:00Z,bitch,tyrion,0
+2019-04-22T01:27:00Z,bitch,arya,5
+2019-04-22T01:27:00Z,bitch,sansa,38
+2019-04-22T01:27:00Z,bitch,jaime,3
+2019-04-22T01:27:00Z,ass,jon snow,0
+2019-04-22T01:27:00Z,ass,daenerys,4
+2019-04-22T01:27:00Z,ass,cersei,0
+2019-04-22T01:27:00Z,ass,tyrion,1
+2019-04-22T01:27:00Z,ass,arya,2
+2019-04-22T01:27:00Z,ass,sansa,5
+2019-04-22T01:27:00Z,ass,jaime,2
+2019-04-22T01:27:00Z,dick,jon snow,0
+2019-04-22T01:27:00Z,dick,daenerys,0
+2019-04-22T01:27:00Z,dick,cersei,0
+2019-04-22T01:27:00Z,dick,tyrion,0
+2019-04-22T01:27:00Z,dick,arya,3
+2019-04-22T01:27:00Z,dick,sansa,3
+2019-04-22T01:27:00Z,dick,jaime,0
+2019-04-22T01:28:00Z,fuck,jon snow,2
+2019-04-22T01:28:00Z,fuck,daenerys,3
+2019-04-22T01:28:00Z,fuck,cersei,0
+2019-04-22T01:28:00Z,fuck,tyrion,2
+2019-04-22T01:28:00Z,fuck,arya,14
+2019-04-22T01:28:00Z,fuck,sansa,30
+2019-04-22T01:28:00Z,fuck,jaime,16
+2019-04-22T01:28:00Z,shit,jon snow,1
+2019-04-22T01:28:00Z,shit,daenerys,3
+2019-04-22T01:28:00Z,shit,cersei,4
+2019-04-22T01:28:00Z,shit,tyrion,0
+2019-04-22T01:28:00Z,shit,arya,3
+2019-04-22T01:28:00Z,shit,sansa,30
+2019-04-22T01:28:00Z,shit,jaime,1
+2019-04-22T01:28:00Z,bitch,jon snow,2
+2019-04-22T01:28:00Z,bitch,daenerys,4
+2019-04-22T01:28:00Z,bitch,cersei,0
+2019-04-22T01:28:00Z,bitch,tyrion,0
+2019-04-22T01:28:00Z,bitch,arya,1
+2019-04-22T01:28:00Z,bitch,sansa,23
+2019-04-22T01:28:00Z,bitch,jaime,2
+2019-04-22T01:28:00Z,ass,jon snow,1
+2019-04-22T01:28:00Z,ass,daenerys,1
+2019-04-22T01:28:00Z,ass,cersei,2
+2019-04-22T01:28:00Z,ass,tyrion,0
+2019-04-22T01:28:00Z,ass,arya,2
+2019-04-22T01:28:00Z,ass,sansa,7
+2019-04-22T01:28:00Z,ass,jaime,1
+2019-04-22T01:28:00Z,dick,jon snow,3
+2019-04-22T01:28:00Z,dick,daenerys,2
+2019-04-22T01:28:00Z,dick,cersei,0
+2019-04-22T01:28:00Z,dick,tyrion,0
+2019-04-22T01:28:00Z,dick,arya,4
+2019-04-22T01:28:00Z,dick,sansa,1
+2019-04-22T01:28:00Z,dick,jaime,1
+2019-04-22T01:29:00Z,fuck,jon snow,1
+2019-04-22T01:29:00Z,fuck,daenerys,3
+2019-04-22T01:29:00Z,fuck,cersei,0
+2019-04-22T01:29:00Z,fuck,tyrion,3
+2019-04-22T01:29:00Z,fuck,arya,9
+2019-04-22T01:29:00Z,fuck,sansa,29
+2019-04-22T01:29:00Z,fuck,jaime,17
+2019-04-22T01:29:00Z,shit,jon snow,0
+2019-04-22T01:29:00Z,shit,daenerys,0
+2019-04-22T01:29:00Z,shit,cersei,1
+2019-04-22T01:29:00Z,shit,tyrion,0
+2019-04-22T01:29:00Z,shit,arya,1
+2019-04-22T01:29:00Z,shit,sansa,12
+2019-04-22T01:29:00Z,shit,jaime,1
+2019-04-22T01:29:00Z,bitch,jon snow,3
+2019-04-22T01:29:00Z,bitch,daenerys,1
+2019-04-22T01:29:00Z,bitch,cersei,0
+2019-04-22T01:29:00Z,bitch,tyrion,0
+2019-04-22T01:29:00Z,bitch,arya,3
+2019-04-22T01:29:00Z,bitch,sansa,30
+2019-04-22T01:29:00Z,bitch,jaime,2
+2019-04-22T01:29:00Z,ass,jon snow,0
+2019-04-22T01:29:00Z,ass,daenerys,1
+2019-04-22T01:29:00Z,ass,cersei,2
+2019-04-22T01:29:00Z,ass,tyrion,2
+2019-04-22T01:29:00Z,ass,arya,1
+2019-04-22T01:29:00Z,ass,sansa,3
+2019-04-22T01:29:00Z,ass,jaime,1
+2019-04-22T01:29:00Z,dick,jon snow,5
+2019-04-22T01:29:00Z,dick,daenerys,3
+2019-04-22T01:29:00Z,dick,cersei,0
+2019-04-22T01:29:00Z,dick,tyrion,0
+2019-04-22T01:29:00Z,dick,arya,0
+2019-04-22T01:29:00Z,dick,sansa,2
+2019-04-22T01:29:00Z,dick,jaime,1
+2019-04-22T01:30:00Z,fuck,jon snow,1
+2019-04-22T01:30:00Z,fuck,daenerys,1
+2019-04-22T01:30:00Z,fuck,cersei,0
+2019-04-22T01:30:00Z,fuck,tyrion,2
+2019-04-22T01:30:00Z,fuck,arya,7
+2019-04-22T01:30:00Z,fuck,sansa,18
+2019-04-22T01:30:00Z,fuck,jaime,9
+2019-04-22T01:30:00Z,shit,jon snow,0
+2019-04-22T01:30:00Z,shit,daenerys,1
+2019-04-22T01:30:00Z,shit,cersei,0
+2019-04-22T01:30:00Z,shit,tyrion,0
+2019-04-22T01:30:00Z,shit,arya,1
+2019-04-22T01:30:00Z,shit,sansa,7
+2019-04-22T01:30:00Z,shit,jaime,0
+2019-04-22T01:30:00Z,bitch,jon snow,1
+2019-04-22T01:30:00Z,bitch,daenerys,5
+2019-04-22T01:30:00Z,bitch,cersei,0
+2019-04-22T01:30:00Z,bitch,tyrion,1
+2019-04-22T01:30:00Z,bitch,arya,2
+2019-04-22T01:30:00Z,bitch,sansa,24
+2019-04-22T01:30:00Z,bitch,jaime,2
+2019-04-22T01:30:00Z,ass,jon snow,0
+2019-04-22T01:30:00Z,ass,daenerys,1
+2019-04-22T01:30:00Z,ass,cersei,4
+2019-04-22T01:30:00Z,ass,tyrion,2
+2019-04-22T01:30:00Z,ass,arya,0
+2019-04-22T01:30:00Z,ass,sansa,2
+2019-04-22T01:30:00Z,ass,jaime,0
+2019-04-22T01:30:00Z,dick,jon snow,5
+2019-04-22T01:30:00Z,dick,daenerys,5
+2019-04-22T01:30:00Z,dick,cersei,0
+2019-04-22T01:30:00Z,dick,tyrion,0
+2019-04-22T01:30:00Z,dick,arya,0
+2019-04-22T01:30:00Z,dick,sansa,1
+2019-04-22T01:30:00Z,dick,jaime,0
+2019-04-22T01:31:00Z,fuck,jon snow,2
+2019-04-22T01:31:00Z,fuck,daenerys,2
+2019-04-22T01:31:00Z,fuck,cersei,0
+2019-04-22T01:31:00Z,fuck,tyrion,5
+2019-04-22T01:31:00Z,fuck,arya,8
+2019-04-22T01:31:00Z,fuck,sansa,21
+2019-04-22T01:31:00Z,fuck,jaime,11
+2019-04-22T01:31:00Z,shit,jon snow,0
+2019-04-22T01:31:00Z,shit,daenerys,1
+2019-04-22T01:31:00Z,shit,cersei,2
+2019-04-22T01:31:00Z,shit,tyrion,0
+2019-04-22T01:31:00Z,shit,arya,0
+2019-04-22T01:31:00Z,shit,sansa,8
+2019-04-22T01:31:00Z,shit,jaime,0
+2019-04-22T01:31:00Z,bitch,jon snow,1
+2019-04-22T01:31:00Z,bitch,daenerys,2
+2019-04-22T01:31:00Z,bitch,cersei,0
+2019-04-22T01:31:00Z,bitch,tyrion,0
+2019-04-22T01:31:00Z,bitch,arya,4
+2019-04-22T01:31:00Z,bitch,sansa,22
+2019-04-22T01:31:00Z,bitch,jaime,2
+2019-04-22T01:31:00Z,ass,jon snow,0
+2019-04-22T01:31:00Z,ass,daenerys,3
+2019-04-22T01:31:00Z,ass,cersei,0
+2019-04-22T01:31:00Z,ass,tyrion,0
+2019-04-22T01:31:00Z,ass,arya,0
+2019-04-22T01:31:00Z,ass,sansa,4
+2019-04-22T01:31:00Z,ass,jaime,1
+2019-04-22T01:31:00Z,dick,jon snow,9
+2019-04-22T01:31:00Z,dick,daenerys,5
+2019-04-22T01:31:00Z,dick,cersei,0
+2019-04-22T01:31:00Z,dick,tyrion,0
+2019-04-22T01:31:00Z,dick,arya,2
+2019-04-22T01:31:00Z,dick,sansa,1
+2019-04-22T01:31:00Z,dick,jaime,0
+2019-04-22T01:32:00Z,fuck,jon snow,2
+2019-04-22T01:32:00Z,fuck,daenerys,1
+2019-04-22T01:32:00Z,fuck,cersei,2
+2019-04-22T01:32:00Z,fuck,tyrion,9
+2019-04-22T01:32:00Z,fuck,arya,9
+2019-04-22T01:32:00Z,fuck,sansa,9
+2019-04-22T01:32:00Z,fuck,jaime,16
+2019-04-22T01:32:00Z,shit,jon snow,1
+2019-04-22T01:32:00Z,shit,daenerys,3
+2019-04-22T01:32:00Z,shit,cersei,0
+2019-04-22T01:32:00Z,shit,tyrion,2
+2019-04-22T01:32:00Z,shit,arya,2
+2019-04-22T01:32:00Z,shit,sansa,15
+2019-04-22T01:32:00Z,shit,jaime,1
+2019-04-22T01:32:00Z,bitch,jon snow,0
+2019-04-22T01:32:00Z,bitch,daenerys,3
+2019-04-22T01:32:00Z,bitch,cersei,0
+2019-04-22T01:32:00Z,bitch,tyrion,3
+2019-04-22T01:32:00Z,bitch,arya,3
+2019-04-22T01:32:00Z,bitch,sansa,17
+2019-04-22T01:32:00Z,bitch,jaime,1
+2019-04-22T01:32:00Z,ass,jon snow,0
+2019-04-22T01:32:00Z,ass,daenerys,6
+2019-04-22T01:32:00Z,ass,cersei,0
+2019-04-22T01:32:00Z,ass,tyrion,1
+2019-04-22T01:32:00Z,ass,arya,1
+2019-04-22T01:32:00Z,ass,sansa,0
+2019-04-22T01:32:00Z,ass,jaime,2
+2019-04-22T01:32:00Z,dick,jon snow,11
+2019-04-22T01:32:00Z,dick,daenerys,8
+2019-04-22T01:32:00Z,dick,cersei,0
+2019-04-22T01:32:00Z,dick,tyrion,0
+2019-04-22T01:32:00Z,dick,arya,4
+2019-04-22T01:32:00Z,dick,sansa,0
+2019-04-22T01:32:00Z,dick,jaime,0
+2019-04-22T01:33:00Z,fuck,jon snow,4
+2019-04-22T01:33:00Z,fuck,daenerys,3
+2019-04-22T01:33:00Z,fuck,cersei,4
+2019-04-22T01:33:00Z,fuck,tyrion,7
+2019-04-22T01:33:00Z,fuck,arya,11
+2019-04-22T01:33:00Z,fuck,sansa,7
+2019-04-22T01:33:00Z,fuck,jaime,11
+2019-04-22T01:33:00Z,shit,jon snow,0
+2019-04-22T01:33:00Z,shit,daenerys,2
+2019-04-22T01:33:00Z,shit,cersei,0
+2019-04-22T01:33:00Z,shit,tyrion,1
+2019-04-22T01:33:00Z,shit,arya,2
+2019-04-22T01:33:00Z,shit,sansa,4
+2019-04-22T01:33:00Z,shit,jaime,0
+2019-04-22T01:33:00Z,bitch,jon snow,0
+2019-04-22T01:33:00Z,bitch,daenerys,0
+2019-04-22T01:33:00Z,bitch,cersei,1
+2019-04-22T01:33:00Z,bitch,tyrion,2
+2019-04-22T01:33:00Z,bitch,arya,0
+2019-04-22T01:33:00Z,bitch,sansa,7
+2019-04-22T01:33:00Z,bitch,jaime,1
+2019-04-22T01:33:00Z,ass,jon snow,0
+2019-04-22T01:33:00Z,ass,daenerys,3
+2019-04-22T01:33:00Z,ass,cersei,0
+2019-04-22T01:33:00Z,ass,tyrion,0
+2019-04-22T01:33:00Z,ass,arya,1
+2019-04-22T01:33:00Z,ass,sansa,0
+2019-04-22T01:33:00Z,ass,jaime,0
+2019-04-22T01:33:00Z,dick,jon snow,4
+2019-04-22T01:33:00Z,dick,daenerys,5
+2019-04-22T01:33:00Z,dick,cersei,0
+2019-04-22T01:33:00Z,dick,tyrion,0
+2019-04-22T01:33:00Z,dick,arya,6
+2019-04-22T01:33:00Z,dick,sansa,3
+2019-04-22T01:33:00Z,dick,jaime,0
+2019-04-22T01:34:00Z,fuck,jon snow,0
+2019-04-22T01:34:00Z,fuck,daenerys,0
+2019-04-22T01:34:00Z,fuck,cersei,1
+2019-04-22T01:34:00Z,fuck,tyrion,2
+2019-04-22T01:34:00Z,fuck,arya,9
+2019-04-22T01:34:00Z,fuck,sansa,11
+2019-04-22T01:34:00Z,fuck,jaime,12
+2019-04-22T01:34:00Z,shit,jon snow,1
+2019-04-22T01:34:00Z,shit,daenerys,1
+2019-04-22T01:34:00Z,shit,cersei,0
+2019-04-22T01:34:00Z,shit,tyrion,4
+2019-04-22T01:34:00Z,shit,arya,0
+2019-04-22T01:34:00Z,shit,sansa,8
+2019-04-22T01:34:00Z,shit,jaime,3
+2019-04-22T01:34:00Z,bitch,jon snow,3
+2019-04-22T01:34:00Z,bitch,daenerys,2
+2019-04-22T01:34:00Z,bitch,cersei,0
+2019-04-22T01:34:00Z,bitch,tyrion,2
+2019-04-22T01:34:00Z,bitch,arya,3
+2019-04-22T01:34:00Z,bitch,sansa,14
+2019-04-22T01:34:00Z,bitch,jaime,0
+2019-04-22T01:34:00Z,ass,jon snow,0
+2019-04-22T01:34:00Z,ass,daenerys,1
+2019-04-22T01:34:00Z,ass,cersei,0
+2019-04-22T01:34:00Z,ass,tyrion,1
+2019-04-22T01:34:00Z,ass,arya,0
+2019-04-22T01:34:00Z,ass,sansa,0
+2019-04-22T01:34:00Z,ass,jaime,0
+2019-04-22T01:34:00Z,dick,jon snow,4
+2019-04-22T01:34:00Z,dick,daenerys,4
+2019-04-22T01:34:00Z,dick,cersei,0
+2019-04-22T01:34:00Z,dick,tyrion,0
+2019-04-22T01:34:00Z,dick,arya,2
+2019-04-22T01:34:00Z,dick,sansa,0
+2019-04-22T01:34:00Z,dick,jaime,1
+2019-04-22T01:35:00Z,fuck,jon snow,7
+2019-04-22T01:35:00Z,fuck,daenerys,1
+2019-04-22T01:35:00Z,fuck,cersei,3
+2019-04-22T01:35:00Z,fuck,tyrion,7
+2019-04-22T01:35:00Z,fuck,arya,9
+2019-04-22T01:35:00Z,fuck,sansa,9
+2019-04-22T01:35:00Z,fuck,jaime,8
+2019-04-22T01:35:00Z,shit,jon snow,1
+2019-04-22T01:35:00Z,shit,daenerys,0
+2019-04-22T01:35:00Z,shit,cersei,0
+2019-04-22T01:35:00Z,shit,tyrion,3
+2019-04-22T01:35:00Z,shit,arya,2
+2019-04-22T01:35:00Z,shit,sansa,6
+2019-04-22T01:35:00Z,shit,jaime,3
+2019-04-22T01:35:00Z,bitch,jon snow,2
+2019-04-22T01:35:00Z,bitch,daenerys,1
+2019-04-22T01:35:00Z,bitch,cersei,0
+2019-04-22T01:35:00Z,bitch,tyrion,2
+2019-04-22T01:35:00Z,bitch,arya,6
+2019-04-22T01:35:00Z,bitch,sansa,9
+2019-04-22T01:35:00Z,bitch,jaime,2
+2019-04-22T01:35:00Z,ass,jon snow,1
+2019-04-22T01:35:00Z,ass,daenerys,1
+2019-04-22T01:35:00Z,ass,cersei,0
+2019-04-22T01:35:00Z,ass,tyrion,1
+2019-04-22T01:35:00Z,ass,arya,1
+2019-04-22T01:35:00Z,ass,sansa,4
+2019-04-22T01:35:00Z,ass,jaime,1
+2019-04-22T01:35:00Z,dick,jon snow,3
+2019-04-22T01:35:00Z,dick,daenerys,2
+2019-04-22T01:35:00Z,dick,cersei,0
+2019-04-22T01:35:00Z,dick,tyrion,0
+2019-04-22T01:35:00Z,dick,arya,0
+2019-04-22T01:35:00Z,dick,sansa,0
+2019-04-22T01:35:00Z,dick,jaime,0
+2019-04-22T01:36:00Z,fuck,jon snow,1
+2019-04-22T01:36:00Z,fuck,daenerys,4
+2019-04-22T01:36:00Z,fuck,cersei,2
+2019-04-22T01:36:00Z,fuck,tyrion,2
+2019-04-22T01:36:00Z,fuck,arya,4
+2019-04-22T01:36:00Z,fuck,sansa,11
+2019-04-22T01:36:00Z,fuck,jaime,6
+2019-04-22T01:36:00Z,shit,jon snow,1
+2019-04-22T01:36:00Z,shit,daenerys,0
+2019-04-22T01:36:00Z,shit,cersei,0
+2019-04-22T01:36:00Z,shit,tyrion,2
+2019-04-22T01:36:00Z,shit,arya,0
+2019-04-22T01:36:00Z,shit,sansa,10
+2019-04-22T01:36:00Z,shit,jaime,2
+2019-04-22T01:36:00Z,bitch,jon snow,1
+2019-04-22T01:36:00Z,bitch,daenerys,3
+2019-04-22T01:36:00Z,bitch,cersei,1
+2019-04-22T01:36:00Z,bitch,tyrion,0
+2019-04-22T01:36:00Z,bitch,arya,1
+2019-04-22T01:36:00Z,bitch,sansa,14
+2019-04-22T01:36:00Z,bitch,jaime,1
+2019-04-22T01:36:00Z,ass,jon snow,1
+2019-04-22T01:36:00Z,ass,daenerys,2
+2019-04-22T01:36:00Z,ass,cersei,1
+2019-04-22T01:36:00Z,ass,tyrion,0
+2019-04-22T01:36:00Z,ass,arya,1
+2019-04-22T01:36:00Z,ass,sansa,1
+2019-04-22T01:36:00Z,ass,jaime,0
+2019-04-22T01:36:00Z,dick,jon snow,4
+2019-04-22T01:36:00Z,dick,daenerys,1
+2019-04-22T01:36:00Z,dick,cersei,0
+2019-04-22T01:36:00Z,dick,tyrion,0
+2019-04-22T01:36:00Z,dick,arya,3
+2019-04-22T01:36:00Z,dick,sansa,3
+2019-04-22T01:36:00Z,dick,jaime,1
+2019-04-22T01:37:00Z,fuck,jon snow,2
+2019-04-22T01:37:00Z,fuck,daenerys,2
+2019-04-22T01:37:00Z,fuck,cersei,2
+2019-04-22T01:37:00Z,fuck,tyrion,6
+2019-04-22T01:37:00Z,fuck,arya,9
+2019-04-22T01:37:00Z,fuck,sansa,6
+2019-04-22T01:37:00Z,fuck,jaime,9
+2019-04-22T01:37:00Z,shit,jon snow,3
+2019-04-22T01:37:00Z,shit,daenerys,1
+2019-04-22T01:37:00Z,shit,cersei,1
+2019-04-22T01:37:00Z,shit,tyrion,1
+2019-04-22T01:37:00Z,shit,arya,0
+2019-04-22T01:37:00Z,shit,sansa,8
+2019-04-22T01:37:00Z,shit,jaime,3
+2019-04-22T01:37:00Z,bitch,jon snow,3
+2019-04-22T01:37:00Z,bitch,daenerys,1
+2019-04-22T01:37:00Z,bitch,cersei,1
+2019-04-22T01:37:00Z,bitch,tyrion,1
+2019-04-22T01:37:00Z,bitch,arya,4
+2019-04-22T01:37:00Z,bitch,sansa,17
+2019-04-22T01:37:00Z,bitch,jaime,1
+2019-04-22T01:37:00Z,ass,jon snow,2
+2019-04-22T01:37:00Z,ass,daenerys,0
+2019-04-22T01:37:00Z,ass,cersei,1
+2019-04-22T01:37:00Z,ass,tyrion,2
+2019-04-22T01:37:00Z,ass,arya,1
+2019-04-22T01:37:00Z,ass,sansa,1
+2019-04-22T01:37:00Z,ass,jaime,1
+2019-04-22T01:37:00Z,dick,jon snow,5
+2019-04-22T01:37:00Z,dick,daenerys,0
+2019-04-22T01:37:00Z,dick,cersei,1
+2019-04-22T01:37:00Z,dick,tyrion,1
+2019-04-22T01:37:00Z,dick,arya,2
+2019-04-22T01:37:00Z,dick,sansa,1
+2019-04-22T01:37:00Z,dick,jaime,2
+2019-04-22T01:38:00Z,fuck,jon snow,0
+2019-04-22T01:38:00Z,fuck,daenerys,2
+2019-04-22T01:38:00Z,fuck,cersei,2
+2019-04-22T01:38:00Z,fuck,tyrion,4
+2019-04-22T01:38:00Z,fuck,arya,5
+2019-04-22T01:38:00Z,fuck,sansa,1
+2019-04-22T01:38:00Z,fuck,jaime,7
+2019-04-22T01:38:00Z,shit,jon snow,3
+2019-04-22T01:38:00Z,shit,daenerys,2
+2019-04-22T01:38:00Z,shit,cersei,0
+2019-04-22T01:38:00Z,shit,tyrion,4
+2019-04-22T01:38:00Z,shit,arya,4
+2019-04-22T01:38:00Z,shit,sansa,2
+2019-04-22T01:38:00Z,shit,jaime,6
+2019-04-22T01:38:00Z,bitch,jon snow,2
+2019-04-22T01:38:00Z,bitch,daenerys,0
+2019-04-22T01:38:00Z,bitch,cersei,0
+2019-04-22T01:38:00Z,bitch,tyrion,1
+2019-04-22T01:38:00Z,bitch,arya,5
+2019-04-22T01:38:00Z,bitch,sansa,11
+2019-04-22T01:38:00Z,bitch,jaime,0
+2019-04-22T01:38:00Z,ass,jon snow,0
+2019-04-22T01:38:00Z,ass,daenerys,0
+2019-04-22T01:38:00Z,ass,cersei,1
+2019-04-22T01:38:00Z,ass,tyrion,2
+2019-04-22T01:38:00Z,ass,arya,1
+2019-04-22T01:38:00Z,ass,sansa,1
+2019-04-22T01:38:00Z,ass,jaime,0
+2019-04-22T01:38:00Z,dick,jon snow,5
+2019-04-22T01:38:00Z,dick,daenerys,0
+2019-04-22T01:38:00Z,dick,cersei,0
+2019-04-22T01:38:00Z,dick,tyrion,0
+2019-04-22T01:38:00Z,dick,arya,1
+2019-04-22T01:38:00Z,dick,sansa,1
+2019-04-22T01:38:00Z,dick,jaime,1
+2019-04-22T01:39:00Z,fuck,jon snow,3
+2019-04-22T01:39:00Z,fuck,daenerys,1
+2019-04-22T01:39:00Z,fuck,cersei,1
+2019-04-22T01:39:00Z,fuck,tyrion,9
+2019-04-22T01:39:00Z,fuck,arya,12
+2019-04-22T01:39:00Z,fuck,sansa,3
+2019-04-22T01:39:00Z,fuck,jaime,18
+2019-04-22T01:39:00Z,shit,jon snow,5
+2019-04-22T01:39:00Z,shit,daenerys,1
+2019-04-22T01:39:00Z,shit,cersei,1
+2019-04-22T01:39:00Z,shit,tyrion,7
+2019-04-22T01:39:00Z,shit,arya,4
+2019-04-22T01:39:00Z,shit,sansa,7
+2019-04-22T01:39:00Z,shit,jaime,6
+2019-04-22T01:39:00Z,bitch,jon snow,2
+2019-04-22T01:39:00Z,bitch,daenerys,1
+2019-04-22T01:39:00Z,bitch,cersei,0
+2019-04-22T01:39:00Z,bitch,tyrion,7
+2019-04-22T01:39:00Z,bitch,arya,6
+2019-04-22T01:39:00Z,bitch,sansa,11
+2019-04-22T01:39:00Z,bitch,jaime,4
+2019-04-22T01:39:00Z,ass,jon snow,0
+2019-04-22T01:39:00Z,ass,daenerys,0
+2019-04-22T01:39:00Z,ass,cersei,0
+2019-04-22T01:39:00Z,ass,tyrion,2
+2019-04-22T01:39:00Z,ass,arya,2
+2019-04-22T01:39:00Z,ass,sansa,0
+2019-04-22T01:39:00Z,ass,jaime,0
+2019-04-22T01:39:00Z,dick,jon snow,3
+2019-04-22T01:39:00Z,dick,daenerys,0
+2019-04-22T01:39:00Z,dick,cersei,1
+2019-04-22T01:39:00Z,dick,tyrion,0
+2019-04-22T01:39:00Z,dick,arya,4
+2019-04-22T01:39:00Z,dick,sansa,0
+2019-04-22T01:39:00Z,dick,jaime,3
+2019-04-22T01:40:00Z,fuck,jon snow,2
+2019-04-22T01:40:00Z,fuck,daenerys,2
+2019-04-22T01:40:00Z,fuck,cersei,1
+2019-04-22T01:40:00Z,fuck,tyrion,6
+2019-04-22T01:40:00Z,fuck,arya,25
+2019-04-22T01:40:00Z,fuck,sansa,4
+2019-04-22T01:40:00Z,fuck,jaime,22
+2019-04-22T01:40:00Z,shit,jon snow,0
+2019-04-22T01:40:00Z,shit,daenerys,0
+2019-04-22T01:40:00Z,shit,cersei,1
+2019-04-22T01:40:00Z,shit,tyrion,2
+2019-04-22T01:40:00Z,shit,arya,9
+2019-04-22T01:40:00Z,shit,sansa,1
+2019-04-22T01:40:00Z,shit,jaime,1
+2019-04-22T01:40:00Z,bitch,jon snow,0
+2019-04-22T01:40:00Z,bitch,daenerys,1
+2019-04-22T01:40:00Z,bitch,cersei,0
+2019-04-22T01:40:00Z,bitch,tyrion,2
+2019-04-22T01:40:00Z,bitch,arya,6
+2019-04-22T01:40:00Z,bitch,sansa,6
+2019-04-22T01:40:00Z,bitch,jaime,2
+2019-04-22T01:40:00Z,ass,jon snow,0
+2019-04-22T01:40:00Z,ass,daenerys,1
+2019-04-22T01:40:00Z,ass,cersei,0
+2019-04-22T01:40:00Z,ass,tyrion,1
+2019-04-22T01:40:00Z,ass,arya,1
+2019-04-22T01:40:00Z,ass,sansa,3
+2019-04-22T01:40:00Z,ass,jaime,1
+2019-04-22T01:40:00Z,dick,jon snow,6
+2019-04-22T01:40:00Z,dick,daenerys,1
+2019-04-22T01:40:00Z,dick,cersei,1
+2019-04-22T01:40:00Z,dick,tyrion,0
+2019-04-22T01:40:00Z,dick,arya,7
+2019-04-22T01:40:00Z,dick,sansa,1
+2019-04-22T01:40:00Z,dick,jaime,9
+2019-04-22T01:41:00Z,fuck,jon snow,5
+2019-04-22T01:41:00Z,fuck,daenerys,2
+2019-04-22T01:41:00Z,fuck,cersei,4
+2019-04-22T01:41:00Z,fuck,tyrion,4
+2019-04-22T01:41:00Z,fuck,arya,57
+2019-04-22T01:41:00Z,fuck,sansa,8
+2019-04-22T01:41:00Z,fuck,jaime,14
+2019-04-22T01:41:00Z,shit,jon snow,1
+2019-04-22T01:41:00Z,shit,daenerys,1
+2019-04-22T01:41:00Z,shit,cersei,1
+2019-04-22T01:41:00Z,shit,tyrion,3
+2019-04-22T01:41:00Z,shit,arya,19
+2019-04-22T01:41:00Z,shit,sansa,1
+2019-04-22T01:41:00Z,shit,jaime,3
+2019-04-22T01:41:00Z,bitch,jon snow,1
+2019-04-22T01:41:00Z,bitch,daenerys,1
+2019-04-22T01:41:00Z,bitch,cersei,1
+2019-04-22T01:41:00Z,bitch,tyrion,6
+2019-04-22T01:41:00Z,bitch,arya,4
+2019-04-22T01:41:00Z,bitch,sansa,4
+2019-04-22T01:41:00Z,bitch,jaime,5
+2019-04-22T01:41:00Z,ass,jon snow,0
+2019-04-22T01:41:00Z,ass,daenerys,0
+2019-04-22T01:41:00Z,ass,cersei,0
+2019-04-22T01:41:00Z,ass,tyrion,1
+2019-04-22T01:41:00Z,ass,arya,5
+2019-04-22T01:41:00Z,ass,sansa,0
+2019-04-22T01:41:00Z,ass,jaime,1
+2019-04-22T01:41:00Z,dick,jon snow,2
+2019-04-22T01:41:00Z,dick,daenerys,0
+2019-04-22T01:41:00Z,dick,cersei,0
+2019-04-22T01:41:00Z,dick,tyrion,0
+2019-04-22T01:41:00Z,dick,arya,10
+2019-04-22T01:41:00Z,dick,sansa,1
+2019-04-22T01:41:00Z,dick,jaime,7
+2019-04-22T01:42:00Z,fuck,jon snow,5
+2019-04-22T01:42:00Z,fuck,daenerys,1
+2019-04-22T01:42:00Z,fuck,cersei,2
+2019-04-22T01:42:00Z,fuck,tyrion,2
+2019-04-22T01:42:00Z,fuck,arya,59
+2019-04-22T01:42:00Z,fuck,sansa,11
+2019-04-22T01:42:00Z,fuck,jaime,17
+2019-04-22T01:42:00Z,shit,jon snow,1
+2019-04-22T01:42:00Z,shit,daenerys,0
+2019-04-22T01:42:00Z,shit,cersei,0
+2019-04-22T01:42:00Z,shit,tyrion,1
+2019-04-22T01:42:00Z,shit,arya,42
+2019-04-22T01:42:00Z,shit,sansa,5
+2019-04-22T01:42:00Z,shit,jaime,1
+2019-04-22T01:42:00Z,bitch,jon snow,0
+2019-04-22T01:42:00Z,bitch,daenerys,2
+2019-04-22T01:42:00Z,bitch,cersei,0
+2019-04-22T01:42:00Z,bitch,tyrion,1
+2019-04-22T01:42:00Z,bitch,arya,16
+2019-04-22T01:42:00Z,bitch,sansa,3
+2019-04-22T01:42:00Z,bitch,jaime,0
+2019-04-22T01:42:00Z,ass,jon snow,0
+2019-04-22T01:42:00Z,ass,daenerys,0
+2019-04-22T01:42:00Z,ass,cersei,0
+2019-04-22T01:42:00Z,ass,tyrion,1
+2019-04-22T01:42:00Z,ass,arya,4
+2019-04-22T01:42:00Z,ass,sansa,0
+2019-04-22T01:42:00Z,ass,jaime,0
+2019-04-22T01:42:00Z,dick,jon snow,1
+2019-04-22T01:42:00Z,dick,daenerys,0
+2019-04-22T01:42:00Z,dick,cersei,0
+2019-04-22T01:42:00Z,dick,tyrion,0
+2019-04-22T01:42:00Z,dick,arya,34
+2019-04-22T01:42:00Z,dick,sansa,0
+2019-04-22T01:42:00Z,dick,jaime,9
+2019-04-22T01:43:00Z,fuck,jon snow,5
+2019-04-22T01:43:00Z,fuck,daenerys,1
+2019-04-22T01:43:00Z,fuck,cersei,3
+2019-04-22T01:43:00Z,fuck,tyrion,1
+2019-04-22T01:43:00Z,fuck,arya,105
+2019-04-22T01:43:00Z,fuck,sansa,6
+2019-04-22T01:43:00Z,fuck,jaime,7
+2019-04-22T01:43:00Z,shit,jon snow,0
+2019-04-22T01:43:00Z,shit,daenerys,1
+2019-04-22T01:43:00Z,shit,cersei,0
+2019-04-22T01:43:00Z,shit,tyrion,1
+2019-04-22T01:43:00Z,shit,arya,43
+2019-04-22T01:43:00Z,shit,sansa,3
+2019-04-22T01:43:00Z,shit,jaime,0
+2019-04-22T01:43:00Z,bitch,jon snow,2
+2019-04-22T01:43:00Z,bitch,daenerys,0
+2019-04-22T01:43:00Z,bitch,cersei,0
+2019-04-22T01:43:00Z,bitch,tyrion,1
+2019-04-22T01:43:00Z,bitch,arya,27
+2019-04-22T01:43:00Z,bitch,sansa,5
+2019-04-22T01:43:00Z,bitch,jaime,2
+2019-04-22T01:43:00Z,ass,jon snow,0
+2019-04-22T01:43:00Z,ass,daenerys,0
+2019-04-22T01:43:00Z,ass,cersei,0
+2019-04-22T01:43:00Z,ass,tyrion,0
+2019-04-22T01:43:00Z,ass,arya,9
+2019-04-22T01:43:00Z,ass,sansa,0
+2019-04-22T01:43:00Z,ass,jaime,0
+2019-04-22T01:43:00Z,dick,jon snow,3
+2019-04-22T01:43:00Z,dick,daenerys,0
+2019-04-22T01:43:00Z,dick,cersei,0
+2019-04-22T01:43:00Z,dick,tyrion,0
+2019-04-22T01:43:00Z,dick,arya,42
+2019-04-22T01:43:00Z,dick,sansa,2
+2019-04-22T01:43:00Z,dick,jaime,2
+2019-04-22T01:44:00Z,fuck,jon snow,4
+2019-04-22T01:44:00Z,fuck,daenerys,1
+2019-04-22T01:44:00Z,fuck,cersei,0
+2019-04-22T01:44:00Z,fuck,tyrion,1
+2019-04-22T01:44:00Z,fuck,arya,117
+2019-04-22T01:44:00Z,fuck,sansa,5
+2019-04-22T01:44:00Z,fuck,jaime,3
+2019-04-22T01:44:00Z,shit,jon snow,0
+2019-04-22T01:44:00Z,shit,daenerys,1
+2019-04-22T01:44:00Z,shit,cersei,0
+2019-04-22T01:44:00Z,shit,tyrion,3
+2019-04-22T01:44:00Z,shit,arya,45
+2019-04-22T01:44:00Z,shit,sansa,2
+2019-04-22T01:44:00Z,shit,jaime,2
+2019-04-22T01:44:00Z,bitch,jon snow,0
+2019-04-22T01:44:00Z,bitch,daenerys,0
+2019-04-22T01:44:00Z,bitch,cersei,0
+2019-04-22T01:44:00Z,bitch,tyrion,0
+2019-04-22T01:44:00Z,bitch,arya,40
+2019-04-22T01:44:00Z,bitch,sansa,1
+2019-04-22T01:44:00Z,bitch,jaime,1
+2019-04-22T01:44:00Z,ass,jon snow,0
+2019-04-22T01:44:00Z,ass,daenerys,0
+2019-04-22T01:44:00Z,ass,cersei,0
+2019-04-22T01:44:00Z,ass,tyrion,1
+2019-04-22T01:44:00Z,ass,arya,8
+2019-04-22T01:44:00Z,ass,sansa,0
+2019-04-22T01:44:00Z,ass,jaime,0
+2019-04-22T01:44:00Z,dick,jon snow,2
+2019-04-22T01:44:00Z,dick,daenerys,0
+2019-04-22T01:44:00Z,dick,cersei,0
+2019-04-22T01:44:00Z,dick,tyrion,0
+2019-04-22T01:44:00Z,dick,arya,75
+2019-04-22T01:44:00Z,dick,sansa,1
+2019-04-22T01:44:00Z,dick,jaime,2
+2019-04-22T01:45:00Z,fuck,jon snow,2
+2019-04-22T01:45:00Z,fuck,daenerys,0
+2019-04-22T01:45:00Z,fuck,cersei,0
+2019-04-22T01:45:00Z,fuck,tyrion,0
+2019-04-22T01:45:00Z,fuck,arya,110
+2019-04-22T01:45:00Z,fuck,sansa,2
+2019-04-22T01:45:00Z,fuck,jaime,5
+2019-04-22T01:45:00Z,shit,jon snow,1
+2019-04-22T01:45:00Z,shit,daenerys,0
+2019-04-22T01:45:00Z,shit,cersei,0
+2019-04-22T01:45:00Z,shit,tyrion,1
+2019-04-22T01:45:00Z,shit,arya,57
+2019-04-22T01:45:00Z,shit,sansa,1
+2019-04-22T01:45:00Z,shit,jaime,2
+2019-04-22T01:45:00Z,bitch,jon snow,1
+2019-04-22T01:45:00Z,bitch,daenerys,0
+2019-04-22T01:45:00Z,bitch,cersei,0
+2019-04-22T01:45:00Z,bitch,tyrion,0
+2019-04-22T01:45:00Z,bitch,arya,31
+2019-04-22T01:45:00Z,bitch,sansa,1
+2019-04-22T01:45:00Z,bitch,jaime,0
+2019-04-22T01:45:00Z,ass,jon snow,0
+2019-04-22T01:45:00Z,ass,daenerys,0
+2019-04-22T01:45:00Z,ass,cersei,0
+2019-04-22T01:45:00Z,ass,tyrion,0
+2019-04-22T01:45:00Z,ass,arya,25
+2019-04-22T01:45:00Z,ass,sansa,1
+2019-04-22T01:45:00Z,ass,jaime,0
+2019-04-22T01:45:00Z,dick,jon snow,1
+2019-04-22T01:45:00Z,dick,daenerys,1
+2019-04-22T01:45:00Z,dick,cersei,0
+2019-04-22T01:45:00Z,dick,tyrion,0
+2019-04-22T01:45:00Z,dick,arya,80
+2019-04-22T01:45:00Z,dick,sansa,0
+2019-04-22T01:45:00Z,dick,jaime,0
+2019-04-22T01:46:00Z,fuck,jon snow,1
+2019-04-22T01:46:00Z,fuck,daenerys,2
+2019-04-22T01:46:00Z,fuck,cersei,1
+2019-04-22T01:46:00Z,fuck,tyrion,0
+2019-04-22T01:46:00Z,fuck,arya,83
+2019-04-22T01:46:00Z,fuck,sansa,2
+2019-04-22T01:46:00Z,fuck,jaime,3
+2019-04-22T01:46:00Z,shit,jon snow,0
+2019-04-22T01:46:00Z,shit,daenerys,0
+2019-04-22T01:46:00Z,shit,cersei,0
+2019-04-22T01:46:00Z,shit,tyrion,0
+2019-04-22T01:46:00Z,shit,arya,57
+2019-04-22T01:46:00Z,shit,sansa,3
+2019-04-22T01:46:00Z,shit,jaime,1
+2019-04-22T01:46:00Z,bitch,jon snow,0
+2019-04-22T01:46:00Z,bitch,daenerys,0
+2019-04-22T01:46:00Z,bitch,cersei,0
+2019-04-22T01:46:00Z,bitch,tyrion,0
+2019-04-22T01:46:00Z,bitch,arya,22
+2019-04-22T01:46:00Z,bitch,sansa,2
+2019-04-22T01:46:00Z,bitch,jaime,0
+2019-04-22T01:46:00Z,ass,jon snow,0
+2019-04-22T01:46:00Z,ass,daenerys,0
+2019-04-22T01:46:00Z,ass,cersei,0
+2019-04-22T01:46:00Z,ass,tyrion,0
+2019-04-22T01:46:00Z,ass,arya,19
+2019-04-22T01:46:00Z,ass,sansa,0
+2019-04-22T01:46:00Z,ass,jaime,0
+2019-04-22T01:46:00Z,dick,jon snow,0
+2019-04-22T01:46:00Z,dick,daenerys,0
+2019-04-22T01:46:00Z,dick,cersei,0
+2019-04-22T01:46:00Z,dick,tyrion,0
+2019-04-22T01:46:00Z,dick,arya,61
+2019-04-22T01:46:00Z,dick,sansa,0
+2019-04-22T01:46:00Z,dick,jaime,0
+2019-04-22T01:47:00Z,fuck,jon snow,1
+2019-04-22T01:47:00Z,fuck,daenerys,2
+2019-04-22T01:47:00Z,fuck,cersei,0
+2019-04-22T01:47:00Z,fuck,tyrion,2
+2019-04-22T01:47:00Z,fuck,arya,65
+2019-04-22T01:47:00Z,fuck,sansa,2
+2019-04-22T01:47:00Z,fuck,jaime,3
+2019-04-22T01:47:00Z,shit,jon snow,0
+2019-04-22T01:47:00Z,shit,daenerys,1
+2019-04-22T01:47:00Z,shit,cersei,0
+2019-04-22T01:47:00Z,shit,tyrion,2
+2019-04-22T01:47:00Z,shit,arya,35
+2019-04-22T01:47:00Z,shit,sansa,1
+2019-04-22T01:47:00Z,shit,jaime,0
+2019-04-22T01:47:00Z,bitch,jon snow,0
+2019-04-22T01:47:00Z,bitch,daenerys,0
+2019-04-22T01:47:00Z,bitch,cersei,0
+2019-04-22T01:47:00Z,bitch,tyrion,0
+2019-04-22T01:47:00Z,bitch,arya,33
+2019-04-22T01:47:00Z,bitch,sansa,0
+2019-04-22T01:47:00Z,bitch,jaime,0
+2019-04-22T01:47:00Z,ass,jon snow,0
+2019-04-22T01:47:00Z,ass,daenerys,0
+2019-04-22T01:47:00Z,ass,cersei,0
+2019-04-22T01:47:00Z,ass,tyrion,0
+2019-04-22T01:47:00Z,ass,arya,18
+2019-04-22T01:47:00Z,ass,sansa,0
+2019-04-22T01:47:00Z,ass,jaime,0
+2019-04-22T01:47:00Z,dick,jon snow,0
+2019-04-22T01:47:00Z,dick,daenerys,0
+2019-04-22T01:47:00Z,dick,cersei,0
+2019-04-22T01:47:00Z,dick,tyrion,0
+2019-04-22T01:47:00Z,dick,arya,59
+2019-04-22T01:47:00Z,dick,sansa,0
+2019-04-22T01:47:00Z,dick,jaime,0
+2019-04-22T01:48:00Z,fuck,jon snow,0
+2019-04-22T01:48:00Z,fuck,daenerys,1
+2019-04-22T01:48:00Z,fuck,cersei,0
+2019-04-22T01:48:00Z,fuck,tyrion,1
+2019-04-22T01:48:00Z,fuck,arya,60
+2019-04-22T01:48:00Z,fuck,sansa,1
+2019-04-22T01:48:00Z,fuck,jaime,3
+2019-04-22T01:48:00Z,shit,jon snow,0
+2019-04-22T01:48:00Z,shit,daenerys,0
+2019-04-22T01:48:00Z,shit,cersei,0
+2019-04-22T01:48:00Z,shit,tyrion,0
+2019-04-22T01:48:00Z,shit,arya,22
+2019-04-22T01:48:00Z,shit,sansa,0
+2019-04-22T01:48:00Z,shit,jaime,1
+2019-04-22T01:48:00Z,bitch,jon snow,0
+2019-04-22T01:48:00Z,bitch,daenerys,0
+2019-04-22T01:48:00Z,bitch,cersei,0
+2019-04-22T01:48:00Z,bitch,tyrion,0
+2019-04-22T01:48:00Z,bitch,arya,17
+2019-04-22T01:48:00Z,bitch,sansa,0
+2019-04-22T01:48:00Z,bitch,jaime,0
+2019-04-22T01:48:00Z,ass,jon snow,0
+2019-04-22T01:48:00Z,ass,daenerys,0
+2019-04-22T01:48:00Z,ass,cersei,0
+2019-04-22T01:48:00Z,ass,tyrion,0
+2019-04-22T01:48:00Z,ass,arya,21
+2019-04-22T01:48:00Z,ass,sansa,0
+2019-04-22T01:48:00Z,ass,jaime,1
+2019-04-22T01:48:00Z,dick,jon snow,0
+2019-04-22T01:48:00Z,dick,daenerys,0
+2019-04-22T01:48:00Z,dick,cersei,0
+2019-04-22T01:48:00Z,dick,tyrion,0
+2019-04-22T01:48:00Z,dick,arya,56
+2019-04-22T01:48:00Z,dick,sansa,0
+2019-04-22T01:48:00Z,dick,jaime,0
+2019-04-22T01:49:00Z,fuck,jon snow,2
+2019-04-22T01:49:00Z,fuck,daenerys,0
+2019-04-22T01:49:00Z,fuck,cersei,1
+2019-04-22T01:49:00Z,fuck,tyrion,0
+2019-04-22T01:49:00Z,fuck,arya,53
+2019-04-22T01:49:00Z,fuck,sansa,1
+2019-04-22T01:49:00Z,fuck,jaime,14
+2019-04-22T01:49:00Z,shit,jon snow,0
+2019-04-22T01:49:00Z,shit,daenerys,0
+2019-04-22T01:49:00Z,shit,cersei,1
+2019-04-22T01:49:00Z,shit,tyrion,0
+2019-04-22T01:49:00Z,shit,arya,24
+2019-04-22T01:49:00Z,shit,sansa,2
+2019-04-22T01:49:00Z,shit,jaime,4
+2019-04-22T01:49:00Z,bitch,jon snow,0
+2019-04-22T01:49:00Z,bitch,daenerys,0
+2019-04-22T01:49:00Z,bitch,cersei,1
+2019-04-22T01:49:00Z,bitch,tyrion,2
+2019-04-22T01:49:00Z,bitch,arya,18
+2019-04-22T01:49:00Z,bitch,sansa,2
+2019-04-22T01:49:00Z,bitch,jaime,1
+2019-04-22T01:49:00Z,ass,jon snow,0
+2019-04-22T01:49:00Z,ass,daenerys,0
+2019-04-22T01:49:00Z,ass,cersei,0
+2019-04-22T01:49:00Z,ass,tyrion,0
+2019-04-22T01:49:00Z,ass,arya,15
+2019-04-22T01:49:00Z,ass,sansa,0
+2019-04-22T01:49:00Z,ass,jaime,1
+2019-04-22T01:49:00Z,dick,jon snow,1
+2019-04-22T01:49:00Z,dick,daenerys,0
+2019-04-22T01:49:00Z,dick,cersei,0
+2019-04-22T01:49:00Z,dick,tyrion,0
+2019-04-22T01:49:00Z,dick,arya,49
+2019-04-22T01:49:00Z,dick,sansa,1
+2019-04-22T01:49:00Z,dick,jaime,0
+2019-04-22T01:50:00Z,fuck,jon snow,0
+2019-04-22T01:50:00Z,fuck,daenerys,1
+2019-04-22T01:50:00Z,fuck,cersei,1
+2019-04-22T01:50:00Z,fuck,tyrion,1
+2019-04-22T01:50:00Z,fuck,arya,42
+2019-04-22T01:50:00Z,fuck,sansa,0
+2019-04-22T01:50:00Z,fuck,jaime,21
+2019-04-22T01:50:00Z,shit,jon snow,0
+2019-04-22T01:50:00Z,shit,daenerys,0
+2019-04-22T01:50:00Z,shit,cersei,0
+2019-04-22T01:50:00Z,shit,tyrion,0
+2019-04-22T01:50:00Z,shit,arya,35
+2019-04-22T01:50:00Z,shit,sansa,2
+2019-04-22T01:50:00Z,shit,jaime,6
+2019-04-22T01:50:00Z,bitch,jon snow,1
+2019-04-22T01:50:00Z,bitch,daenerys,0
+2019-04-22T01:50:00Z,bitch,cersei,0
+2019-04-22T01:50:00Z,bitch,tyrion,1
+2019-04-22T01:50:00Z,bitch,arya,18
+2019-04-22T01:50:00Z,bitch,sansa,1
+2019-04-22T01:50:00Z,bitch,jaime,2
+2019-04-22T01:50:00Z,ass,jon snow,0
+2019-04-22T01:50:00Z,ass,daenerys,0
+2019-04-22T01:50:00Z,ass,cersei,0
+2019-04-22T01:50:00Z,ass,tyrion,0
+2019-04-22T01:50:00Z,ass,arya,16
+2019-04-22T01:50:00Z,ass,sansa,1
+2019-04-22T01:50:00Z,ass,jaime,2
+2019-04-22T01:50:00Z,dick,jon snow,1
+2019-04-22T01:50:00Z,dick,daenerys,0
+2019-04-22T01:50:00Z,dick,cersei,0
+2019-04-22T01:50:00Z,dick,tyrion,0
+2019-04-22T01:50:00Z,dick,arya,52
+2019-04-22T01:50:00Z,dick,sansa,2
+2019-04-22T01:50:00Z,dick,jaime,1
+2019-04-22T01:51:00Z,fuck,jon snow,1
+2019-04-22T01:51:00Z,fuck,daenerys,2
+2019-04-22T01:51:00Z,fuck,cersei,2
+2019-04-22T01:51:00Z,fuck,tyrion,0
+2019-04-22T01:51:00Z,fuck,arya,43
+2019-04-22T01:51:00Z,fuck,sansa,4
+2019-04-22T01:51:00Z,fuck,jaime,11
+2019-04-22T01:51:00Z,shit,jon snow,0
+2019-04-22T01:51:00Z,shit,daenerys,0
+2019-04-22T01:51:00Z,shit,cersei,0
+2019-04-22T01:51:00Z,shit,tyrion,1
+2019-04-22T01:51:00Z,shit,arya,22
+2019-04-22T01:51:00Z,shit,sansa,2
+2019-04-22T01:51:00Z,shit,jaime,3
+2019-04-22T01:51:00Z,bitch,jon snow,1
+2019-04-22T01:51:00Z,bitch,daenerys,0
+2019-04-22T01:51:00Z,bitch,cersei,0
+2019-04-22T01:51:00Z,bitch,tyrion,0
+2019-04-22T01:51:00Z,bitch,arya,11
+2019-04-22T01:51:00Z,bitch,sansa,0
+2019-04-22T01:51:00Z,bitch,jaime,0
+2019-04-22T01:51:00Z,ass,jon snow,0
+2019-04-22T01:51:00Z,ass,daenerys,0
+2019-04-22T01:51:00Z,ass,cersei,0
+2019-04-22T01:51:00Z,ass,tyrion,0
+2019-04-22T01:51:00Z,ass,arya,11
+2019-04-22T01:51:00Z,ass,sansa,1
+2019-04-22T01:51:00Z,ass,jaime,2
+2019-04-22T01:51:00Z,dick,jon snow,1
+2019-04-22T01:51:00Z,dick,daenerys,0
+2019-04-22T01:51:00Z,dick,cersei,0
+2019-04-22T01:51:00Z,dick,tyrion,0
+2019-04-22T01:51:00Z,dick,arya,47
+2019-04-22T01:51:00Z,dick,sansa,1
+2019-04-22T01:51:00Z,dick,jaime,1
+2019-04-22T01:52:00Z,fuck,jon snow,1
+2019-04-22T01:52:00Z,fuck,daenerys,0
+2019-04-22T01:52:00Z,fuck,cersei,2
+2019-04-22T01:52:00Z,fuck,tyrion,0
+2019-04-22T01:52:00Z,fuck,arya,47
+2019-04-22T01:52:00Z,fuck,sansa,2
+2019-04-22T01:52:00Z,fuck,jaime,9
+2019-04-22T01:52:00Z,shit,jon snow,1
+2019-04-22T01:52:00Z,shit,daenerys,3
+2019-04-22T01:52:00Z,shit,cersei,1
+2019-04-22T01:52:00Z,shit,tyrion,0
+2019-04-22T01:52:00Z,shit,arya,15
+2019-04-22T01:52:00Z,shit,sansa,5
+2019-04-22T01:52:00Z,shit,jaime,2
+2019-04-22T01:52:00Z,bitch,jon snow,0
+2019-04-22T01:52:00Z,bitch,daenerys,0
+2019-04-22T01:52:00Z,bitch,cersei,0
+2019-04-22T01:52:00Z,bitch,tyrion,0
+2019-04-22T01:52:00Z,bitch,arya,19
+2019-04-22T01:52:00Z,bitch,sansa,4
+2019-04-22T01:52:00Z,bitch,jaime,2
+2019-04-22T01:52:00Z,ass,jon snow,0
+2019-04-22T01:52:00Z,ass,daenerys,0
+2019-04-22T01:52:00Z,ass,cersei,1
+2019-04-22T01:52:00Z,ass,tyrion,0
+2019-04-22T01:52:00Z,ass,arya,11
+2019-04-22T01:52:00Z,ass,sansa,1
+2019-04-22T01:52:00Z,ass,jaime,1
+2019-04-22T01:52:00Z,dick,jon snow,2
+2019-04-22T01:52:00Z,dick,daenerys,0
+2019-04-22T01:52:00Z,dick,cersei,0
+2019-04-22T01:52:00Z,dick,tyrion,0
+2019-04-22T01:52:00Z,dick,arya,51
+2019-04-22T01:52:00Z,dick,sansa,0
+2019-04-22T01:52:00Z,dick,jaime,1
+2019-04-22T01:53:00Z,fuck,jon snow,5
+2019-04-22T01:53:00Z,fuck,daenerys,1
+2019-04-22T01:53:00Z,fuck,cersei,0
+2019-04-22T01:53:00Z,fuck,tyrion,2
+2019-04-22T01:53:00Z,fuck,arya,73
+2019-04-22T01:53:00Z,fuck,sansa,2
+2019-04-22T01:53:00Z,fuck,jaime,10
+2019-04-22T01:53:00Z,shit,jon snow,0
+2019-04-22T01:53:00Z,shit,daenerys,0
+2019-04-22T01:53:00Z,shit,cersei,0
+2019-04-22T01:53:00Z,shit,tyrion,0
+2019-04-22T01:53:00Z,shit,arya,25
+2019-04-22T01:53:00Z,shit,sansa,3
+2019-04-22T01:53:00Z,shit,jaime,10
+2019-04-22T01:53:00Z,bitch,jon snow,0
+2019-04-22T01:53:00Z,bitch,daenerys,0
+2019-04-22T01:53:00Z,bitch,cersei,0
+2019-04-22T01:53:00Z,bitch,tyrion,0
+2019-04-22T01:53:00Z,bitch,arya,29
+2019-04-22T01:53:00Z,bitch,sansa,2
+2019-04-22T01:53:00Z,bitch,jaime,0
+2019-04-22T01:53:00Z,ass,jon snow,0
+2019-04-22T01:53:00Z,ass,daenerys,0
+2019-04-22T01:53:00Z,ass,cersei,2
+2019-04-22T01:53:00Z,ass,tyrion,0
+2019-04-22T01:53:00Z,ass,arya,8
+2019-04-22T01:53:00Z,ass,sansa,0
+2019-04-22T01:53:00Z,ass,jaime,0
+2019-04-22T01:53:00Z,dick,jon snow,0
+2019-04-22T01:53:00Z,dick,daenerys,0
+2019-04-22T01:53:00Z,dick,cersei,0
+2019-04-22T01:53:00Z,dick,tyrion,0
+2019-04-22T01:53:00Z,dick,arya,50
+2019-04-22T01:53:00Z,dick,sansa,2
+2019-04-22T01:53:00Z,dick,jaime,1
+2019-04-22T01:54:00Z,fuck,jon snow,4
+2019-04-22T01:54:00Z,fuck,daenerys,2
+2019-04-22T01:54:00Z,fuck,cersei,1
+2019-04-22T01:54:00Z,fuck,tyrion,4
+2019-04-22T01:54:00Z,fuck,arya,67
+2019-04-22T01:54:00Z,fuck,sansa,10
+2019-04-22T01:54:00Z,fuck,jaime,5
+2019-04-22T01:54:00Z,shit,jon snow,0
+2019-04-22T01:54:00Z,shit,daenerys,1
+2019-04-22T01:54:00Z,shit,cersei,0
+2019-04-22T01:54:00Z,shit,tyrion,1
+2019-04-22T01:54:00Z,shit,arya,19
+2019-04-22T01:54:00Z,shit,sansa,3
+2019-04-22T01:54:00Z,shit,jaime,7
+2019-04-22T01:54:00Z,bitch,jon snow,0
+2019-04-22T01:54:00Z,bitch,daenerys,2
+2019-04-22T01:54:00Z,bitch,cersei,0
+2019-04-22T01:54:00Z,bitch,tyrion,0
+2019-04-22T01:54:00Z,bitch,arya,42
+2019-04-22T01:54:00Z,bitch,sansa,0
+2019-04-22T01:54:00Z,bitch,jaime,0
+2019-04-22T01:54:00Z,ass,jon snow,1
+2019-04-22T01:54:00Z,ass,daenerys,1
+2019-04-22T01:54:00Z,ass,cersei,0
+2019-04-22T01:54:00Z,ass,tyrion,1
+2019-04-22T01:54:00Z,ass,arya,11
+2019-04-22T01:54:00Z,ass,sansa,0
+2019-04-22T01:54:00Z,ass,jaime,0
+2019-04-22T01:54:00Z,dick,jon snow,0
+2019-04-22T01:54:00Z,dick,daenerys,0
+2019-04-22T01:54:00Z,dick,cersei,0
+2019-04-22T01:54:00Z,dick,tyrion,0
+2019-04-22T01:54:00Z,dick,arya,35
+2019-04-22T01:54:00Z,dick,sansa,3
+2019-04-22T01:54:00Z,dick,jaime,0
+2019-04-22T01:55:00Z,fuck,jon snow,3
+2019-04-22T01:55:00Z,fuck,daenerys,10
+2019-04-22T01:55:00Z,fuck,cersei,1
+2019-04-22T01:55:00Z,fuck,tyrion,0
+2019-04-22T01:55:00Z,fuck,arya,51
+2019-04-22T01:55:00Z,fuck,sansa,5
+2019-04-22T01:55:00Z,fuck,jaime,6
+2019-04-22T01:55:00Z,shit,jon snow,1
+2019-04-22T01:55:00Z,shit,daenerys,1
+2019-04-22T01:55:00Z,shit,cersei,1
+2019-04-22T01:55:00Z,shit,tyrion,0
+2019-04-22T01:55:00Z,shit,arya,19
+2019-04-22T01:55:00Z,shit,sansa,4
+2019-04-22T01:55:00Z,shit,jaime,2
+2019-04-22T01:55:00Z,bitch,jon snow,0
+2019-04-22T01:55:00Z,bitch,daenerys,2
+2019-04-22T01:55:00Z,bitch,cersei,0
+2019-04-22T01:55:00Z,bitch,tyrion,1
+2019-04-22T01:55:00Z,bitch,arya,25
+2019-04-22T01:55:00Z,bitch,sansa,3
+2019-04-22T01:55:00Z,bitch,jaime,2
+2019-04-22T01:55:00Z,ass,jon snow,0
+2019-04-22T01:55:00Z,ass,daenerys,0
+2019-04-22T01:55:00Z,ass,cersei,0
+2019-04-22T01:55:00Z,ass,tyrion,0
+2019-04-22T01:55:00Z,ass,arya,24
+2019-04-22T01:55:00Z,ass,sansa,1
+2019-04-22T01:55:00Z,ass,jaime,0
+2019-04-22T01:55:00Z,dick,jon snow,0
+2019-04-22T01:55:00Z,dick,daenerys,0
+2019-04-22T01:55:00Z,dick,cersei,0
+2019-04-22T01:55:00Z,dick,tyrion,0
+2019-04-22T01:55:00Z,dick,arya,33
+2019-04-22T01:55:00Z,dick,sansa,3
+2019-04-22T01:55:00Z,dick,jaime,0
+2019-04-22T01:56:00Z,fuck,jon snow,7
+2019-04-22T01:56:00Z,fuck,daenerys,6
+2019-04-22T01:56:00Z,fuck,cersei,0
+2019-04-22T01:56:00Z,fuck,tyrion,4
+2019-04-22T01:56:00Z,fuck,arya,44
+2019-04-22T01:56:00Z,fuck,sansa,3
+2019-04-22T01:56:00Z,fuck,jaime,7
+2019-04-22T01:56:00Z,shit,jon snow,1
+2019-04-22T01:56:00Z,shit,daenerys,8
+2019-04-22T01:56:00Z,shit,cersei,0
+2019-04-22T01:56:00Z,shit,tyrion,1
+2019-04-22T01:56:00Z,shit,arya,17
+2019-04-22T01:56:00Z,shit,sansa,0
+2019-04-22T01:56:00Z,shit,jaime,5
+2019-04-22T01:56:00Z,bitch,jon snow,2
+2019-04-22T01:56:00Z,bitch,daenerys,2
+2019-04-22T01:56:00Z,bitch,cersei,0
+2019-04-22T01:56:00Z,bitch,tyrion,1
+2019-04-22T01:56:00Z,bitch,arya,29
+2019-04-22T01:56:00Z,bitch,sansa,1
+2019-04-22T01:56:00Z,bitch,jaime,1
+2019-04-22T01:56:00Z,ass,jon snow,3
+2019-04-22T01:56:00Z,ass,daenerys,0
+2019-04-22T01:56:00Z,ass,cersei,0
+2019-04-22T01:56:00Z,ass,tyrion,0
+2019-04-22T01:56:00Z,ass,arya,16
+2019-04-22T01:56:00Z,ass,sansa,2
+2019-04-22T01:56:00Z,ass,jaime,0
+2019-04-22T01:56:00Z,dick,jon snow,0
+2019-04-22T01:56:00Z,dick,daenerys,1
+2019-04-22T01:56:00Z,dick,cersei,1
+2019-04-22T01:56:00Z,dick,tyrion,0
+2019-04-22T01:56:00Z,dick,arya,20
+2019-04-22T01:56:00Z,dick,sansa,6
+2019-04-22T01:56:00Z,dick,jaime,0
+2019-04-22T01:57:00Z,fuck,jon snow,8
+2019-04-22T01:57:00Z,fuck,daenerys,10
+2019-04-22T01:57:00Z,fuck,cersei,0
+2019-04-22T01:57:00Z,fuck,tyrion,1
+2019-04-22T01:57:00Z,fuck,arya,39
+2019-04-22T01:57:00Z,fuck,sansa,6
+2019-04-22T01:57:00Z,fuck,jaime,6
+2019-04-22T01:57:00Z,shit,jon snow,6
+2019-04-22T01:57:00Z,shit,daenerys,10
+2019-04-22T01:57:00Z,shit,cersei,0
+2019-04-22T01:57:00Z,shit,tyrion,0
+2019-04-22T01:57:00Z,shit,arya,16
+2019-04-22T01:57:00Z,shit,sansa,2
+2019-04-22T01:57:00Z,shit,jaime,3
+2019-04-22T01:57:00Z,bitch,jon snow,2
+2019-04-22T01:57:00Z,bitch,daenerys,6
+2019-04-22T01:57:00Z,bitch,cersei,0
+2019-04-22T01:57:00Z,bitch,tyrion,0
+2019-04-22T01:57:00Z,bitch,arya,21
+2019-04-22T01:57:00Z,bitch,sansa,2
+2019-04-22T01:57:00Z,bitch,jaime,1
+2019-04-22T01:57:00Z,ass,jon snow,0
+2019-04-22T01:57:00Z,ass,daenerys,1
+2019-04-22T01:57:00Z,ass,cersei,0
+2019-04-22T01:57:00Z,ass,tyrion,0
+2019-04-22T01:57:00Z,ass,arya,12
+2019-04-22T01:57:00Z,ass,sansa,0
+2019-04-22T01:57:00Z,ass,jaime,1
+2019-04-22T01:57:00Z,dick,jon snow,2
+2019-04-22T01:57:00Z,dick,daenerys,2
+2019-04-22T01:57:00Z,dick,cersei,0
+2019-04-22T01:57:00Z,dick,tyrion,0
+2019-04-22T01:57:00Z,dick,arya,19
+2019-04-22T01:57:00Z,dick,sansa,1
+2019-04-22T01:57:00Z,dick,jaime,0
+2019-04-22T01:58:00Z,fuck,jon snow,8
+2019-04-22T01:58:00Z,fuck,daenerys,17
+2019-04-22T01:58:00Z,fuck,cersei,0
+2019-04-22T01:58:00Z,fuck,tyrion,1
+2019-04-22T01:58:00Z,fuck,arya,25
+2019-04-22T01:58:00Z,fuck,sansa,3
+2019-04-22T01:58:00Z,fuck,jaime,7
+2019-04-22T01:58:00Z,shit,jon snow,7
+2019-04-22T01:58:00Z,shit,daenerys,10
+2019-04-22T01:58:00Z,shit,cersei,0
+2019-04-22T01:58:00Z,shit,tyrion,1
+2019-04-22T01:58:00Z,shit,arya,17
+2019-04-22T01:58:00Z,shit,sansa,1
+2019-04-22T01:58:00Z,shit,jaime,1
+2019-04-22T01:58:00Z,bitch,jon snow,0
+2019-04-22T01:58:00Z,bitch,daenerys,5
+2019-04-22T01:58:00Z,bitch,cersei,0
+2019-04-22T01:58:00Z,bitch,tyrion,0
+2019-04-22T01:58:00Z,bitch,arya,19
+2019-04-22T01:58:00Z,bitch,sansa,2
+2019-04-22T01:58:00Z,bitch,jaime,1
+2019-04-22T01:58:00Z,ass,jon snow,0
+2019-04-22T01:58:00Z,ass,daenerys,1
+2019-04-22T01:58:00Z,ass,cersei,0
+2019-04-22T01:58:00Z,ass,tyrion,0
+2019-04-22T01:58:00Z,ass,arya,8
+2019-04-22T01:58:00Z,ass,sansa,0
+2019-04-22T01:58:00Z,ass,jaime,0
+2019-04-22T01:58:00Z,dick,jon snow,0
+2019-04-22T01:58:00Z,dick,daenerys,0
+2019-04-22T01:58:00Z,dick,cersei,0
+2019-04-22T01:58:00Z,dick,tyrion,0
+2019-04-22T01:58:00Z,dick,arya,21
+2019-04-22T01:58:00Z,dick,sansa,1
+2019-04-22T01:58:00Z,dick,jaime,0
+2019-04-22T01:59:00Z,fuck,jon snow,21
+2019-04-22T01:59:00Z,fuck,daenerys,12
+2019-04-22T01:59:00Z,fuck,cersei,1
+2019-04-22T01:59:00Z,fuck,tyrion,3
+2019-04-22T01:59:00Z,fuck,arya,50
+2019-04-22T01:59:00Z,fuck,sansa,3
+2019-04-22T01:59:00Z,fuck,jaime,8
+2019-04-22T01:59:00Z,shit,jon snow,8
+2019-04-22T01:59:00Z,shit,daenerys,8
+2019-04-22T01:59:00Z,shit,cersei,0
+2019-04-22T01:59:00Z,shit,tyrion,0
+2019-04-22T01:59:00Z,shit,arya,10
+2019-04-22T01:59:00Z,shit,sansa,4
+2019-04-22T01:59:00Z,shit,jaime,6
+2019-04-22T01:59:00Z,bitch,jon snow,4
+2019-04-22T01:59:00Z,bitch,daenerys,5
+2019-04-22T01:59:00Z,bitch,cersei,1
+2019-04-22T01:59:00Z,bitch,tyrion,0
+2019-04-22T01:59:00Z,bitch,arya,24
+2019-04-22T01:59:00Z,bitch,sansa,6
+2019-04-22T01:59:00Z,bitch,jaime,1
+2019-04-22T01:59:00Z,ass,jon snow,1
+2019-04-22T01:59:00Z,ass,daenerys,5
+2019-04-22T01:59:00Z,ass,cersei,0
+2019-04-22T01:59:00Z,ass,tyrion,0
+2019-04-22T01:59:00Z,ass,arya,12
+2019-04-22T01:59:00Z,ass,sansa,1
+2019-04-22T01:59:00Z,ass,jaime,0
+2019-04-22T01:59:00Z,dick,jon snow,3
+2019-04-22T01:59:00Z,dick,daenerys,4
+2019-04-22T01:59:00Z,dick,cersei,0
+2019-04-22T01:59:00Z,dick,tyrion,0
+2019-04-22T01:59:00Z,dick,arya,29
+2019-04-22T01:59:00Z,dick,sansa,2
+2019-04-22T01:59:00Z,dick,jaime,0
+2019-04-22T02:00:00Z,fuck,jon snow,57
+2019-04-22T02:00:00Z,fuck,daenerys,22
+2019-04-22T02:00:00Z,fuck,cersei,3
+2019-04-22T02:00:00Z,fuck,tyrion,2
+2019-04-22T02:00:00Z,fuck,arya,52
+2019-04-22T02:00:00Z,fuck,sansa,7
+2019-04-22T02:00:00Z,fuck,jaime,7
+2019-04-22T02:00:00Z,shit,jon snow,15
+2019-04-22T02:00:00Z,shit,daenerys,19
+2019-04-22T02:00:00Z,shit,cersei,1
+2019-04-22T02:00:00Z,shit,tyrion,1
+2019-04-22T02:00:00Z,shit,arya,32
+2019-04-22T02:00:00Z,shit,sansa,2
+2019-04-22T02:00:00Z,shit,jaime,0
+2019-04-22T02:00:00Z,bitch,jon snow,4
+2019-04-22T02:00:00Z,bitch,daenerys,3
+2019-04-22T02:00:00Z,bitch,cersei,1
+2019-04-22T02:00:00Z,bitch,tyrion,0
+2019-04-22T02:00:00Z,bitch,arya,27
+2019-04-22T02:00:00Z,bitch,sansa,7
+2019-04-22T02:00:00Z,bitch,jaime,1
+2019-04-22T02:00:00Z,ass,jon snow,1
+2019-04-22T02:00:00Z,ass,daenerys,1
+2019-04-22T02:00:00Z,ass,cersei,0
+2019-04-22T02:00:00Z,ass,tyrion,0
+2019-04-22T02:00:00Z,ass,arya,12
+2019-04-22T02:00:00Z,ass,sansa,0
+2019-04-22T02:00:00Z,ass,jaime,0
+2019-04-22T02:00:00Z,dick,jon snow,14
+2019-04-22T02:00:00Z,dick,daenerys,14
+2019-04-22T02:00:00Z,dick,cersei,0
+2019-04-22T02:00:00Z,dick,tyrion,0
+2019-04-22T02:00:00Z,dick,arya,37
+2019-04-22T02:00:00Z,dick,sansa,1
+2019-04-22T02:00:00Z,dick,jaime,0
+2019-04-22T02:01:00Z,fuck,jon snow,57
+2019-04-22T02:01:00Z,fuck,daenerys,25
+2019-04-22T02:01:00Z,fuck,cersei,2
+2019-04-22T02:01:00Z,fuck,tyrion,1
+2019-04-22T02:01:00Z,fuck,arya,51
+2019-04-22T02:01:00Z,fuck,sansa,9
+2019-04-22T02:01:00Z,fuck,jaime,4
+2019-04-22T02:01:00Z,shit,jon snow,13
+2019-04-22T02:01:00Z,shit,daenerys,13
+2019-04-22T02:01:00Z,shit,cersei,1
+2019-04-22T02:01:00Z,shit,tyrion,1
+2019-04-22T02:01:00Z,shit,arya,23
+2019-04-22T02:01:00Z,shit,sansa,7
+2019-04-22T02:01:00Z,shit,jaime,2
+2019-04-22T02:01:00Z,bitch,jon snow,2
+2019-04-22T02:01:00Z,bitch,daenerys,6
+2019-04-22T02:01:00Z,bitch,cersei,1
+2019-04-22T02:01:00Z,bitch,tyrion,0
+2019-04-22T02:01:00Z,bitch,arya,20
+2019-04-22T02:01:00Z,bitch,sansa,6
+2019-04-22T02:01:00Z,bitch,jaime,1
+2019-04-22T02:01:00Z,ass,jon snow,0
+2019-04-22T02:01:00Z,ass,daenerys,1
+2019-04-22T02:01:00Z,ass,cersei,2
+2019-04-22T02:01:00Z,ass,tyrion,0
+2019-04-22T02:01:00Z,ass,arya,11
+2019-04-22T02:01:00Z,ass,sansa,1
+2019-04-22T02:01:00Z,ass,jaime,0
+2019-04-22T02:01:00Z,dick,jon snow,11
+2019-04-22T02:01:00Z,dick,daenerys,8
+2019-04-22T02:01:00Z,dick,cersei,0
+2019-04-22T02:01:00Z,dick,tyrion,0
+2019-04-22T02:01:00Z,dick,arya,26
+2019-04-22T02:01:00Z,dick,sansa,2
+2019-04-22T02:01:00Z,dick,jaime,0
+2019-04-22T02:02:00Z,fuck,jon snow,35
+2019-04-22T02:02:00Z,fuck,daenerys,24
+2019-04-22T02:02:00Z,fuck,cersei,1
+2019-04-22T02:02:00Z,fuck,tyrion,4
+2019-04-22T02:02:00Z,fuck,arya,43
+2019-04-22T02:02:00Z,fuck,sansa,7
+2019-04-22T02:02:00Z,fuck,jaime,6
+2019-04-22T02:02:00Z,shit,jon snow,8
+2019-04-22T02:02:00Z,shit,daenerys,9
+2019-04-22T02:02:00Z,shit,cersei,1
+2019-04-22T02:02:00Z,shit,tyrion,0
+2019-04-22T02:02:00Z,shit,arya,20
+2019-04-22T02:02:00Z,shit,sansa,1
+2019-04-22T02:02:00Z,shit,jaime,2
+2019-04-22T02:02:00Z,bitch,jon snow,5
+2019-04-22T02:02:00Z,bitch,daenerys,1
+2019-04-22T02:02:00Z,bitch,cersei,0
+2019-04-22T02:02:00Z,bitch,tyrion,0
+2019-04-22T02:02:00Z,bitch,arya,12
+2019-04-22T02:02:00Z,bitch,sansa,5
+2019-04-22T02:02:00Z,bitch,jaime,0
+2019-04-22T02:02:00Z,ass,jon snow,3
+2019-04-22T02:02:00Z,ass,daenerys,4
+2019-04-22T02:02:00Z,ass,cersei,0
+2019-04-22T02:02:00Z,ass,tyrion,0
+2019-04-22T02:02:00Z,ass,arya,17
+2019-04-22T02:02:00Z,ass,sansa,0
+2019-04-22T02:02:00Z,ass,jaime,0
+2019-04-22T02:02:00Z,dick,jon snow,5
+2019-04-22T02:02:00Z,dick,daenerys,5
+2019-04-22T02:02:00Z,dick,cersei,0
+2019-04-22T02:02:00Z,dick,tyrion,0
+2019-04-22T02:02:00Z,dick,arya,34
+2019-04-22T02:02:00Z,dick,sansa,0
+2019-04-22T02:02:00Z,dick,jaime,0
+2019-04-22T02:03:00Z,fuck,jon snow,36
+2019-04-22T02:03:00Z,fuck,daenerys,22
+2019-04-22T02:03:00Z,fuck,cersei,2
+2019-04-22T02:03:00Z,fuck,tyrion,0
+2019-04-22T02:03:00Z,fuck,arya,58
+2019-04-22T02:03:00Z,fuck,sansa,8
+2019-04-22T02:03:00Z,fuck,jaime,6
+2019-04-22T02:03:00Z,shit,jon snow,10
+2019-04-22T02:03:00Z,shit,daenerys,12
+2019-04-22T02:03:00Z,shit,cersei,0
+2019-04-22T02:03:00Z,shit,tyrion,0
+2019-04-22T02:03:00Z,shit,arya,28
+2019-04-22T02:03:00Z,shit,sansa,2
+2019-04-22T02:03:00Z,shit,jaime,2
+2019-04-22T02:03:00Z,bitch,jon snow,1
+2019-04-22T02:03:00Z,bitch,daenerys,0
+2019-04-22T02:03:00Z,bitch,cersei,0
+2019-04-22T02:03:00Z,bitch,tyrion,0
+2019-04-22T02:03:00Z,bitch,arya,18
+2019-04-22T02:03:00Z,bitch,sansa,1
+2019-04-22T02:03:00Z,bitch,jaime,2
+2019-04-22T02:03:00Z,ass,jon snow,0
+2019-04-22T02:03:00Z,ass,daenerys,2
+2019-04-22T02:03:00Z,ass,cersei,3
+2019-04-22T02:03:00Z,ass,tyrion,0
+2019-04-22T02:03:00Z,ass,arya,11
+2019-04-22T02:03:00Z,ass,sansa,0
+2019-04-22T02:03:00Z,ass,jaime,0
+2019-04-22T02:03:00Z,dick,jon snow,10
+2019-04-22T02:03:00Z,dick,daenerys,10
+2019-04-22T02:03:00Z,dick,cersei,0
+2019-04-22T02:03:00Z,dick,tyrion,0
+2019-04-22T02:03:00Z,dick,arya,27
+2019-04-22T02:03:00Z,dick,sansa,1
+2019-04-22T02:03:00Z,dick,jaime,1
+2019-04-22T02:04:00Z,fuck,jon snow,28
+2019-04-22T02:04:00Z,fuck,daenerys,18
+2019-04-22T02:04:00Z,fuck,cersei,2
+2019-04-22T02:04:00Z,fuck,tyrion,1
+2019-04-22T02:04:00Z,fuck,arya,45
+2019-04-22T02:04:00Z,fuck,sansa,8
+2019-04-22T02:04:00Z,fuck,jaime,4
+2019-04-22T02:04:00Z,shit,jon snow,5
+2019-04-22T02:04:00Z,shit,daenerys,6
+2019-04-22T02:04:00Z,shit,cersei,1
+2019-04-22T02:04:00Z,shit,tyrion,0
+2019-04-22T02:04:00Z,shit,arya,36
+2019-04-22T02:04:00Z,shit,sansa,1
+2019-04-22T02:04:00Z,shit,jaime,2
+2019-04-22T02:04:00Z,bitch,jon snow,2
+2019-04-22T02:04:00Z,bitch,daenerys,5
+2019-04-22T02:04:00Z,bitch,cersei,1
+2019-04-22T02:04:00Z,bitch,tyrion,0
+2019-04-22T02:04:00Z,bitch,arya,21
+2019-04-22T02:04:00Z,bitch,sansa,5
+2019-04-22T02:04:00Z,bitch,jaime,0
+2019-04-22T02:04:00Z,ass,jon snow,0
+2019-04-22T02:04:00Z,ass,daenerys,2
+2019-04-22T02:04:00Z,ass,cersei,1
+2019-04-22T02:04:00Z,ass,tyrion,0
+2019-04-22T02:04:00Z,ass,arya,10
+2019-04-22T02:04:00Z,ass,sansa,0
+2019-04-22T02:04:00Z,ass,jaime,0
+2019-04-22T02:04:00Z,dick,jon snow,9
+2019-04-22T02:04:00Z,dick,daenerys,5
+2019-04-22T02:04:00Z,dick,cersei,0
+2019-04-22T02:04:00Z,dick,tyrion,0
+2019-04-22T02:04:00Z,dick,arya,25
+2019-04-22T02:04:00Z,dick,sansa,4
+2019-04-22T02:04:00Z,dick,jaime,0
+2019-04-22T02:05:00Z,fuck,jon snow,21
+2019-04-22T02:05:00Z,fuck,daenerys,6
+2019-04-22T02:05:00Z,fuck,cersei,0
+2019-04-22T02:05:00Z,fuck,tyrion,1
+2019-04-22T02:05:00Z,fuck,arya,45
+2019-04-22T02:05:00Z,fuck,sansa,13
+2019-04-22T02:05:00Z,fuck,jaime,3
+2019-04-22T02:05:00Z,shit,jon snow,5
+2019-04-22T02:05:00Z,shit,daenerys,2
+2019-04-22T02:05:00Z,shit,cersei,0
+2019-04-22T02:05:00Z,shit,tyrion,3
+2019-04-22T02:05:00Z,shit,arya,25
+2019-04-22T02:05:00Z,shit,sansa,4
+2019-04-22T02:05:00Z,shit,jaime,3
+2019-04-22T02:05:00Z,bitch,jon snow,0
+2019-04-22T02:05:00Z,bitch,daenerys,4
+2019-04-22T02:05:00Z,bitch,cersei,0
+2019-04-22T02:05:00Z,bitch,tyrion,0
+2019-04-22T02:05:00Z,bitch,arya,12
+2019-04-22T02:05:00Z,bitch,sansa,4
+2019-04-22T02:05:00Z,bitch,jaime,0
+2019-04-22T02:05:00Z,ass,jon snow,0
+2019-04-22T02:05:00Z,ass,daenerys,0
+2019-04-22T02:05:00Z,ass,cersei,0
+2019-04-22T02:05:00Z,ass,tyrion,0
+2019-04-22T02:05:00Z,ass,arya,18
+2019-04-22T02:05:00Z,ass,sansa,1
+2019-04-22T02:05:00Z,ass,jaime,0
+2019-04-22T02:05:00Z,dick,jon snow,2
+2019-04-22T02:05:00Z,dick,daenerys,1
+2019-04-22T02:05:00Z,dick,cersei,0
+2019-04-22T02:05:00Z,dick,tyrion,0
+2019-04-22T02:05:00Z,dick,arya,17
+2019-04-22T02:05:00Z,dick,sansa,0
+2019-04-22T02:05:00Z,dick,jaime,0
+2019-04-22T02:06:00Z,fuck,jon snow,15
+2019-04-22T02:06:00Z,fuck,daenerys,11
+2019-04-22T02:06:00Z,fuck,cersei,1
+2019-04-22T02:06:00Z,fuck,tyrion,2
+2019-04-22T02:06:00Z,fuck,arya,58
+2019-04-22T02:06:00Z,fuck,sansa,11
+2019-04-22T02:06:00Z,fuck,jaime,2
+2019-04-22T02:06:00Z,shit,jon snow,1
+2019-04-22T02:06:00Z,shit,daenerys,2
+2019-04-22T02:06:00Z,shit,cersei,1
+2019-04-22T02:06:00Z,shit,tyrion,0
+2019-04-22T02:06:00Z,shit,arya,13
+2019-04-22T02:06:00Z,shit,sansa,1
+2019-04-22T02:06:00Z,shit,jaime,1
+2019-04-22T02:06:00Z,bitch,jon snow,2
+2019-04-22T02:06:00Z,bitch,daenerys,2
+2019-04-22T02:06:00Z,bitch,cersei,0
+2019-04-22T02:06:00Z,bitch,tyrion,0
+2019-04-22T02:06:00Z,bitch,arya,18
+2019-04-22T02:06:00Z,bitch,sansa,4
+2019-04-22T02:06:00Z,bitch,jaime,0
+2019-04-22T02:06:00Z,ass,jon snow,0
+2019-04-22T02:06:00Z,ass,daenerys,0
+2019-04-22T02:06:00Z,ass,cersei,0
+2019-04-22T02:06:00Z,ass,tyrion,0
+2019-04-22T02:06:00Z,ass,arya,13
+2019-04-22T02:06:00Z,ass,sansa,0
+2019-04-22T02:06:00Z,ass,jaime,0
+2019-04-22T02:06:00Z,dick,jon snow,1
+2019-04-22T02:06:00Z,dick,daenerys,0
+2019-04-22T02:06:00Z,dick,cersei,0
+2019-04-22T02:06:00Z,dick,tyrion,0
+2019-04-22T02:06:00Z,dick,arya,8
+2019-04-22T02:06:00Z,dick,sansa,0
+2019-04-22T02:06:00Z,dick,jaime,1
+2019-04-22T02:07:00Z,fuck,jon snow,32
+2019-04-22T02:07:00Z,fuck,daenerys,10
+2019-04-22T02:07:00Z,fuck,cersei,4
+2019-04-22T02:07:00Z,fuck,tyrion,0
+2019-04-22T02:07:00Z,fuck,arya,54
+2019-04-22T02:07:00Z,fuck,sansa,17
+2019-04-22T02:07:00Z,fuck,jaime,7
+2019-04-22T02:07:00Z,shit,jon snow,3
+2019-04-22T02:07:00Z,shit,daenerys,3
+2019-04-22T02:07:00Z,shit,cersei,2
+2019-04-22T02:07:00Z,shit,tyrion,0
+2019-04-22T02:07:00Z,shit,arya,8
+2019-04-22T02:07:00Z,shit,sansa,2
+2019-04-22T02:07:00Z,shit,jaime,0
+2019-04-22T02:07:00Z,bitch,jon snow,2
+2019-04-22T02:07:00Z,bitch,daenerys,2
+2019-04-22T02:07:00Z,bitch,cersei,0
+2019-04-22T02:07:00Z,bitch,tyrion,0
+2019-04-22T02:07:00Z,bitch,arya,8
+2019-04-22T02:07:00Z,bitch,sansa,3
+2019-04-22T02:07:00Z,bitch,jaime,1
+2019-04-22T02:07:00Z,ass,jon snow,0
+2019-04-22T02:07:00Z,ass,daenerys,1
+2019-04-22T02:07:00Z,ass,cersei,0
+2019-04-22T02:07:00Z,ass,tyrion,0
+2019-04-22T02:07:00Z,ass,arya,15
+2019-04-22T02:07:00Z,ass,sansa,2
+2019-04-22T02:07:00Z,ass,jaime,0
+2019-04-22T02:07:00Z,dick,jon snow,5
+2019-04-22T02:07:00Z,dick,daenerys,2
+2019-04-22T02:07:00Z,dick,cersei,0
+2019-04-22T02:07:00Z,dick,tyrion,0
+2019-04-22T02:07:00Z,dick,arya,17
+2019-04-22T02:07:00Z,dick,sansa,2
+2019-04-22T02:07:00Z,dick,jaime,0
+2019-04-22T02:08:00Z,fuck,jon snow,22
+2019-04-22T02:08:00Z,fuck,daenerys,11
+2019-04-22T02:08:00Z,fuck,cersei,2
+2019-04-22T02:08:00Z,fuck,tyrion,1
+2019-04-22T02:08:00Z,fuck,arya,49
+2019-04-22T02:08:00Z,fuck,sansa,12
+2019-04-22T02:08:00Z,fuck,jaime,1
+2019-04-22T02:08:00Z,shit,jon snow,2
+2019-04-22T02:08:00Z,shit,daenerys,3
+2019-04-22T02:08:00Z,shit,cersei,1
+2019-04-22T02:08:00Z,shit,tyrion,0
+2019-04-22T02:08:00Z,shit,arya,15
+2019-04-22T02:08:00Z,shit,sansa,3
+2019-04-22T02:08:00Z,shit,jaime,0
+2019-04-22T02:08:00Z,bitch,jon snow,2
+2019-04-22T02:08:00Z,bitch,daenerys,4
+2019-04-22T02:08:00Z,bitch,cersei,3
+2019-04-22T02:08:00Z,bitch,tyrion,0
+2019-04-22T02:08:00Z,bitch,arya,19
+2019-04-22T02:08:00Z,bitch,sansa,4
+2019-04-22T02:08:00Z,bitch,jaime,1
+2019-04-22T02:08:00Z,ass,jon snow,0
+2019-04-22T02:08:00Z,ass,daenerys,2
+2019-04-22T02:08:00Z,ass,cersei,0
+2019-04-22T02:08:00Z,ass,tyrion,1
+2019-04-22T02:08:00Z,ass,arya,9
+2019-04-22T02:08:00Z,ass,sansa,1
+2019-04-22T02:08:00Z,ass,jaime,0
+2019-04-22T02:08:00Z,dick,jon snow,3
+2019-04-22T02:08:00Z,dick,daenerys,1
+2019-04-22T02:08:00Z,dick,cersei,0
+2019-04-22T02:08:00Z,dick,tyrion,0
+2019-04-22T02:08:00Z,dick,arya,16
+2019-04-22T02:08:00Z,dick,sansa,3
+2019-04-22T02:08:00Z,dick,jaime,2
+2019-04-22T02:09:00Z,fuck,jon snow,16
+2019-04-22T02:09:00Z,fuck,daenerys,5
+2019-04-22T02:09:00Z,fuck,cersei,3
+2019-04-22T02:09:00Z,fuck,tyrion,1
+2019-04-22T02:09:00Z,fuck,arya,52
+2019-04-22T02:09:00Z,fuck,sansa,11
+2019-04-22T02:09:00Z,fuck,jaime,4
+2019-04-22T02:09:00Z,shit,jon snow,2
+2019-04-22T02:09:00Z,shit,daenerys,1
+2019-04-22T02:09:00Z,shit,cersei,0
+2019-04-22T02:09:00Z,shit,tyrion,0
+2019-04-22T02:09:00Z,shit,arya,12
+2019-04-22T02:09:00Z,shit,sansa,3
+2019-04-22T02:09:00Z,shit,jaime,1
+2019-04-22T02:09:00Z,bitch,jon snow,1
+2019-04-22T02:09:00Z,bitch,daenerys,2
+2019-04-22T02:09:00Z,bitch,cersei,1
+2019-04-22T02:09:00Z,bitch,tyrion,0
+2019-04-22T02:09:00Z,bitch,arya,17
+2019-04-22T02:09:00Z,bitch,sansa,3
+2019-04-22T02:09:00Z,bitch,jaime,0
+2019-04-22T02:09:00Z,ass,jon snow,0
+2019-04-22T02:09:00Z,ass,daenerys,1
+2019-04-22T02:09:00Z,ass,cersei,0
+2019-04-22T02:09:00Z,ass,tyrion,0
+2019-04-22T02:09:00Z,ass,arya,13
+2019-04-22T02:09:00Z,ass,sansa,0
+2019-04-22T02:09:00Z,ass,jaime,1
+2019-04-22T02:09:00Z,dick,jon snow,1
+2019-04-22T02:09:00Z,dick,daenerys,0
+2019-04-22T02:09:00Z,dick,cersei,0
+2019-04-22T02:09:00Z,dick,tyrion,0
+2019-04-22T02:09:00Z,dick,arya,15
+2019-04-22T02:09:00Z,dick,sansa,0
+2019-04-22T02:09:00Z,dick,jaime,0
+2019-04-22T02:10:00Z,fuck,jon snow,15
+2019-04-22T02:10:00Z,fuck,daenerys,12
+2019-04-22T02:10:00Z,fuck,cersei,3
+2019-04-22T02:10:00Z,fuck,tyrion,1
+2019-04-22T02:10:00Z,fuck,arya,46
+2019-04-22T02:10:00Z,fuck,sansa,16
+2019-04-22T02:10:00Z,fuck,jaime,3
+2019-04-22T02:10:00Z,shit,jon snow,2
+2019-04-22T02:10:00Z,shit,daenerys,4
+2019-04-22T02:10:00Z,shit,cersei,1
+2019-04-22T02:10:00Z,shit,tyrion,0
+2019-04-22T02:10:00Z,shit,arya,8
+2019-04-22T02:10:00Z,shit,sansa,6
+2019-04-22T02:10:00Z,shit,jaime,0
+2019-04-22T02:10:00Z,bitch,jon snow,2
+2019-04-22T02:10:00Z,bitch,daenerys,3
+2019-04-22T02:10:00Z,bitch,cersei,1
+2019-04-22T02:10:00Z,bitch,tyrion,1
+2019-04-22T02:10:00Z,bitch,arya,14
+2019-04-22T02:10:00Z,bitch,sansa,6
+2019-04-22T02:10:00Z,bitch,jaime,1
+2019-04-22T02:10:00Z,ass,jon snow,0
+2019-04-22T02:10:00Z,ass,daenerys,1
+2019-04-22T02:10:00Z,ass,cersei,0
+2019-04-22T02:10:00Z,ass,tyrion,0
+2019-04-22T02:10:00Z,ass,arya,8
+2019-04-22T02:10:00Z,ass,sansa,0
+2019-04-22T02:10:00Z,ass,jaime,0
+2019-04-22T02:10:00Z,dick,jon snow,3
+2019-04-22T02:10:00Z,dick,daenerys,1
+2019-04-22T02:10:00Z,dick,cersei,0
+2019-04-22T02:10:00Z,dick,tyrion,0
+2019-04-22T02:10:00Z,dick,arya,34
+2019-04-22T02:10:00Z,dick,sansa,1
+2019-04-22T02:10:00Z,dick,jaime,3
+2019-04-22T02:11:00Z,fuck,jon snow,19
+2019-04-22T02:11:00Z,fuck,daenerys,6
+2019-04-22T02:11:00Z,fuck,cersei,2
+2019-04-22T02:11:00Z,fuck,tyrion,1
+2019-04-22T02:11:00Z,fuck,arya,44
+2019-04-22T02:11:00Z,fuck,sansa,15
+2019-04-22T02:11:00Z,fuck,jaime,6
+2019-04-22T02:11:00Z,shit,jon snow,3
+2019-04-22T02:11:00Z,shit,daenerys,3
+2019-04-22T02:11:00Z,shit,cersei,1
+2019-04-22T02:11:00Z,shit,tyrion,0
+2019-04-22T02:11:00Z,shit,arya,17
+2019-04-22T02:11:00Z,shit,sansa,3
+2019-04-22T02:11:00Z,shit,jaime,0
+2019-04-22T02:11:00Z,bitch,jon snow,0
+2019-04-22T02:11:00Z,bitch,daenerys,2
+2019-04-22T02:11:00Z,bitch,cersei,0
+2019-04-22T02:11:00Z,bitch,tyrion,0
+2019-04-22T02:11:00Z,bitch,arya,16
+2019-04-22T02:11:00Z,bitch,sansa,2
+2019-04-22T02:11:00Z,bitch,jaime,0
+2019-04-22T02:11:00Z,ass,jon snow,0
+2019-04-22T02:11:00Z,ass,daenerys,1
+2019-04-22T02:11:00Z,ass,cersei,0
+2019-04-22T02:11:00Z,ass,tyrion,0
+2019-04-22T02:11:00Z,ass,arya,10
+2019-04-22T02:11:00Z,ass,sansa,0
+2019-04-22T02:11:00Z,ass,jaime,0
+2019-04-22T02:11:00Z,dick,jon snow,2
+2019-04-22T02:11:00Z,dick,daenerys,1
+2019-04-22T02:11:00Z,dick,cersei,0
+2019-04-22T02:11:00Z,dick,tyrion,0
+2019-04-22T02:11:00Z,dick,arya,24
+2019-04-22T02:11:00Z,dick,sansa,2
+2019-04-22T02:11:00Z,dick,jaime,1
+2019-04-22T02:12:00Z,fuck,jon snow,19
+2019-04-22T02:12:00Z,fuck,daenerys,4
+2019-04-22T02:12:00Z,fuck,cersei,1
+2019-04-22T02:12:00Z,fuck,tyrion,1
+2019-04-22T02:12:00Z,fuck,arya,59
+2019-04-22T02:12:00Z,fuck,sansa,14
+2019-04-22T02:12:00Z,fuck,jaime,2
+2019-04-22T02:12:00Z,shit,jon snow,1
+2019-04-22T02:12:00Z,shit,daenerys,0
+2019-04-22T02:12:00Z,shit,cersei,2
+2019-04-22T02:12:00Z,shit,tyrion,1
+2019-04-22T02:12:00Z,shit,arya,11
+2019-04-22T02:12:00Z,shit,sansa,3
+2019-04-22T02:12:00Z,shit,jaime,2
+2019-04-22T02:12:00Z,bitch,jon snow,1
+2019-04-22T02:12:00Z,bitch,daenerys,3
+2019-04-22T02:12:00Z,bitch,cersei,3
+2019-04-22T02:12:00Z,bitch,tyrion,0
+2019-04-22T02:12:00Z,bitch,arya,19
+2019-04-22T02:12:00Z,bitch,sansa,4
+2019-04-22T02:12:00Z,bitch,jaime,1
+2019-04-22T02:12:00Z,ass,jon snow,0
+2019-04-22T02:12:00Z,ass,daenerys,1
+2019-04-22T02:12:00Z,ass,cersei,1
+2019-04-22T02:12:00Z,ass,tyrion,0
+2019-04-22T02:12:00Z,ass,arya,10
+2019-04-22T02:12:00Z,ass,sansa,2
+2019-04-22T02:12:00Z,ass,jaime,1
+2019-04-22T02:12:00Z,dick,jon snow,1
+2019-04-22T02:12:00Z,dick,daenerys,0
+2019-04-22T02:12:00Z,dick,cersei,0
+2019-04-22T02:12:00Z,dick,tyrion,0
+2019-04-22T02:12:00Z,dick,arya,15
+2019-04-22T02:12:00Z,dick,sansa,2
+2019-04-22T02:12:00Z,dick,jaime,1
+2019-04-22T02:13:00Z,fuck,jon snow,17
+2019-04-22T02:13:00Z,fuck,daenerys,6
+2019-04-22T02:13:00Z,fuck,cersei,2
+2019-04-22T02:13:00Z,fuck,tyrion,1
+2019-04-22T02:13:00Z,fuck,arya,62
+2019-04-22T02:13:00Z,fuck,sansa,16
+2019-04-22T02:13:00Z,fuck,jaime,3
+2019-04-22T02:13:00Z,shit,jon snow,2
+2019-04-22T02:13:00Z,shit,daenerys,1
+2019-04-22T02:13:00Z,shit,cersei,2
+2019-04-22T02:13:00Z,shit,tyrion,1
+2019-04-22T02:13:00Z,shit,arya,11
+2019-04-22T02:13:00Z,shit,sansa,4
+2019-04-22T02:13:00Z,shit,jaime,1
+2019-04-22T02:13:00Z,bitch,jon snow,3
+2019-04-22T02:13:00Z,bitch,daenerys,2
+2019-04-22T02:13:00Z,bitch,cersei,1
+2019-04-22T02:13:00Z,bitch,tyrion,1
+2019-04-22T02:13:00Z,bitch,arya,24
+2019-04-22T02:13:00Z,bitch,sansa,2
+2019-04-22T02:13:00Z,bitch,jaime,0
+2019-04-22T02:13:00Z,ass,jon snow,0
+2019-04-22T02:13:00Z,ass,daenerys,0
+2019-04-22T02:13:00Z,ass,cersei,0
+2019-04-22T02:13:00Z,ass,tyrion,0
+2019-04-22T02:13:00Z,ass,arya,11
+2019-04-22T02:13:00Z,ass,sansa,0
+2019-04-22T02:13:00Z,ass,jaime,2
+2019-04-22T02:13:00Z,dick,jon snow,3
+2019-04-22T02:13:00Z,dick,daenerys,1
+2019-04-22T02:13:00Z,dick,cersei,0
+2019-04-22T02:13:00Z,dick,tyrion,0
+2019-04-22T02:13:00Z,dick,arya,15
+2019-04-22T02:13:00Z,dick,sansa,1
+2019-04-22T02:13:00Z,dick,jaime,0
+2019-04-22T02:14:00Z,fuck,jon snow,9
+2019-04-22T02:14:00Z,fuck,daenerys,6
+2019-04-22T02:14:00Z,fuck,cersei,0
+2019-04-22T02:14:00Z,fuck,tyrion,0
+2019-04-22T02:14:00Z,fuck,arya,41
+2019-04-22T02:14:00Z,fuck,sansa,15
+2019-04-22T02:14:00Z,fuck,jaime,3
+2019-04-22T02:14:00Z,shit,jon snow,3
+2019-04-22T02:14:00Z,shit,daenerys,1
+2019-04-22T02:14:00Z,shit,cersei,0
+2019-04-22T02:14:00Z,shit,tyrion,0
+2019-04-22T02:14:00Z,shit,arya,7
+2019-04-22T02:14:00Z,shit,sansa,6
+2019-04-22T02:14:00Z,shit,jaime,0
+2019-04-22T02:14:00Z,bitch,jon snow,0
+2019-04-22T02:14:00Z,bitch,daenerys,2
+2019-04-22T02:14:00Z,bitch,cersei,1
+2019-04-22T02:14:00Z,bitch,tyrion,0
+2019-04-22T02:14:00Z,bitch,arya,19
+2019-04-22T02:14:00Z,bitch,sansa,4
+2019-04-22T02:14:00Z,bitch,jaime,0
+2019-04-22T02:14:00Z,ass,jon snow,1
+2019-04-22T02:14:00Z,ass,daenerys,1
+2019-04-22T02:14:00Z,ass,cersei,1
+2019-04-22T02:14:00Z,ass,tyrion,0
+2019-04-22T02:14:00Z,ass,arya,5
+2019-04-22T02:14:00Z,ass,sansa,0
+2019-04-22T02:14:00Z,ass,jaime,0
+2019-04-22T02:14:00Z,dick,jon snow,0
+2019-04-22T02:14:00Z,dick,daenerys,0
+2019-04-22T02:14:00Z,dick,cersei,0
+2019-04-22T02:14:00Z,dick,tyrion,0
+2019-04-22T02:14:00Z,dick,arya,15
+2019-04-22T02:14:00Z,dick,sansa,0
+2019-04-22T02:14:00Z,dick,jaime,0
+2019-04-22T02:15:00Z,fuck,jon snow,0
+2019-04-22T02:15:00Z,fuck,daenerys,0
+2019-04-22T02:15:00Z,fuck,cersei,1
+2019-04-22T02:15:00Z,fuck,tyrion,1
+2019-04-22T02:15:00Z,fuck,arya,1
+2019-04-22T02:15:00Z,fuck,sansa,0
+2019-04-22T02:15:00Z,fuck,jaime,0
+2019-04-22T02:15:00Z,shit,jon snow,0
+2019-04-22T02:15:00Z,shit,daenerys,0
+2019-04-22T02:15:00Z,shit,cersei,0
+2019-04-22T02:15:00Z,shit,tyrion,0
+2019-04-22T02:15:00Z,shit,arya,0
+2019-04-22T02:15:00Z,shit,sansa,0
+2019-04-22T02:15:00Z,shit,jaime,0
+2019-04-22T02:15:00Z,bitch,jon snow,0
+2019-04-22T02:15:00Z,bitch,daenerys,0
+2019-04-22T02:15:00Z,bitch,cersei,0
+2019-04-22T02:15:00Z,bitch,tyrion,0
+2019-04-22T02:15:00Z,bitch,arya,2
+2019-04-22T02:15:00Z,bitch,sansa,0
+2019-04-22T02:15:00Z,bitch,jaime,0
+2019-04-22T02:15:00Z,ass,jon snow,0
+2019-04-22T02:15:00Z,ass,daenerys,0
+2019-04-22T02:15:00Z,ass,cersei,0
+2019-04-22T02:15:00Z,ass,tyrion,0
+2019-04-22T02:15:00Z,ass,arya,0
+2019-04-22T02:15:00Z,ass,sansa,0
+2019-04-22T02:15:00Z,ass,jaime,0
+2019-04-22T02:15:00Z,dick,jon snow,0
+2019-04-22T02:15:00Z,dick,daenerys,0
+2019-04-22T02:15:00Z,dick,cersei,0
+2019-04-22T02:15:00Z,dick,tyrion,0
+2019-04-22T02:15:00Z,dick,arya,0
+2019-04-22T02:15:00Z,dick,sansa,0
+2019-04-22T02:15:00Z,dick,jaime,0
