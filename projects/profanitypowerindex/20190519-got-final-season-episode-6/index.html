@@ -1,0 +1,146 @@
+---
+layout: null
+title: "Profanity Power Index"
+---
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Profanity Power Index</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <!-- Site-wide styling -->
+    <link rel="stylesheet" href="{{ site.url }}/css/style.css"/>
+</head>
+<body class="fill">
+    {% include navbar.html %}
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Profanity Power Index</h1>
+        </div>
+        <hr>
+        <div class="row">
+            <h5 class="text-center">Collected from the Twitter public timeline.</h5>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-5" id="jon-snow-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="jon-snow-image">
+                    <img src="https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Jon Snow</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="jon-snow-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-5" id="arya-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="arya-image">
+                    <img src="https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w700.h700.jpg" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Arya Stark</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="arya-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-5" id="sansa-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="sansa-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sansa-stark-84e96267-5156-421d-95b7-13bdbe8397da-1502318886.jpg?crop=0.525xw:1.00xh;0.202xw,0&resize=480:*" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Sansa Stark</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="sansa-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-5" id="daenerys-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="daenerys-image">
+                    <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/36/1504608500-daenerys.jpg?crop=0.665xw:1.00xh;0.0950xw,0&resize=480:*" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Daenerys Targaryen</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="daenerys-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-5" id="cersei-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="cersei-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJN1mnapJhzvc5UXLMqPImMVGFgAh5_K3S_Oyvzp2pHWGWaxY" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Cersei Lannister</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="cersei-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-5" id="tyrion-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="tyrion-image">
+                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/game-of-thrones-season-8-peter-dinklage-tyrion-lannister-1554392499.jpg?crop=0.743xw:0.528xh;0.126xw,0.0700xh&resize=480:*" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Tyrion Lannister</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="tyrion-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-5" id="jaime-barchart"></div>
+            <div class="col-md-2">
+                <div class="row" id="jaime-image">
+                    <img src="https://pbs.twimg.com/profile_images/1102627590618185728/InsaP-NJ.jpg" style="width:180px; height:180px; border:2px solid black; margin: 1em auto 0">
+                </div>
+                <div class="row text-center">
+                    <h5>Jaime Lannister</h5>
+                </div>
+            </div>
+            <div class="col-md-5" id="jaime-sparkline"></div>
+        </div>
+        <hr>
+        
+        <div class="row">
+            <p class="text-center">
+                Technical shit: Collected with <a href="https://github.com/bear/python-twitter">python-twitter</a> and <a href="https://github.com/elastic/elasticsearch">Elasticsearch</a>.
+            </p>
+            <p class="text-center">
+                Visualization built with <a href="https://d3js.org/">D3.js</a>.
+            </p>
+            <p class="text-center">
+                Check out the code on <a href="https://github.com/timothyrenner/profanity-power-index">GitHub</a>.
+            </p>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <script src="js/profanity_power_index.js" type="text/javascript"></script>
+    <script>
+        // TODO: Add the callback with the subjects.
+        d3.csv("20190519_got_episode_6.csv", csvCallback([{"colors": {"barchart": {"base": "#636363", "hover": "#252525"}, "sparkline": [{"color": "#F7F7F7", "offset": "0%"}, {"color": "#CCCCCC", "offset": "25%"}, {"color": "#969696", "offset": "50%"}, {"color": "#636363", "offset": "75%"}, {"color": "#252525", "offset": "100%"}]}, "display_name": "Jon Snow", "id": "jon-snow", "image": "https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg", "name": "jon snow"}, {"colors": {"barchart": {"base": "#636363", "hover": "#252525"}, "sparkline": [{"color": "#F7F7F7", "offset": "0%"}, {"color": "#CCCCCC", "offset": "25%"}, {"color": "#969696", "offset": "50%"}, {"color": "#636363", "offset": "75%"}, {"color": "#252525", "offset": "100%"}]}, "display_name": "Arya Stark", "id": "arya", "image": "https://pixel.nymag.com/imgs/daily/vulture/2017/07/18/18-arya-stark.w700.h700.jpg", "name": "arya"}, {"colors": {"barchart": {"base": "#636363", "hover": "#252525"}, "sparkline": [{"color": "#F7F7F7", "offset": "0%"}, {"color": "#CCCCCC", "offset": "25%"}, {"color": "#969696", "offset": "50%"}, {"color": "#636363", "offset": "75%"}, {"color": "#252525", "offset": "100%"}]}, "display_name": "Sansa Stark", "id": "sansa", "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sansa-stark-84e96267-5156-421d-95b7-13bdbe8397da-1502318886.jpg?crop=0.525xw:1.00xh;0.202xw,0\u0026resize=480:*", "name": "sansa"}, {"colors": {"barchart": {"base": "#BABABA", "hover": "#404040"}, "sparkline": [{"color": "#CA0020", "offset": "0%"}, {"color": "#F4A582", "offset": "25%"}, {"color": "#FFFFFF", "offset": "50%"}, {"color": "#BABABA", "offset": "75%"}, {"color": "#404040", "offset": "100%"}]}, "display_name": "Daenerys Targaryen", "id": "daenerys", "image": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/36/1504608500-daenerys.jpg?crop=0.665xw:1.00xh;0.0950xw,0\u0026resize=480:*", "name": "daenerys"}, {"colors": {"barchart": {"base": "#F03B20", "hover": "#BD0026"}, "sparkline": [{"color": "#FFFFB2", "offset": "0%"}, {"color": "#FECC5C", "offset": "25%"}, {"color": "#FD8D3C", "offset": "50%"}, {"color": "#F03B20", "offset": "75%"}, {"color": "#BD0026", "offset": "100%"}]}, "display_name": "Cersei Lannister", "id": "cersei", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJN1mnapJhzvc5UXLMqPImMVGFgAh5_K3S_Oyvzp2pHWGWaxY", "name": "cersei"}, {"colors": {"barchart": {"base": "#F03B20", "hover": "#BD0026"}, "sparkline": [{"color": "#FFFFB2", "offset": "0%"}, {"color": "#FECC5C", "offset": "25%"}, {"color": "#FD8D3C", "offset": "50%"}, {"color": "#F03B20", "offset": "75%"}, {"color": "#BD0026", "offset": "100%"}]}, "display_name": "Tyrion Lannister", "id": "tyrion", "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/game-of-thrones-season-8-peter-dinklage-tyrion-lannister-1554392499.jpg?crop=0.743xw:0.528xh;0.126xw,0.0700xh\u0026resize=480:*", "name": "tyrion"}, {"colors": {"barchart": {"base": "#F03B20", "hover": "#BD0026"}, "sparkline": [{"color": "#FFFFB2", "offset": "0%"}, {"color": "#FECC5C", "offset": "25%"}, {"color": "#FD8D3C", "offset": "50%"}, {"color": "#F03B20", "offset": "75%"}, {"color": "#BD0026", "offset": "100%"}]}, "display_name": "Jaime Lannister", "id": "jaime", "image": "https://pbs.twimg.com/profile_images/1102627590618185728/InsaP-NJ.jpg", "name": "jaime"}]));
+    </script>
+</body>
+</html>
