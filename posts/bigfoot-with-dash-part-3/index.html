@@ -1,0 +1,276 @@
+<!doctype html><html lang=en><head><title>Finding Bigfoot with Dash, Part 3 · Timothy Renner</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Timothy Renner"><meta name=description content="Adding a search bar to the Bigfoot report titles and wiring it to the sightings map and plots.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta name=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Finding Bigfoot with Dash, Part 3"><meta name=twitter:description content="Adding a search bar to the Bigfoot report titles and wiring it to the sightings map and plots.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta property="og:title" content="Finding Bigfoot with Dash, Part 3"><meta property="og:description" content="Adding a search bar to the Bigfoot report titles and wiring it to the sightings map and plots.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta property="og:type" content="article"><meta property="og:url" content="https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-08-10T00:00:00+00:00"><meta property="article:modified_time" content="2022-08-10T00:00:00+00:00"><link rel=canonical href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.7f9d180e3b3bebba9ba80d55eed1255c35e00764872854736d6ad7db38884ffc.css integrity="sha256-f50YDjs767qbqA1V7tElXDXgB2SHKFRzbWrX2ziIT/w=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.107.0"></head><body class="preload-transitions colorscheme-light"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Timothy Renner</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/>Finding Bigfoot with Dash, Part 3</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2022-08-10T00:00:00Z>August 10, 2022</time></span>
+<span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+8-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/authors/timothy-renner/>Timothy Renner</a></div></div></header><div><p>Adding a search bar to the Bigfoot report titles and wiring it to the sightings map and plots.</p><p><em><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/>Part 1: Map</a></em></p><p><em><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/>Part 2: Plots</a></em></p><p><strong><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/>Part 3: Interactions</a></strong></p><div class="notice warning"><div class=notice-title><i class="fa fa-exclamation-triangle" aria-hidden=true></i>Warning</div><div class=notice-content><p>I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.</p><p>In particular, the <a href=https://dash-bootstrap-components.opensource.faculty.ai/>Dash Bootstrap Components</a> library replaces the manually set CSS classes and works really well. <a href=https://plotly.com/python/mapbox-layers/>Plotly Express</a> makes generating the map easier too.</p></div></div><p>This is it, the final piece of the puzzle.
+The answer to questions no one thought to ask.
+The key to unlocking the sasquatch mystery.</p><p>Maybe.</p><p>This is part 3 of the details of my latest plan to make <a href=http://www.wtae.com/article/the-hunt-for-bigfoot-in-crawford-county-pennsylvania/10227215>one million dollars by finding Bigfoot</a> using Plotly&rsquo;s <a href=https://plot.ly/products/dash/>Dash</a> framework.
+I walked through the app structure and the interactive map in <a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/>part 1</a>.
+In <a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/>part 2</a> I added a few more plots and made a more complicated layout.
+In this part I&rsquo;ll add a search bar that filters the data in all of the plots using the text in the title and the real magic of the Dash framework: the callback decorator.</p><h2 id=input-bar>Input Bar
+<a class=heading-link href=#input-bar><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>The first order of business is to add the input bar to the layout.
+I&rsquo;ll also go ahead and add links to the data sources to the same row.
+The rest of the layout is unchanged at the moment.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>layout <span style=color:#f92672>=</span> html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Title</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Title</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>H1(<span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>, className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-center&#34;</span>)
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-12&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e>############################################################################</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># NEW CODE</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>############################################################################</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Input Bar + References</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Input Bar</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>P([
+</span></span><span style=display:flex><span>                html<span style=color:#f92672>.</span>B(<span style=color:#e6db74>&#34;Filter the titles:  &#34;</span>),
+</span></span><span style=display:flex><span>                dcc<span style=color:#f92672>.</span>Input(
+</span></span><span style=display:flex><span>                    placeholder<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Try &#39;heard&#39;&#34;</span>,
+</span></span><span style=display:flex><span>                    id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-text-filter&#34;</span>,
+</span></span><span style=display:flex><span>                    value<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>            ]),
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-6&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: References.</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>P([
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;Data pulled from &#34;</span>,
+</span></span><span style=display:flex><span>                html<span style=color:#f92672>.</span>A(<span style=color:#e6db74>&#34;bfro.net&#34;</span>, href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;http://www.bfro.net/&#34;</span>),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;. Grab it at &#34;</span>,
+</span></span><span style=display:flex><span>                html<span style=color:#f92672>.</span>A(<span style=color:#e6db74>&#34;data.world&#34;</span>,
+</span></span><span style=display:flex><span>                       href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://data.world/timothyrenner/bfro-sightings-data&#34;</span>),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;.&#34;</span>
+</span></span><span style=display:flex><span>            ], style<span style=color:#f92672>=</span>{<span style=color:#e6db74>&#34;text-align&#34;</span>: <span style=color:#e6db74>&#34;right&#34;</span>})
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-6&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e>############################################################################</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Map + DOW</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Map</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-map&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_map(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-8&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Day of Week</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-dow&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_dow(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-4&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Year + Class</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Year</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-by-year&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_by_year(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-8&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Class</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-class&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_class(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-4&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>)
+</span></span><span style=display:flex><span>], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container-fluid&#34;</span>)
+</span></span></code></pre></div><p>The search bar is a Dash <code>Input</code> component, but it isn&rsquo;t wired to anything.
+If I fired up the app right now it would show up, and that&rsquo;s about it.
+The server&rsquo;s going to need a little work to make the magic happen.</p><h2 id=filter-function>Filter Function
+<a class=heading-link href=#filter-function><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>The first thing the server&rsquo;s going to need is a function that will filter the sightings data for us.
+Since the goal is to filter <em>all</em> of the data feeding the plots, it makes sense to write the function once and use it to filter the data before sending it to the individual plotting functions.
+This realization may or may not have come to me after I already wrote the same thing four times.
+Anyway, here&rsquo;s what that function should look like:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Compose list with filter using toolz.</span>
+</span></span><span style=display:flex><span>listfilter <span style=color:#f92672>=</span> compose(list, filter)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>filter_sightings</span>(filter_text):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> listfilter(
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>lambda</span> x: filter_text<span style=color:#f92672>.</span>lower() <span style=color:#f92672>in</span> x[<span style=color:#e6db74>&#39;title&#39;</span>]<span style=color:#f92672>.</span>lower(),
+</span></span><span style=display:flex><span>            BFRO_LOCATION_DATA
+</span></span><span style=display:flex><span>        )
+</span></span></code></pre></div><p>This function takes some text and performs a substring search against the titles in <code>BFRO_LOCATION_DATA</code>, making sure everything&rsquo;s in lower case so the search isn&rsquo;t case sensitive.
+A more sophisticated version might use some sort of index or fuzzy matching or even a little NLP, but a substring search is a good start.
+One thing to notice is that the function closes around the <code>BFRO_LOCATION_DATA</code> variable, which is effectively in global scope for the application.
+This isn&rsquo;t a problem because I don&rsquo;t ever ever ever ever modify it.
+Once it&rsquo;s initialized, it&rsquo;s a constant.</p><h2 id=callbacks>Callbacks
+<a class=heading-link href=#callbacks><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>It&rsquo;s time to put the input bar and filter function to good use.
+There&rsquo;s one last modification I&rsquo;ll need to make to the layout: remove the <code>figure</code> attribute from the <code>dcc.Graph</code> components.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>layout <span style=color:#f92672>=</span> html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Title</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Title</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>H1(<span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>, className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-center&#34;</span>)
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-12&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Input Bar + References</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Input Bar</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>P([
+</span></span><span style=display:flex><span>                html<span style=color:#f92672>.</span>B(<span style=color:#e6db74>&#34;Filter the titles:  &#34;</span>),
+</span></span><span style=display:flex><span>                dcc<span style=color:#f92672>.</span>Input(
+</span></span><span style=display:flex><span>                    placeholder<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;Try &#39;heard&#39;&#34;</span>,
+</span></span><span style=display:flex><span>                    id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-text-filter&#34;</span>,
+</span></span><span style=display:flex><span>                    value<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;&#34;</span>)
+</span></span><span style=display:flex><span>            ]),
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-6&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: References.</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>P([
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;Data pulled from &#34;</span>,
+</span></span><span style=display:flex><span>                html<span style=color:#f92672>.</span>A(<span style=color:#e6db74>&#34;bfro.net&#34;</span>, href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;http://www.bfro.net/&#34;</span>),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;. Grab it at &#34;</span>,
+</span></span><span style=display:flex><span>                html<span style=color:#f92672>.</span>A(<span style=color:#e6db74>&#34;data.world&#34;</span>, 
+</span></span><span style=display:flex><span>                       href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;https://data.world/timothyrenner/bfro-sightings-data&#34;</span>),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;.&#34;</span>
+</span></span><span style=display:flex><span>            ], style<span style=color:#f92672>=</span>{<span style=color:#e6db74>&#34;text-align&#34;</span>: <span style=color:#e6db74>&#34;right&#34;</span>})
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-6&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Map + DOW</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Map</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-map&#34;</span>
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-8&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Day of Week</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-dow&#34;</span>
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-4&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Year + Class</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Year</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-by-year&#34;</span>
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-8&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Class</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-class&#34;</span>
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-4&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>)
+</span></span><span style=display:flex><span>], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container-fluid&#34;</span>)
+</span></span></code></pre></div><p>What I&rsquo;m going to do next is wire the <code>figure</code> attribute of those components to the values returned by the callbacks, rather than having them statically built when the server starts.
+Because the interaction is fairly straightforward - read the input and filter the data by title - the callbacks themselves aren&rsquo;t complicated.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#a6e22e>@app.callback</span>(
+</span></span><span style=display:flex><span>    Output(<span style=color:#e6db74>&#39;bigfoot-map&#39;</span>, <span style=color:#e6db74>&#39;figure&#39;</span>),
+</span></span><span style=display:flex><span>    [
+</span></span><span style=display:flex><span>        Input(<span style=color:#e6db74>&#39;bigfoot-text-filter&#39;</span>, <span style=color:#e6db74>&#39;value&#39;</span>)
+</span></span><span style=display:flex><span>    ]
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>filter_bigfoot_map</span>(filter_text):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> bigfoot_map(filter_sightings(filter_text))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@app.callback</span>(
+</span></span><span style=display:flex><span>    Output(<span style=color:#e6db74>&#39;bigfoot-by-year&#39;</span>, <span style=color:#e6db74>&#39;figure&#39;</span>),
+</span></span><span style=display:flex><span>    [
+</span></span><span style=display:flex><span>        Input(<span style=color:#e6db74>&#39;bigfoot-text-filter&#39;</span>, <span style=color:#e6db74>&#39;value&#39;</span>)
+</span></span><span style=display:flex><span>    ]
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>filter_bigfoot_by_year</span>(filter_text):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> bigfoot_by_year(filter_sightings(filter_text))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@app.callback</span>(
+</span></span><span style=display:flex><span>    Output(<span style=color:#e6db74>&#39;bigfoot-dow&#39;</span>, <span style=color:#e6db74>&#39;figure&#39;</span>),
+</span></span><span style=display:flex><span>    [
+</span></span><span style=display:flex><span>        Input(<span style=color:#e6db74>&#39;bigfoot-text-filter&#39;</span>, <span style=color:#e6db74>&#39;value&#39;</span>)
+</span></span><span style=display:flex><span>    ]
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>filter_bigfoot_dow</span>(filter_text):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> bigfoot_dow(filter_sightings(filter_text))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@app.callback</span>(
+</span></span><span style=display:flex><span>    Output(<span style=color:#e6db74>&#39;bigfoot-class&#39;</span>, <span style=color:#e6db74>&#39;figure&#39;</span>),
+</span></span><span style=display:flex><span>    [
+</span></span><span style=display:flex><span>        Input(<span style=color:#e6db74>&#39;bigfoot-text-filter&#39;</span>, <span style=color:#e6db74>&#39;value&#39;</span>)
+</span></span><span style=display:flex><span>    ]
+</span></span><span style=display:flex><span>)
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>filter_bigfoot_class</span>(filter_text):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> bigfoot_class(filter_sightings(filter_text))
+</span></span></code></pre></div><p>Each of these functions works exactly the same way:</p><ol><li>Get the input from the text filter&rsquo;s <code>value</code> property.</li><li>Filter the reports with the <code>filter_sightings</code> function based on the callback input.</li><li>Return the plot, sending the output to the <code>figure</code> property of the corresponding graph in the layout.</li></ol><p>Here&rsquo;s what makes the Dash framework truly excellent in my opinion: effectively every thing I&rsquo;ve written for this application down to the interaction callbacks is a testable, reusable piece of logic.
+The interactions aren&rsquo;t done by binding specialized functions to fields in some data structure; they&rsquo;re done by decorating a plain-ass Python function that, by itself, is useful code.
+In fact, the vast majority of the code in this app could easily have come from some module that was originally built for, say, an analysis notebook.
+It&rsquo;s only the layout and callback <em>decorators</em> that are specific to Dash, not the entire app&rsquo;s code base.</p><p>Anyway, enough gushing.
+If you fire up the app, it will work.
+It&rsquo;s got all of the plots, all of the data, and all of the interactions.
+It looks like this:</p><figure><img src=/bigfoot-with-dash-part-2/bigfoot_dash_final.png></figure><p>There&rsquo;s one more improvement to be made, however.
+It&rsquo;s probably pretty minor because there isn&rsquo;t much data, but it was bugging me when I was putting this thing together.
+You may have noticed that the <code>filter_sightings</code> function gets called four times with every callback.
+The callbacks themselves are invoked every time the user types a character in the input bar.
+If I can save the value of the filtered reports and send <em>that</em> to all of the plot function callbacks, then I only need to loop over that array once.
+That&rsquo;s what caching&rsquo;s for.</p><h2 id=filter-function-again>Filter Function Again
+<a class=heading-link href=#filter-function-again><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>The particular type of caching that works best here is called &ldquo;memoization&rdquo;, and the way it works is straightforward: when a memoized function is called, the inputs are mapped to the outputs and the map is stored in memory.
+If the function called again with that same input, it doesn&rsquo;t need to be recomputed - the value can be returned outright because it&rsquo;s stored.
+A function call turns into a lookup.
+<em>Note that this only works for functions that are free of side effects and return the same output every time the function is called.</em></p><p>As I&rsquo;ve already said, memoizing the <code>filter_sightings</code> function <em>might</em> get us a little more performance, or we might not notice.
+Either way it can&rsquo;t hurt.
+Caching in Dash can be easily added with the <code>flask-caching</code> module because Dash is built on top of Flask.</p><p>This will require one additional installation:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>pip install flask-caching
+</span></span></code></pre></div><p>It&rsquo;s also going to require initializing the cache and attaching it to the app server.
+Revisiting the original app initialization code:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> dash
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#################################### NEW CODE ##################################</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> flask_caching <span style=color:#f92672>import</span> Cache
+</span></span><span style=display:flex><span><span style=color:#75715e>################################################################################</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>app <span style=color:#f92672>=</span> dash<span style=color:#f92672>.</span>Dash()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Title the app.</span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>title <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#################################### NEW CODE ##################################</span>
+</span></span><span style=display:flex><span>cache <span style=color:#f92672>=</span> Cache(app<span style=color:#f92672>.</span>server, config<span style=color:#f92672>=</span>{<span style=color:#e6db74>&#34;CACHE_TYPE&#34;</span>: <span style=color:#e6db74>&#34;simple&#34;</span>})
+</span></span><span style=display:flex><span><span style=color:#75715e>################################################################################</span>
+</span></span></code></pre></div><p>The Flask server lives inside the <code>server</code> attribute of the <code>Dash</code> object.
+All I have to do is initialize the cache and pass it the underlying server and we&rsquo;re ready to memoize our filter function.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Compose list with filter using toolz.</span>
+</span></span><span style=display:flex><span>listfilter <span style=color:#f92672>=</span> compose(list, filter)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#################################### NEW CODE ##################################</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>@cache.memoize</span>(<span style=color:#ae81ff>10</span>) <span style=color:#75715e># Ten second timeout.</span>
+</span></span><span style=display:flex><span><span style=color:#75715e>################################################################################</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>filter_sightings</span>(filter_text):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> listfilter(
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>lambda</span> x: filter_text<span style=color:#f92672>.</span>lower() <span style=color:#f92672>in</span> x[<span style=color:#e6db74>&#39;title&#39;</span>]<span style=color:#f92672>.</span>lower(),
+</span></span><span style=display:flex><span>            BFRO_LOCATION_DATA
+</span></span><span style=display:flex><span>        )
+</span></span></code></pre></div><p>That&rsquo;s it.
+Decorate the function with <code>@cache.memoize(10)</code> and the cache will remember input->output mappings for 10 seconds before expiring them.
+You can fire up the app again to make sure it works, but this time all of the changes were internal.
+Odds are the caching didn&rsquo;t make a <em>huge</em> difference but it did provide me the opportunity to learn how to use it.</p><h2 id=conclusion-part-3>Conclusion, Part 3
+<a class=heading-link href=#conclusion-part-3><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>And that&rsquo;s it!
+In this part I added the search bar to the map, bar chart, line/scatter plot, and donut chart with a pretty small code change.
+Overall this is what I like most about the framework: the ability to get an app ready to run and easily make incremental improvements, all while keeping the code factored into manageable and often reusable chunks.</p><p>Also I wrote zero Javascript.</p><p>If you want to see the whole thing together in one script, the full source code for everything is already on <a href=https://github.com/timothyrenner/bigfoot-dash-app>GitHub</a>.</p><p>That&rsquo;s it - we&rsquo;re ready to rock.
+Happy hunting.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+2022
+Timothy Renner
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js integrity="sha256-J6/OOU+2KE9SGz+8n2qDJjQjM8MJImfzlE13BImHb+0="></script></body></html>

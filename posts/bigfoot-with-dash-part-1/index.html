@@ -1,0 +1,217 @@
+<!doctype html><html lang=en><head><title>Finding Bigfoot with Dash, Part 1 · Timothy Renner</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Timothy Renner"><meta name=description content="Building a map of Bigfoot sightings with Plotly&rsquo;s Dash framwork.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta name=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Finding Bigfoot with Dash, Part 1"><meta name=twitter:description content="Building a map of Bigfoot sightings with Plotly&rsquo;s Dash framwork.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta property="og:title" content="Finding Bigfoot with Dash, Part 1"><meta property="og:description" content="Building a map of Bigfoot sightings with Plotly&rsquo;s Dash framwork.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta property="og:type" content="article"><meta property="og:url" content="https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2017-08-08T00:00:00+00:00"><meta property="article:modified_time" content="2017-08-08T00:00:00+00:00"><link rel=canonical href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.7f9d180e3b3bebba9ba80d55eed1255c35e00764872854736d6ad7db38884ffc.css integrity="sha256-f50YDjs767qbqA1V7tElXDXgB2SHKFRzbWrX2ziIT/w=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.107.0"></head><body class="preload-transitions colorscheme-light"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Timothy Renner</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/>Finding Bigfoot with Dash, Part 1</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2017-08-08T00:00:00Z>August 8, 2017</time></span>
+<span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+9-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/authors/timothy-renner/>Timothy Renner</a></div></div></header><div><p>Building a map of Bigfoot sightings with Plotly&rsquo;s Dash framwork.</p><p><strong><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/>Part 1: Map</a></strong></p><p><em><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/>Part 2: Plots</a></em></p><p><em><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/>Part 3: Interactions</a></em></p><div class="notice warning"><div class=notice-title><i class="fa fa-exclamation-triangle" aria-hidden=true></i>Warning</div><div class=notice-content><p>I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.</p><p>In particular, the <a href=https://dash-bootstrap-components.opensource.faculty.ai/>Dash Bootstrap Components</a> library replaces the manually set CSS classes and works really well. <a href=https://plotly.com/python/mapbox-layers/>Plotly Express</a> makes generating the map easier too.</p></div></div><p>Not too long ago, Plotly announced a new open source framework for Python-based web applications called <a href=https://plot.ly/products/dash/>Dash</a> (<a href=https://medium.com/@plotlygraphs/introducing-dash-5ecf7191b503>announcement letter</a>).
+It&rsquo;s a framework in the vein of R&rsquo;s <a href=https://shiny.rstudio.com/>Shiny</a>, with the key advantage being that it isn&rsquo;t R.
+Considering my <a href=https://timothyrenner.github.io/datascience/2017/06/30/finding-bigfoot.html>recent efforts</a> to make <a href=http://www.wtae.com/article/the-hunt-for-bigfoot-in-crawford-county-pennsylvania/10227215>one million dollars by finding Bigfoot</a> had stalled, I figured it was as good a time as any to take this framework for a spin and try to make bank.</p><p>Here&rsquo;s what I want to build: an application that shows various <em>highly critical and important</em> visualizations and statistics about sasquatch sightings, with the added ability to filter the sightings based on words I think might help me narrow down the search to relevant areas.
+Here&rsquo;s what the final thing will look like:</p><p></p><p>Basically it&rsquo;ll be four plots - a map of the geolocated sightings, a line/scatter plot of sightings over time, a bar plot of sightings by day of week, and a donut chart (<em>totally not</em> a bar chart) of the percentage of sightings for each sighting class.
+The magic will be in the search bar, which will filter the titles of the sightings based on the text you put into it.</p><p>I&rsquo;ve broken this into three parts: the first part will load the data, make a map, and initialize the server.
+The second part will be to add the additional plots with a more complex layout, and the third part will be adding the title filter bar and the associated interactions.</p><p>It&rsquo;s <em><strong>highly recommended</strong></em> that you read the awesome <a href=https://plot.ly/dash/>Dash user guide</a> before going through this.
+I&rsquo;m going to assume you&rsquo;re familiar with the HTML and core components, specifically the graphs.
+The purpose of this series of posts is to walk through a real app example rather than introduce the Dash framework itself, which the official docs already do a great job of.
+I&rsquo;ll probably spend some time going over the plot semantics because the docs for Dash and Plotly aren&rsquo;t particularly consistent in that regard, but if it&rsquo;s obvious I&rsquo;m not going to explain it.</p><h2 id=setup>Setup
+<a class=heading-link href=#setup><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>We&rsquo;re going to need some prerequisites installed.
+Generally the best idea is to do this in a Python or Anaconda virtual environment.
+These are the installations for Dash:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>pip install dash
+</span></span><span style=display:flex><span>pip install dash_renderer
+</span></span><span style=display:flex><span>pip install dash_core_components
+</span></span><span style=display:flex><span>pip install dash_html_components
+</span></span><span style=display:flex><span>pip install plotly
+</span></span></code></pre></div><p>In addition to those, we&rsquo;ll also install a couple of things that will help us with the data:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>pip install toolz
+</span></span><span style=display:flex><span>pip install python-dotenv
+</span></span></code></pre></div><p><a href=http://toolz.readthedocs.io/en/latest/api.html>Toolz</a> is probably the single most useful Python library I&rsquo;ve used - once you get used to it, it&rsquo;s indispensable.
+Python-dotenv is a library that makes reading <code>.env</code> files easier - we&rsquo;ll use it when we make the map, as Plotly&rsquo;s map plot requires an API key from <a href=https://www.mapbox.com/>Mapbox</a>.</p><p>I&rsquo;ll start by creating my directory like so:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>app.py
+</span></span><span style=display:flex><span>.env
+</span></span><span style=display:flex><span>data/
+</span></span></code></pre></div><p>I&rsquo;ll get the data, which is a geocoded list of <a href=http://www.bfro.net/>Bigfoot Field Researchers Organization (BFRO)</a> verified Bigfoot sightings, from <a href=https://data.world/timothyrenner/bfro-sightings-data>data.world</a> and put it in <code>data/bfro_report_locations.csv</code>.</p><h2 id=app-initialization>App Initialization
+<a class=heading-link href=#app-initialization><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>We&rsquo;ve got the data, so it needs to be loaded into the app.
+This <em>could</em> be done with a pandas data frame, but I actually like the model of a list of dictionaries a bit better for this application.
+The semantics are cleaner, and performance really isn&rsquo;t an issue - most of the time will be spent on the client rendering all of the plots, not filtering a 3000 element list.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> csv <span style=color:#f92672>import</span> DictReader
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>fin <span style=color:#f92672>=</span> open(<span style=color:#e6db74>&#39;data/bfro_report_locations.csv&#39;</span>, <span style=color:#e6db74>&#39;r&#39;</span>)
+</span></span><span style=display:flex><span>reader <span style=color:#f92672>=</span> DictReader(fin)
+</span></span><span style=display:flex><span>BFRO_LOCATION_DATA <span style=color:#f92672>=</span> [
+</span></span><span style=display:flex><span>    line <span style=color:#66d9ef>for</span> line <span style=color:#f92672>in</span> reader
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>fin<span style=color:#f92672>.</span>close()
+</span></span></code></pre></div><p>The sightings do have some odd times in there, so in a later post I&rsquo;ll go back and add a conditional to that comprehension.
+For now, I&rsquo;ll leave it.</p><p>Initializing the app itself is basically the same as Flask.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> dash
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>app <span style=color:#f92672>=</span> dash<span style=color:#f92672>.</span>Dash()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Title the app.</span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>title <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>
+</span></span></code></pre></div><h2 id=layout>Layout
+<a class=heading-link href=#layout><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>The &ldquo;front-end&rdquo; components of the app - the ones that get turned into the DOM in the browser - live in the <code>layout</code> property.
+Before building that out, I&rsquo;ll need to load a few CSS and Javascript dependencies.
+Because I&rsquo;m a total amateur at CSS I&rsquo;m going to use <a href=http://getbootstrap.com/>Bootstrap</a>&rsquo;s grid system.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Boostrap CSS.</span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>css<span style=color:#f92672>.</span>append_css({
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;external_url&#34;</span>: <span style=color:#e6db74>&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&#34;</span>
+</span></span><span style=display:flex><span>})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Extra Dash styling.</span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>css<span style=color:#f92672>.</span>append_css({
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;external_url&#34;</span>: <span style=color:#e6db74>&#39;https://codepen.io/chriddyp/pen/bWLwgP.css&#39;</span>
+</span></span><span style=display:flex><span>})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># JQuery is required for Bootstrap.</span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>scripts<span style=color:#f92672>.</span>append_script({
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;external_url&#34;</span>: <span style=color:#e6db74>&#34;https://code.jquery.com/jquery-3.2.1.min.js&#34;</span>
+</span></span><span style=display:flex><span>})
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Bootstrap Javascript.</span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>scripts<span style=color:#f92672>.</span>append_script({
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;external_url&#34;</span>: <span style=color:#e6db74>&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&#34;</span>
+</span></span><span style=display:flex><span>})
+</span></span></code></pre></div><p>If you want to know the details of how Bootstrap&rsquo;s grid system works, the <a href=http://getbootstrap.com/css/#grid>documentation</a> is excellent.
+Basically the only part that isn&rsquo;t self explanatory in this code is that columns are 12 units across, and different column classes subdivide it.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> dash_html_components <span style=color:#66d9ef>as</span> html
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> dash_core_components <span style=color:#66d9ef>as</span> dcc
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>layout <span style=color:#f92672>=</span> html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Column: Title + Map</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Row: Title</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>H1(<span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>, className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-center&#34;</span>)
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Row: Map</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-map&#34;</span>)
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-12&#34;</span>)
+</span></span><span style=display:flex><span>], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container-fluid&#34;</span>)
+</span></span></code></pre></div><p>At the moment, the layout doesn&rsquo;t actually have anything in it - I&rsquo;ll need to write a function that makes the map and modify the layout slightly once it&rsquo;s done.</p><h2 id=the-map>The Map
+<a class=heading-link href=#the-map><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>One of the things that makes Plotly unique is its declarative plot building semantics.
+The <code>plotly.graph_objs</code> module has wrapper classes for all of the plots, but honestly I think it&rsquo;s a lot simpler to build them as dictionaries.
+For this app, each plot&rsquo;s going to be built with a function that returns a dictionary that roughly looks like the following:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;data&#34;</span>: [
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#75715e># Data, plot type, etc.</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    ],
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;layout&#34;</span>: {
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Titles, axes, etc.</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Each function is going to take a list of dictionaries and return the dictionary that builds the plot.
+Before we build that function we need to add our Mapbox key to the environment.
+My favorite way of doing this is to use the <code>python-dotenv</code> module and put it in a <code>.env</code> file.
+Obviously <code>.env</code> should <em>not</em> be in version control.
+I&rsquo;ll put the mapbox key in the <code>.env</code> file as follows:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>MAPBOX_KEY=my_mapbox_key
+</span></span></code></pre></div><p>Then, in the app (preferably near the top before any functions are built):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> dotenv <span style=color:#f92672>import</span> find_dotenv, load_dotenv
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> os
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Loads the dotenv file into the environment. This exposes the variables in that</span>
+</span></span><span style=display:flex><span><span style=color:#75715e># file as though they were actual environment variables to the os module.</span>
+</span></span><span style=display:flex><span>load_dotenv(find_dotenv())
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>MAPBOX_KEY <span style=color:#f92672>=</span> os<span style=color:#f92672>.</span>environ<span style=color:#f92672>.</span>get(<span style=color:#e6db74>&#34;MAPBOX_KEY&#34;</span>)
+</span></span></code></pre></div><p>Now we&rsquo;re ready to make the plot building function.
+It&rsquo;s a bit long, but it&rsquo;s pretty simple.
+The only real action is basically a <code>groupby</code> - the rest is just populating the dict that will define the plot.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>from</span> toolz <span style=color:#f92672>import</span> groupby, compose, pluck
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># pluck returns a generator, so compose it with list to materialize it.</span>
+</span></span><span style=display:flex><span>listpluck <span style=color:#f92672>=</span> compose(list, pluck)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>bigfoot_map</span>(sightings):
+</span></span><span style=display:flex><span>    <span style=color:#75715e># groupby returns a dictionary mapping the values of the first field </span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># &#39;classification&#39; onto a list of record dictionaries with that </span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># classification value.</span>
+</span></span><span style=display:flex><span>    classifications <span style=color:#f92672>=</span> groupby(<span style=color:#e6db74>&#39;classification&#39;</span>, sightings)
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;data&#34;</span>: [
+</span></span><span style=display:flex><span>                {
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;scattermapbox&#34;</span>,
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;lat&#34;</span>: listpluck(<span style=color:#e6db74>&#34;latitude&#34;</span>, class_sightings),
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;lon&#34;</span>: listpluck(<span style=color:#e6db74>&#34;longitude&#34;</span>, class_sightings),
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;text&#34;</span>: listpluck(<span style=color:#e6db74>&#34;title&#34;</span>, class_sightings),
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;mode&#34;</span>: <span style=color:#e6db74>&#34;markers&#34;</span>,
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;name&#34;</span>: classification,
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;marker&#34;</span>: {
+</span></span><span style=display:flex><span>                        <span style=color:#e6db74>&#34;size&#34;</span>: <span style=color:#ae81ff>3</span>,
+</span></span><span style=display:flex><span>                        <span style=color:#e6db74>&#34;opacity&#34;</span>: <span style=color:#ae81ff>1.0</span>
+</span></span><span style=display:flex><span>                    }
+</span></span><span style=display:flex><span>                }
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>for</span> classification, class_sightings <span style=color:#f92672>in</span> classifications<span style=color:#f92672>.</span>items()
+</span></span><span style=display:flex><span>            ],
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;layout&#34;</span>: {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;autosize&#34;</span>: <span style=color:#66d9ef>True</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;hovermode&#34;</span>: <span style=color:#e6db74>&#34;closest&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;mapbox&#34;</span>: {
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;accesstoken&#34;</span>: MAPBOX_KEY,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;bearing&#34;</span>: <span style=color:#ae81ff>0</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;center&#34;</span>: {
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;lat&#34;</span>: <span style=color:#ae81ff>40</span>,
+</span></span><span style=display:flex><span>                    <span style=color:#e6db74>&#34;lon&#34;</span>: <span style=color:#f92672>-</span><span style=color:#ae81ff>98.5</span>
+</span></span><span style=display:flex><span>                },
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;pitch&#34;</span>: <span style=color:#ae81ff>0</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;zoom&#34;</span>: <span style=color:#ae81ff>2</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;style&#34;</span>: <span style=color:#e6db74>&#34;outdoors&#34;</span>
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><p>The data is a list of three dictionaries - in Plotly parlance these are called &ldquo;traces&rdquo;.
+Essentially they define a group of points, in our case the grouping is done by the classification - Class A (direct sighting), Class B (indirect sighting), or Class C (hearsay, basically).
+Each trace gets its own color assigned to it by Plotly.
+The plot <code>type</code> is also important: <code>"scattermapbox"</code> says this is a set of points projected onto a Mapbox tiling system.
+It requires &ldquo;lat&rdquo; and &ldquo;lon&rdquo; instead of x and y, which we get from using <code>pluck</code>.
+That function walks over a sequence and applies some accessor (could be an index or a dictionary key) to it, returning a generator.
+I composed <code>list</code> and <code>pluck</code> (pluck first, then turn the generator into a list) because Plotly needs a list, then extracted the &ldquo;latitude&rdquo; and &ldquo;longitude&rdquo; field from the sightings list with it.
+I also added the title to the <code>text</code> field so we can see the titles when we hover over the points.</p><p>The Mapbox specific options are in the <code>mapbox</code> field of the layout - they&rsquo;re pretty self explanatory and the Plotly docs are awesome at explaining what these do, though you might need to flip to the PlotlyJS Javascript version.
+As expected, the data structure described in PlotlyJS docs maps perfectly to the Python dictionary version - no need for objects.</p><p>Now that we&rsquo;ve got our function we need to wire that into the actual layout.
+Going back to the layout, we just need to add the call:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>app<span style=color:#f92672>.</span>layout <span style=color:#f92672>=</span> html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Column: Title + Map</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Row: Title</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>H1(<span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>, className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-center&#34;</span>)
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Row: Map</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-map&#34;</span>,
+</span></span><span style=display:flex><span>                <span style=color:#75715e>############### NEW CODE #############</span>
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_map(BFRO_LOCATION_DATA)
+</span></span><span style=display:flex><span>                <span style=color:#75715e>######################################    </span>
+</span></span><span style=display:flex><span>            )
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-12&#34;</span>)
+</span></span><span style=display:flex><span>], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container-fluid&#34;</span>)
+</span></span></code></pre></div><h2 id=run-it>Run It
+<a class=heading-link href=#run-it><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>We&rsquo;ve got everything we need: data, layout and plot.
+The final piece to get this thing up and running is to start the server.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>if</span> __name__ <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;__main__&#34;</span>:
+</span></span><span style=display:flex><span>    app<span style=color:#f92672>.</span>run_server(debug<span style=color:#f92672>=</span><span style=color:#66d9ef>True</span>)
+</span></span></code></pre></div><p>After that, start it up in the shell:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>python app.py
+</span></span></code></pre></div><p>You should see that it starts a server at <code>localhost:8050</code>.
+If you go there, you&rsquo;ll see</p><figure><img src=/bigfoot-with-dash-part-1/bigfoot_dash_map_only.png></figure><p>One step closer to making that million.</p><h2 id=conclusion-part-1>Conclusion, Part 1
+<a class=heading-link href=#conclusion-part-1><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>In this post I walked through the high level structure of a Dash app.
+We read in the data, built a layout, create a plot-returning function for the map, and constructed the server.
+We&rsquo;ve still got a ways to go - check out the upcoming part 2 for a more sophisticated layout with additional plots and the upcoming part 3 for an interactive search bar.</p><p>If you&rsquo;re impatient, the full source code for everything is already on <a href=https://github.com/timothyrenner/bigfoot-dash-app>GitHub</a>.</p><p>Head on over to <a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/>part 2</a> and check out more plots with a more interesting layout.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+2022
+Timothy Renner
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js integrity="sha256-J6/OOU+2KE9SGz+8n2qDJjQjM8MJImfzlE13BImHb+0="></script></body></html>

@@ -1,0 +1,226 @@
+<!doctype html><html lang=en><head><title>Finding Bigfoot with Dash, Part 2 · Timothy Renner</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="Timothy Renner"><meta name=description content="Building the plots necessary to find Bigfoot with Plotly&rsquo;s Dash framework.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta name=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Finding Bigfoot with Dash, Part 2"><meta name=twitter:description content="Building the plots necessary to find Bigfoot with Plotly&rsquo;s Dash framework.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta property="og:title" content="Finding Bigfoot with Dash, Part 2"><meta property="og:description" content="Building the plots necessary to find Bigfoot with Plotly&rsquo;s Dash framework.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well."><meta property="og:type" content="article"><meta property="og:url" content="https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-08-09T00:00:00+00:00"><meta property="article:modified_time" content="2022-08-09T00:00:00+00:00"><link rel=canonical href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.7f9d180e3b3bebba9ba80d55eed1255c35e00764872854736d6ad7db38884ffc.css integrity="sha256-f50YDjs767qbqA1V7tElXDXgB2SHKFRzbWrX2ziIT/w=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.107.0"></head><body class="preload-transitions colorscheme-light"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Timothy Renner</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Blog</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/>Finding Bigfoot with Dash, Part 2</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa fa-calendar" aria-hidden=true></i>
+<time datetime=2022-08-09T00:00:00Z>August 9, 2022</time></span>
+<span class=reading-time><i class="fa fa-clock-o" aria-hidden=true></i>
+8-minute read</span></div><div class=authors><i class="fa fa-user" aria-hidden=true></i>
+<a href=/authors/timothy-renner/>Timothy Renner</a></div></div></header><div><p>Building the plots necessary to find Bigfoot with Plotly&rsquo;s Dash framework.</p><p><em><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/>Part 1: Map</a></em></p><p><strong><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/>Part 2: Plots</a></strong></p><p><em><a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/>Part 3: Interactions</a></em></p><div class="notice warning"><div class=notice-title><i class="fa fa-exclamation-triangle" aria-hidden=true></i>Warning</div><div class=notice-content><p>I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.</p><p>In particular, the <a href=https://dash-bootstrap-components.opensource.faculty.ai/>Dash Bootstrap Components</a> library replaces the manually set CSS classes and works really well. <a href=https://plotly.com/python/mapbox-layers/>Plotly Express</a> makes generating the map easier too.</p></div></div><p>In <a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/>part 1</a>, I unveiled my latest plan to make <a href=http://www.wtae.com/article/the-hunt-for-bigfoot-in-crawford-county-pennsylvania/10227215>one million dollars by finding Bigfoot</a> using Plotly&rsquo;s <a href=https://plot.ly/products/dash/>Dash</a> framework.
+I walked through the overall structure of the app, the data, and the map visualization.
+In this part I&rsquo;ll add some more plots to the layout - a line/scatter plot of sightings over time, a bar plot of the sightings by day of week, and a donut chart of the percentage of sightings for each sighting class.
+In part 3, I&rsquo;ll wire the plots to an interactive element - a search bar that filters the titles.
+The final product will look like this:</p><figure><img src=/bigfoot-with-dash-part-2/bigfoot_dash_final.png></figure><p>Obviously I recommend reading part 1 of this series before this one, but it&rsquo;s probably most important to read through the <a href=https://plot.ly/dash/>Dash user guide</a> because I&rsquo;m not going to explain everything in the code - only the parts that aren&rsquo;t obvious.
+My goal isn&rsquo;t to explain the elements of the framework, it&rsquo;s to walk through a complete app and obviously make a million dollars.</p><p>I&rsquo;ll start by walking through the plots, then update the layout.
+The approach for the plots I&rsquo;m taking is the same one I used for the map: write a function that takes all of the sightings and returns the data structure for the plot.</p><h2 id=sightings-by-year>Sightings by Year
+<a class=heading-link href=#sightings-by-year><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Before building this plot I need to create a helper function that extracts the year from the timestamp.
+The timestamps are in <a href=https://en.wikipedia.org/wiki/ISO_8601>ISO-8601</a> format, which means they look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>2000-06-16T12:00:00Z
+</span></span></code></pre></div><p>It&rsquo;s pretty easy to do this with the builtin Python datetime module.
+Put this function above the point where you read in the data (I&rsquo;ll explain why that&rsquo;s important in a minute).</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> datetime <span style=color:#66d9ef>as</span> dt
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># This will get used more than once.</span>
+</span></span><span style=display:flex><span>TIMESTAMP_FORMAT <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;%Y-%m-</span><span style=color:#e6db74>%d</span><span style=color:#e6db74>T%H:%M:%SZ&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sighting_year</span>(sighting):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> dt<span style=color:#f92672>.</span>datetime<span style=color:#f92672>.</span>strptime(sighting[<span style=color:#e6db74>&#39;timestamp&#39;</span>], TIMESTAMP_FORMAT)<span style=color:#f92672>.</span>year
+</span></span></code></pre></div><p>All that function does is cast the string as a datetime object and extract the year.
+The reason I want this above the rest of the code is that there are a few sightings that really skew the axes on the time plot - one that super old, and another that&rsquo;s hopefully been misrecorded as having happened in 2053.
+Revisiting the code where we read in the data, make the following change to take out the odd sightings out:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e># Read the data.</span>
+</span></span><span style=display:flex><span>fin <span style=color:#f92672>=</span> open(<span style=color:#e6db74>&#39;data/bfro_report_locations.csv&#39;</span>,<span style=color:#e6db74>&#39;r&#39;</span>)
+</span></span><span style=display:flex><span>reader <span style=color:#f92672>=</span> DictReader(fin)
+</span></span><span style=display:flex><span>BFRO_LOCATION_DATA <span style=color:#f92672>=</span> \
+</span></span><span style=display:flex><span>[
+</span></span><span style=display:flex><span>    line <span style=color:#66d9ef>for</span> line <span style=color:#f92672>in</span> reader 
+</span></span><span style=display:flex><span>    <span style=color:#75715e>################################ NEW CODE ##################################</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (sighting_year(line) <span style=color:#f92672>&lt;=</span> <span style=color:#ae81ff>2017</span>) <span style=color:#f92672>and</span> (sighting_year(line) <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>1900</span>)
+</span></span><span style=display:flex><span>    <span style=color:#75715e>############################################################################</span>
+</span></span><span style=display:flex><span>]
+</span></span><span style=display:flex><span>fin<span style=color:#f92672>.</span>close()
+</span></span></code></pre></div><p>Now that the dataset is a little cleaner it&rsquo;s time to build the plot.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#f92672>from</span> toolz <span style=color:#f92672>import</span> countby, first
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>bigfoot_by_year</span>(sightings):
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Create a dict mapping the </span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># classification -&gt; [(year, count), (year, count) ... ]</span>
+</span></span><span style=display:flex><span>    sightings_by_year <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>        classification: 
+</span></span><span style=display:flex><span>            sorted(
+</span></span><span style=display:flex><span>                list(
+</span></span><span style=display:flex><span>                    <span style=color:#75715e># Group by year -&gt; count.</span>
+</span></span><span style=display:flex><span>                    countby(sighting_year, class_sightings)<span style=color:#f92672>.</span>items()
+</span></span><span style=display:flex><span>                ),
+</span></span><span style=display:flex><span>                <span style=color:#75715e># Sort by year.</span>
+</span></span><span style=display:flex><span>                key<span style=color:#f92672>=</span>first
+</span></span><span style=display:flex><span>            )
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> classification, class_sightings 
+</span></span><span style=display:flex><span>        <span style=color:#f92672>in</span> groupby(<span style=color:#e6db74>&#39;classification&#39;</span>, sightings)<span style=color:#f92672>.</span>items()
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Build the plot with a dictionary.</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;data&#34;</span>: [
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;scatter&#34;</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;mode&#34;</span>: <span style=color:#e6db74>&#34;lines+markers&#34;</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;name&#34;</span>: classification,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;x&#34;</span>: listpluck(<span style=color:#ae81ff>0</span>, class_sightings_by_year),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;y&#34;</span>: listpluck(<span style=color:#ae81ff>1</span>, class_sightings_by_year)
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>for</span> classification, class_sightings_by_year 
+</span></span><span style=display:flex><span>            <span style=color:#f92672>in</span> sightings_by_year<span style=color:#f92672>.</span>items()
+</span></span><span style=display:flex><span>        ],
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;layout&#34;</span>: {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Sightings by Year&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;showlegend&#34;</span>: <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><p>The real action in this function is building <code>sightings_by_year</code>.
+The data structure is a dictionary mapping the classification to a list of <code>(year,count)</code>.
+To build it, I group by the classification.
+After that, for each classification do a count by year sorted by the year (<code>sorted(... , key=first)</code>).</p><p>As for the plot data structure it&rsquo;s fairly straightforward - just put each class in a trace and pluck the zeroth element (year) for x and the first element (count) for y per trace.
+I decided not to show the legend because every plot gets the same color scheme and the map already has one.</p><h2 id=sightings-by-day-of-week>Sightings by Day of Week
+<a class=heading-link href=#sightings-by-day-of-week><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>As with the sightings by year plot, I&rsquo;ll need a helper function to extract the day of the week from the report timestamp.
+I can use the same format string and just write a different helper.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>sighting_dow</span>(sighting):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> dt<span style=color:#f92672>.</span>datetime<span style=color:#f92672>.</span>strptime(sighting[<span style=color:#e6db74>&#39;timestamp&#39;</span>], TIMESTAMP_FORMAT)\
+</span></span><span style=display:flex><span>                      <span style=color:#f92672>.</span>strftime(<span style=color:#e6db74>&#34;</span><span style=color:#e6db74>%a</span><span style=color:#e6db74>&#34;</span>)
+</span></span></code></pre></div><p>Since the datetime type doesn&rsquo;t have an attribute with the day of the week I have to use <code>strftime</code> to get it, but other than that it&rsquo;s basically the same function we have for extracting the year.</p><p>The plot will get built in two stages: first, group by the day of week, then build the data structure for the plot.
+I won&rsquo;t worry about breaking this plot down by classification, but if you want to give it a shot it is fairly straightforward.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>bigfoot_dow</span>(sightings):
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Produces a dict dow =&gt; count.</span>
+</span></span><span style=display:flex><span>    sightings_dow <span style=color:#f92672>=</span> countby(<span style=color:#e6db74>&#34;dow&#34;</span>,
+</span></span><span style=display:flex><span>        [
+</span></span><span style=display:flex><span>            <span style=color:#75715e># Extract the day of week for each sighting - ignore the rest.</span>
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;dow&#34;</span>: sighting_dow(sighting)
+</span></span><span style=display:flex><span>            } 
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>for</span> sighting <span style=color:#f92672>in</span> sightings
+</span></span><span style=display:flex><span>        ]
+</span></span><span style=display:flex><span>    )
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Fix the order for the day of week axis.</span>
+</span></span><span style=display:flex><span>    dows <span style=color:#f92672>=</span>  [<span style=color:#e6db74>&#34;Sun&#34;</span>, <span style=color:#e6db74>&#34;Mon&#34;</span>, <span style=color:#e6db74>&#34;Tue&#34;</span>, <span style=color:#e6db74>&#34;Wed&#34;</span>, <span style=color:#e6db74>&#34;Thu&#34;</span>, <span style=color:#e6db74>&#34;Fri&#34;</span>, <span style=color:#e6db74>&#34;Sat&#34;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;data&#34;</span>: [
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;bar&#34;</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;x&#34;</span>: dows,
+</span></span><span style=display:flex><span>                <span style=color:#75715e># Get the count, or zero if it isn&#39;t present.</span>
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;y&#34;</span>: [get(d, sightings_dow, <span style=color:#ae81ff>0</span>) <span style=color:#66d9ef>for</span> d <span style=color:#f92672>in</span> dows]
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        ],
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;layout&#34;</span>: {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Sightings by Day of Week&#34;</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><p>There are a couple of things to pay attention to in this function.
+The first is that I&rsquo;ve fixed the order of the days of the week for the x axis, which ensures that the order is sane and consistent.
+When the interactions are added later, the order of the x axis won&rsquo;t change even as the underlying data changes.
+The other is the <code>get(d, sightings_dow, 0)</code>, which pulls the counts for the day of the week, or zero if it isn&rsquo;t present.
+Again, that&rsquo;s not a big deal <em>now</em> because we&rsquo;re passing it all of the data, but when the interactions are added this will ensure that the function doesn&rsquo;t throw an error if there isn&rsquo;t an entry in <code>sightings_dow</code>.</p><h2 id=sightings-by-classification>Sightings by Classification
+<a class=heading-link href=#sightings-by-classification><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>This plot&rsquo;s by far the simplest - it&rsquo;s a donut chart of the classifications.
+There&rsquo;s really nothing we haven&rsquo;t seen before so I&rsquo;ll just show it.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>bigfoot_class</span>(sightings):
+</span></span><span style=display:flex><span>    sightings_by_class <span style=color:#f92672>=</span> countby(<span style=color:#e6db74>&#34;classification&#34;</span>, sightings)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> {
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;data&#34;</span>: [
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;pie&#34;</span>,
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;labels&#34;</span>: list(sightings_by_class<span style=color:#f92672>.</span>keys()),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;values&#34;</span>: list(sightings_by_class<span style=color:#f92672>.</span>values()),
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;hole&#34;</span>: <span style=color:#ae81ff>0.4</span>
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        ],
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;layout&#34;</span>: {
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;title&#34;</span>: <span style=color:#e6db74>&#34;Sightings by Class&#34;</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span></code></pre></div><h2 id=layout>Layout
+<a class=heading-link href=#layout><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Obviously the layout of the app is going to need to change before cramming the new plots in there.
+The code change for the layout is pretty serious, so I suggest nuking the old one and starting fresh.
+The layout I&rsquo;m going for will have three rows (the final product will have four):</p><ol><li>Title</li><li>Map + Sightings by Day of Week</li><li>Sightings by Year + Sightings by Class.</li></ol><p>Because the map and sightings by year plots are most important, I&rsquo;m going to make them 8 units across.
+The other plots will be four units across (recall Bootstrap columns are subdivided into 12 units).
+Basically the layout will look like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>Row
+</span></span><span style=display:flex><span>    Column-12 (title)
+</span></span><span style=display:flex><span>Row
+</span></span><span style=display:flex><span>    Column-8 (map)
+</span></span><span style=display:flex><span>    Column-4 (sightings by day of week)
+</span></span><span style=display:flex><span>Row
+</span></span><span style=display:flex><span>    Column-8 (sightings per year)
+</span></span><span style=display:flex><span>    Column-4 (sightings by class)
+</span></span></code></pre></div><p>Hopefully with that 50,000 foot view the Python code won&rsquo;t seem like a lot - it&rsquo;s really easy to build incrementally as long as you&rsquo;re consistent with your indentation.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>
+</span></span><span style=display:flex><span>app<span style=color:#f92672>.</span>layout <span style=color:#f92672>=</span> html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Title</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Title</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            html<span style=color:#f92672>.</span>H1(<span style=color:#e6db74>&#34;Bigfoot Sightings&#34;</span>, className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-center&#34;</span>)
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-12&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Map + DOW</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Map</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-map&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_map(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-8&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Day of Week</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-dow&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_dow(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-4&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>),
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Row: Year + Class</span>
+</span></span><span style=display:flex><span>    html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Year</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-by-year&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_by_year(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-8&#34;</span>),
+</span></span><span style=display:flex><span>        <span style=color:#75715e># Column: Class</span>
+</span></span><span style=display:flex><span>        html<span style=color:#f92672>.</span>Div([
+</span></span><span style=display:flex><span>            dcc<span style=color:#f92672>.</span>Graph(
+</span></span><span style=display:flex><span>                id<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;bigfoot-class&#34;</span>,
+</span></span><span style=display:flex><span>                figure<span style=color:#f92672>=</span>bigfoot_class(BFRO_LOCATION_DATA))
+</span></span><span style=display:flex><span>        ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;col-md-4&#34;</span>)
+</span></span><span style=display:flex><span>    ], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;row&#34;</span>)
+</span></span><span style=display:flex><span>], className<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;container-fluid&#34;</span>)
+</span></span></code></pre></div><p>With the plots wired into the new layout, it&rsquo;s time to fire this thing up.
+Run</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>python app.py
+</span></span></code></pre></div><p>in the shell and hit <code>localhost:8050</code> in the browser.
+You should see this:</p><figure><img src=/bigfoot-with-dash-part-2/bigfoot_dash_plots.png></figure><h2 id=conclusion-part-2>Conclusion, Part 2
+<a class=heading-link href=#conclusion-part-2><i class="fa fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>In this post I walked through several plotting functions, all of which have basically the same signature: take a list of dictionaries and return a dict with the &ldquo;data&rdquo; and &ldquo;layout&rdquo; fields needed to produce the plot in the browser.
+For most of the data manipulation I used functions from toolz, but it&rsquo;s not terribly difficult to do the same thing with pandas.
+Hell, it might even be faster, but I&rsquo;m not sure it would be <em>noticeably</em> faster.
+After building three additional plot functions, I modified the layout to take better advantage of the Bootstrap grid system and wired the plots into it.</p><p>We&rsquo;re almost there, so it&rsquo;s time to start thinking about what you&rsquo;d do with a million dollars.
+There&rsquo;s just one more thing to do: put that input bar together and wire it to the dataset for the interactions.
+That&rsquo;s the sole topic of part 3.</p><p>If you&rsquo;re impatient, the full source code for everything is already on <a href=https://github.com/timothyrenner/bigfoot-dash-app>GitHub</a>.</p><p>Continue on to <a href=https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/>part 3</a> to finish the app by adding an interactive search bar.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+2022
+Timothy Renner
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js integrity="sha256-J6/OOU+2KE9SGz+8n2qDJjQjM8MJImfzlE13BImHb+0="></script></body></html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Timothy Renner</title><link>https://www.timothyrenner.github.io/posts/</link><description>Recent content in Posts on Timothy Renner</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.timothyrenner.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Finding Bigfoot with Dash, Part 3</title><link>https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/</link><pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-3/</guid><description>Adding a search bar to the Bigfoot report titles and wiring it to the sightings map and plots.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well.</description></item><item><title>Finding Bigfoot with Dash, Part 2</title><link>https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/</link><pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate><guid>https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-2/</guid><description>Building the plots necessary to find Bigfoot with Plotly&amp;rsquo;s Dash framework.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well.</description></item><item><title>Finding Bigfoot with Dash, Part 1</title><link>https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/</link><pubDate>Tue, 08 Aug 2017 00:00:00 +0000</pubDate><guid>https://www.timothyrenner.github.io/posts/bigfoot-with-dash-part-1/</guid><description>Building a map of Bigfoot sightings with Plotly&amp;rsquo;s Dash framwork.
+Part 1: Map
+Part 2: Plots
+Part 3: Interactions
+Warning I wrote this when Plotly Dash was brand new. Though the fundamental process and setup is the same, some of the details are quite a bit simpler now than they were when I wrote this.
+In particular, the Dash Bootstrap Components library replaces the manually set CSS classes and works really well.</description></item></channel></rss>
