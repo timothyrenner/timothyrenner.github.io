@@ -1,0 +1,29 @@
+baseURL = 'https://www.timothyrenner.github.io'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = ["github.com/luizdepra/hugo-coder"]
+
+Paginate = 3
+DefaultContentLanguage = "en"
+
+[params]
+    author = "Timothy Renner"
+    description = "Data and opinions"
+    recent_posts_number = 3
+    [[menu.main]]
+        name = "Blog"
+        weight = 1
+        url  = "/posts/"
+    [[menu.main]]
+        name = "About"
+        weight = 2
+        url = "/about/"
+    [[menu.main]]
+        name = "Projects"
+        weight = 3
+        url = "/projects/"
+    [[menu.main]]
+        name = "Contact me"
+        weight = 5
+        url = "/contact/"
+    
