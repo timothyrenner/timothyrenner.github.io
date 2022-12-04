@@ -1,8 +1,0 @@
-paginate: 5
-highlighter: rouge
-markdown: kramdown
-kramdown:
-    input: GFM
-    hard_wrap: false
-plugins:
-    - jekyll-paginate
