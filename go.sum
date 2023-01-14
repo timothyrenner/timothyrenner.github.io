@@ -1,4 +1,8 @@
+github.com/adityatelange/hugo-PaperMod v0.0.0-20221224152110-d3d90be8a4ea h1:Oh7CmQcvzhhNV4vJy9pXHP4SJoEPg0FVOIP73VwJR5Q=
+github.com/adityatelange/hugo-PaperMod v0.0.0-20221224152110-d3d90be8a4ea/go.mod h1:HCHxNMKYdGafUYjVV3ICiAqznZK2yH0iI53jqcDFDdQ=
 github.com/luizdepra/hugo-coder v0.0.0-20221130122428-266beec0d168 h1:NjJrd6q1E66nUhaqKhTe9NfKzpbAMPi0mDnFVWkhbxM=
 github.com/luizdepra/hugo-coder v0.0.0-20221130122428-266beec0d168/go.mod h1:9EQBf2rU+NPjlohGuKcEgdqSeOc3tIQoOty4xPpuUQ4=
+github.com/martignoni/hugo-notice v0.0.0-20220915151719-9571973877af h1:beo4H+y36B4t4wO4fu+rQI/tZDZB45VSLgKrpATezVs=
+github.com/martignoni/hugo-notice v0.0.0-20220915151719-9571973877af/go.mod h1:k+PSLmVlZC5iWWxLLOSDQetCCeeqKZQvQJ+AXLg6X1A=
 github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20221202213201-a0c7382c597e h1:PApjc31IYMNPNT7gJ/z1BBrVk6S48lTTt563IUtmp34=
 github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20221202213201-a0c7382c597e/go.mod h1:yY14BLqqh5G61rO81YcJKMHY1rClY5iIiUK+K2JKSUM=

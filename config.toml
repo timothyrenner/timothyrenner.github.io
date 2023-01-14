@@ -1,13 +1,13 @@
 baseURL = 'https://www.timothyrenner.github.io'
 languageCode = 'en-us'
 title = 'Timothy Renner'
-theme = ["github.com/luizdepra/hugo-coder"]
+theme = ["github.com/martignoni/hugo-notice", "github.com/adityatelange/hugo-PaperMod"]
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$", "\\.csv$", "environment.yml" ]
 
-Paginate = 3
+Paginate = 5
 DefaultContentLanguage = "en"
 
 [markup.goldmark.renderer]
@@ -16,6 +16,7 @@ unsafe= true
 [params]
     author = "Timothy Renner"
     description = "Data and opinions"
+
     [[menu.main]]
         name = "Blog"
         weight = 1
@@ -24,17 +25,21 @@ unsafe= true
         name = "About"
         weight = 2
         url = "/about/"
-[[params.social]]
+[params.homeInfoParams]
+Title = "Welcome"
+Content = "I write about data, tech, and mostly dumb stuff."
+
+[[params.socialIcons]]
     name = "Github"
     icon = "fa fa-github fa-2x"
     weight = 1
     url = "https://github.com/timothyrenner"
-[[params.social]]
+[[params.socialIcons]]
     name = "Instagram"
     icon = "fa fa-instagram fa-2x"
     weight = 1
     url = "https://instagram.com/timothyrenner/"
-[[params.social]]
+[[params.socialIcons]]
     name = "Linkedin"
     icon = "fa fa-linkedin fa-2x"
     weight = 1
