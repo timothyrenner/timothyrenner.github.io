@@ -317,16 +317,16 @@ ORDER BY total_calories DESC
 
 | elf_id | total_calories |
 |-------:|---------------:|
-|   2115 |          72240 |
-|     89 |          69625 |
-|    459 |          69092 |
-|   1872 |          66996 |
-|   1433 |          66757 |
-|   1647 |          66449 |
-|    273 |          66170 |
-|    279 |          65848 |
-|    916 |          65595 |
-|    297 |          64892 |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
+|   1234 |          xxxxx |
 
 Displaying records 1 - 10
 
@@ -352,7 +352,7 @@ WITH top3 AS (
 
 | sum(total_calories) |
 |--------------------:|
-|              210957 |
+|              xxxxxx |
 
 1 records
 
