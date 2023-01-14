@@ -1,0 +1,13 @@
+name: blog
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - r-base
+  - r-essentials
+  # - r-duckdb # <- NOTE - does not install on Mac ARM, not built.
+  - pip
+  - pip:
+      - jupyter
+      - duckdb

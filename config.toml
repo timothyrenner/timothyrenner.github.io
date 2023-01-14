@@ -5,9 +5,13 @@ theme = ["github.com/luizdepra/hugo-coder"]
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
+ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$", "\\.csv$", "environment.yml" ]
 
 Paginate = 3
 DefaultContentLanguage = "en"
+
+[markup.goldmark.renderer]
+unsafe= true
 
 [params]
     author = "Timothy Renner"
