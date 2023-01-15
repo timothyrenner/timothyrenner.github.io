@@ -1,2 +1,3 @@
 .hugo_build.lock
 /.quarto/
+.DS_Store
