@@ -1,4 +1,4 @@
-baseURL = 'https://www.timothyrenner.github.io/'
+baseURL = ''
 languageCode = 'en-us'
 title = 'Timothy Renner'
 theme = ["github.com/martignoni/hugo-notice", "github.com/adityatelange/hugo-PaperMod"]
