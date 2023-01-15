@@ -39,16 +39,9 @@ Yes.
 Should we?
 Doesn't matter we're doin it anyway.
 
-I'm building this with [Quarto](https://quarto.org/), which is a way of building computational documents.
-Conveniently it allows for SQL cells, so I won't be tempted to cheat by using a language with variables and loops.
-First, a little boilerplate.
-This code configures the SQL fences in Quarto (powered by [knitr](https://yihui.org/knitr/), an R package) to use the same database connection for the document.
-
-``` r
-library("DBI")
-db = dbConnect(duckdb::duckdb(), dbdir=":memory:")
-knitr::opts_chunk$set(connection="db")
-```
+I built this with [Quarto](https://quarto.org/), which is a way of building computational documents.
+You can view the raw Quarto Markdown files [in the git repo](https://github.com/timothyrenner/advent-of-code-2022).
+There are a few things I've omitted from this post that are Quarto specific but not relevant to the solution - mainly firing up and connecting to an in-memory database.
 
 The database I'm using is [DuckDB](https://duckdb.org/), which is a pretty hot item in the data world right now.
 It's the fastest, simplest way to do in-process SQL on tabular data.
