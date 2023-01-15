@@ -20,11 +20,11 @@ unsafe= true
     [[menu.main]]
         name = "Blog"
         weight = 1
-        url  = "/posts/"
+        url  = "posts/"
     [[menu.main]]
         name = "About"
         weight = 2
-        url = "/about/"
+        url = "about/"
 [params.homeInfoParams]
 Title = "Welcome"
 Content = "I write about data, tech, and mostly dumb stuff."
